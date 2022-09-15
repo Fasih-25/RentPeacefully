@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import logo from '../assets/ERT.png';
 import "../App.css";
-import { faGift, faHome, faAddressBook, faQuestionCircle, faExclamationCircle, faPlusSquare, faSignInAlt, faScrewdriverWrench, faUserAlt} from '@fortawesome/free-solid-svg-icons'; 
+import { faGift, faHome, faAddressBook, faQuestionCircle, faExclamationCircle, faPlusSquare, faDoorOpen, faSignInAlt, faWrench, faScrewdriverWrench, faUserAlt} from '@fortawesome/free-solid-svg-icons'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -13,7 +13,7 @@ export default function Navbar() {
     <div className=''>
         <nav className="navbar pt-2.5 pb-2.5 navbar-expand-lg bg-sky-800  ">
             <div className="container-fluid  ">
-                 <img className='logoImage' height="30px !important" src={logo} alt=''></img>
+                 <img className='logoImage' height="30px !important" src={logo}></img>
                 <Link className="navbar-brand text-white font-bold text" to="/">RentalApp</Link>
                 <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@ export default function Navbar() {
                     <Link className="nav-link active text-white hover:text-white" aria-current="page" to="/propertiesForRent"><FontAwesomeIcon icon={faHome} className="homeIcon"></FontAwesomeIcon> Properties for Rent</Link>
                     </li>
                     <li className="nav-item dropdown px-2 lg:!px-0">
-                    <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a className="nav-link dropdown-toggle text-white" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <FontAwesomeIcon icon={faAddressBook} className="homeIcon"></FontAwesomeIcon> Directory
                     </a>
                     <ul className="dropdown-menu ">

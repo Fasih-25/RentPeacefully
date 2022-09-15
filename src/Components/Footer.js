@@ -24,7 +24,7 @@ export default function Footer() {
                     <h5 className='text-xl font-medium'>Help</h5>
                     <ul className='text-center sm:!text-left pt-2'>
                         <li><a className=" text-white px-0  text-sm hover:no-underline  " href="/">How it works</a></li>
-                        <li><a className=" text-white px-0 py-0 text-sm hover:no-underline" href="/">FAQs</a></li>
+                        <li><button className=" text-white px-0 py-0 text-sm hover:no-underline" onClick={()=>navigate("/fAQs")}>FAQs</button></li>
                     </ul>
                 </div>
                 <hr className='md:hidden w-1' />

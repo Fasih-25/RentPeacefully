@@ -111,7 +111,7 @@ export default function NavCenter() {
 
                         <div className={toggleState === 3 ? "flex-start" : "hidden"} >
                             <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 justify-around 2xl:justify-start">
-                                <div className="md:text-center flex md:items-center md:justify-center lg:justify-center">
+                                <div className="md:text-center flex md:items-center md:justify-center lg:justify-center 2xl:pl-36">
                                     <img src={require('../assets/service1.jpg')} className="" alt="" />
                                 </div>
                                 <div className=" md:justify-center lg:justify-start xl:pl-10 2xl:pl-96 2xl:ml-12">
@@ -127,7 +127,7 @@ export default function NavCenter() {
                                 <div className="md:text-center flex md:items-center md:justify-center lg:justify-end  ">
                                     <img src={require('../assets/service2.jpg')} className="" alt="" />
                                 </div>
-                                    <div className=" md:justify-center lg:justify-start mb-20 -ml-56">
+                                    <div className="flex flex-col md:justify-center lg:justify-start mb-20 2xl:-ml-56">
                                         <h4 className="text-red-500 font-bold text-center lg:!text-left mb-3 "><FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon> Score</h4>
                                         <h1 className="text-slate-600 text-center lg:!text-left text-3xl md:text-3xl mb-4  "><strong>Get a Score </strong></h1>
                                         <p className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg xl:text-lg lg:text-base 2xl:text-sm">Get a great score for your services so your service ad can reach more Landlords.</p>

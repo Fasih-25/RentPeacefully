@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBath, faBed, faChair, faClockFour, faD, faDoorOpen, faDroplet, faDumbbell, faElevator, faFire, faGraduationCap, faHandRock, faHighlighter, faParking, faSquare, faStoreAlt, faStreetView, faSwimmingPool, faTemperatureFull, faTree, faUmbrella, faWheelchair, faWind} from '@fortawesome/free-solid-svg-icons';
+import {faBath, faBed, faChair, faClock, faClockFour, faD, faDoorOpen, faDroplet, faDumbbell, faElevator, faFire, faGlassWaterDroplet, faGraduationCap, faHandRock, faHighlighter, faParking, faSquare, faStoreAlt, faStreetView, faSwimmingPool, faTemperatureArrowUp, faTemperatureFull, faTree, faUmbrella, faWheelchair, faWind} from '@fortawesome/free-solid-svg-icons';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
