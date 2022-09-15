@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import logo from '../assets/ERT.png';
 import "../App.css";
-import { faGift, faHome, faAddressBook, faQuestionCircle, faExclamationCircle, faPlusSquare, faDoorOpen, faSignInAlt, faWrench, faScrewdriverWrench, faUserAlt} from '@fortawesome/free-solid-svg-icons'; 
+import { faGift, faHome, faAddressBook, faQuestionCircle, faExclamationCircle, faPlusSquare, faSignInAlt, faScrewdriverWrench, faUserAlt} from '@fortawesome/free-solid-svg-icons'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -13,7 +13,7 @@ export default function Navbar() {
     <div className=''>
         <nav className="navbar pt-2.5 pb-2.5 navbar-expand-lg bg-sky-800  ">
             <div className="container-fluid  ">
-                 <img className='logoImage' height="30px !important" src={logo}></img>
+                 <img className='logoImage' height="30px !important" src={logo} alt=''></img>
                 <Link className="navbar-brand text-white font-bold text" to="/">RentalApp</Link>
                 <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@ export default function Navbar() {
                     <Link className="nav-link active text-white hover:text-white" aria-current="page" to="/propertiesForRent"><FontAwesomeIcon icon={faHome} className="homeIcon"></FontAwesomeIcon> Properties for Rent</Link>
                     </li>
                     <li className="nav-item dropdown px-2 lg:!px-0">
-                    <a className="nav-link dropdown-toggle text-white" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <FontAwesomeIcon icon={faAddressBook} className="homeIcon"></FontAwesomeIcon> Directory
                     </a>
                     <ul className="dropdown-menu ">
@@ -38,8 +38,8 @@ export default function Navbar() {
                 </ul>
                 <form className="d-flex lg:items-center items-start flex-col lg:flex-row" role="search">
                 <ul className="navbar-nav me-auto pt-1  mb-lg-0">
-                    <li className='mx-2'><a className="dropdown-item text-white hover:text-white hover:bg-sky-800 " href="/FAQs"><FontAwesomeIcon icon={faQuestionCircle} className="homeIcon"></FontAwesomeIcon> FAQ</a></li>
-                    <li className='mx-2'><a className="dropdown-item text-white hover:text-white hover:bg-sky-800 " href="/"><FontAwesomeIcon icon={faExclamationCircle} className="homeIcon"></FontAwesomeIcon> How it works</a></li>
+                    <li className='mx-2'><button className="dropdown-item text-white hover:text-white hover:bg-sky-800 " onClick={()=>navigate("/fAQs")}><FontAwesomeIcon icon={faQuestionCircle} className="homeIcon"></FontAwesomeIcon> FAQ</button></li>
+                    <li className='mx-2'><button className="dropdown-item text-white hover:text-white hover:bg-sky-800 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faExclamationCircle} className="homeIcon"></FontAwesomeIcon> How it works</button></li>
                     <li className='mx-2'><button className="dropdown-item text-white hover:text-white hover:bg-sky-800 " onClick={()=>navigate("/signUp")}><FontAwesomeIcon icon={faPlusSquare} className="homeIcon"></FontAwesomeIcon> Create account</button></li>
                 </ul>
                     <button className="btn text-white px-2 lg:px-3 py-1" type="submit" onClick={()=>navigate("/login")}><FontAwesomeIcon icon={faSignInAlt}  className="homeIcon"></FontAwesomeIcon> Login</button>

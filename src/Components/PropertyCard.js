@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBath, faBed, faLocation, faSquare} from '@fortawesome/free-solid-svg-icons';
+import {faBath, faBed, faSquare} from '@fortawesome/free-solid-svg-icons';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles

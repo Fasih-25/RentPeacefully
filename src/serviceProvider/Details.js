@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCertificate, faLink, faShare, faShareNodes } from '@fortawesome/free-solid-svg-icons';
+import { faCertificate, faShareNodes } from '@fortawesome/free-solid-svg-icons';
 import {useNavigate} from "react-router-dom"
 
 export default function Details() {
