@@ -1,0 +1,128 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.logoImage{
+  height: 30px!important;
+  margin-right: 5px;
+}
+.signUpbtn {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.signUpbtn:hover {
+  box-shadow: 0 10px 20px 0 rgb(0 0 0 / 20%), 0 10px 17px 0 rgb(0 0 0 / 19%);
+}
+.socialbtn {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.firstSection{
+  background-image: url(assets/architecture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.rgbaGradient{
+  background: linear-gradient(45deg,rgba(42,27,161,.6),rgba(29,210,177,.6) 100%);
+}
+.blinkText[_ngcontent-c8] {
+  animation: 1s linear infinite blinker;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: blinker;
+}
+.SectionOne{
+  height: 85vh !important;
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.CreateAccbtn{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content-tabs {
+  flex-grow : 1;
+}
+.shadowBox {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.centerNav{
+  z-index: 1;
+}
+.card{
+  /* z-index: -1; */
+  margin-top: -20px;
+}
+
+@media only screen and (max-width:1025px) {
+.contract4{
+  width: 150% ;
+} 
+}
+@media only screen and (max-width:769px) {
+  .contract4{
+    width: 100% ;
+  } 
+  }
+
+
+.propertyDetails{
+  background-image: url(assets/listing1.png);
+}
+.pricingDetails{
+  background-image: url(assets/forest1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+.pricingPlans{
+  background-image: url(assets/forest3.jpg);
+  background-repeat: no-repeat;
+  /* height: 100%;
+  width: 25%; */
+}
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
