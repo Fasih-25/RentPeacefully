@@ -25,7 +25,7 @@ export default function firstSection() {
                                 <h6 className='text-base sm:text-left '>Let your Residential Lease Agreement be managed by an Ethereum Smart Contract created by the Tenant and approved by the Landlord.</h6>
                             </div>
                              <br />
-                            <div className=" flex flex-row justify-start items-start pr-10 sm:pr-16 xl:pr-64 2xl:pr-96">
+                            <div className=" flex flex-row justify-start items-start pr-3 sm:pr-16 xl:pr-64 2xl:pr-96">
                                 <a className='CreateAccbtn  text-white border bottom-2 border-white text-xs py-2 px-3 ' href='/signUp'>CREATE AN ACCOUNT</a>
                                 <a className='CreateAccbtn  text-white border bottom-2 border-white text-xs py-2 px-3 ml-1' href='/login'>LOG IN <FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon></a>
                             </div>
