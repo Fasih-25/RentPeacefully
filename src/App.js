@@ -16,6 +16,7 @@ import AllServicesProviders from './serviceProvider/All';
 import ServiceProviderDetails from './serviceProvider/Details';
 import AllAgents from './RealEstateAgents/AllAgents';
 import AgentsDetail from './RealEstateAgents/AgentsDetails';
+import FAQs from './FAQs';
 function App() {
   return (
     <div className="app">
@@ -36,6 +37,7 @@ function App() {
           <Route exact path="/serviceProvider/Details" element={<ServiceProviderDetails />} />
           <Route exact path="/realEstateAgents/AllAgents" element={<AllAgents />} />
           <Route exact path="/realEstateAgents/AgentsDetails" element={<AgentsDetail />} />
+          <Route exact path="/FAQs" element={<FAQs />} />
         </Routes>
       </Router>
     </div>

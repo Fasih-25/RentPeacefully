@@ -38,7 +38,7 @@ export default function Navbar() {
                 </ul>
                 <form className="d-flex lg:items-center items-start flex-col lg:flex-row" role="search">
                 <ul className="navbar-nav me-auto pt-1  mb-lg-0">
-                    <li className='mx-2'><a className="dropdown-item text-white hover:text-white hover:bg-sky-800 " href="/"><FontAwesomeIcon icon={faQuestionCircle} className="homeIcon"></FontAwesomeIcon> FAQ</a></li>
+                    <li className='mx-2'><a className="dropdown-item text-white hover:text-white hover:bg-sky-800 " href="/FAQs"><FontAwesomeIcon icon={faQuestionCircle} className="homeIcon"></FontAwesomeIcon> FAQ</a></li>
                     <li className='mx-2'><a className="dropdown-item text-white hover:text-white hover:bg-sky-800 " href="/"><FontAwesomeIcon icon={faExclamationCircle} className="homeIcon"></FontAwesomeIcon> How it works</a></li>
                     <li className='mx-2'><button className="dropdown-item text-white hover:text-white hover:bg-sky-800 " onClick={()=>navigate("/signUp")}><FontAwesomeIcon icon={faPlusSquare} className="homeIcon"></FontAwesomeIcon> Create account</button></li>
                 </ul>

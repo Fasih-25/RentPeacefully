@@ -14,8 +14,8 @@ export default function firstSection() {
             <div className='container flex items-center justify-center '>
                 <div className='row flex flex-col sm:flex-row items-center justify-evenly fle pt-2 md:pt-5 mt-3 mr-4 sm:mr-0'>
                     <div className='col-12 mt-8 text-center'>
-                        <h1 className='blinkText text-white font-bold text-2xl sm:text-4xl 2xl:text-5xl sm:mx-40 mb-4'>Launching Soon</h1>
-                        <h1 className='blinkText text-white font-bold text-xl sm:text-3xl 2xl:text-5xl px-0 sm:px-0 text-center'>Free Registration For First 100 Landlords and Agents </h1>
+                        <h1 className='blinkText text-white font-bold text-2xl sm:text-4xl 2xl:text-5xl sm:mx-40 mb-4 animate-flash'>Launching Soon</h1>
+                        <h1 className='blinkText text-white font-bold text-xl sm:text-3xl 2xl:text-5xl px-0 sm:px-0 text-center animate-flash'>Free Registration For First 100 Landlords and Agents </h1>
                     </div>
                     <div className="col-md-6  text-center md:text-left justify-start items-start ">
                         <div className="text-white justify-start text-left items-start">
