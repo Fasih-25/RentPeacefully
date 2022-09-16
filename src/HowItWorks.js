@@ -17,7 +17,7 @@ export default function HowItWorks() {
     <Navbar />
     <SecondSection />
     <div className='flex justify-center items-center pt-10'>
-        <h1 className='text-5xl font-semibold'>How RentalApp works?</h1>
+        <h1 className='text-5xl font-semibold text-center'>How RentalApp works?</h1>
     </div>
         <div>
             <section className="py-4 ">
