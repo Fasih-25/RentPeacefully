@@ -93,7 +93,7 @@ export default function NavCenter() {
                              
                              <hr className="mb-5 mt-5 pb-3"></hr>
 
-                             <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
+                             {/* <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
                                 <div className="contract4 md:text-center flex md:items-center md:justify-center lg:items-start lg:justify-start lg:w-full">
                                     <img src={require('../assets/contract4.png')} className="h-full " alt="" />
                                 </div>
@@ -106,7 +106,7 @@ export default function NavCenter() {
                                         <p className="pt-4"><strong>Rental agreement activity processing:</strong> The contract will process all the rental agreement activities, such as: maintenance request, dispute mediation and arbitration and payment deposits. All the actions taken can be read on the Ethereum network and on the platform in a user-friendly way for both parties.</p>
                                     </p>
                                 </div>
-                             </div>
+                             </div> */}
                         </div>
 
                         <div className={toggleState === 3 ? "flex-start" : "hidden"} >

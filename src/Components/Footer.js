@@ -1,11 +1,14 @@
-import React from 'react'
+import {React, useState} from 'react'
 import "../App.css";
 import {useNavigate} from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faFacebook, faGooglePlus, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import ContactUs from './ContactUs';
 
 export default function Footer() {
+  const [showMyModal, setShowMyModal] = useState(false)
+  const handleOnClose = () => setShowMyModal(false)
   const navigate = useNavigate();
   return (
     <div>
@@ -16,14 +19,14 @@ export default function Footer() {
                 <div className='col-md-3 text-center sm:!text-left  '>
                     <h5 className='text-xl font-medium'>RentalApp</h5>
                     <ul className='text-center sm:!text-left '>
-                        <li><a className="dropdown-item text-white hover:bg-sky-700 text-sm pt-2 px-0" href="/">Contact us</a></li>
+                        <li><button className="dropdown-item text-white hover:bg-sky-700 text-sm pt-2 px-0" onClick={()=>setShowMyModal(true)}>Contact us</button></li>
                     </ul>
                 </div>
                 <hr className='md:hidden w-1' />
                 <div className='col-md-3 text-center sm:!text-left  top-4 md:top-0'>
                     <h5 className='text-xl font-medium'>Help</h5>
                     <ul className='text-center sm:!text-left pt-2'>
-                        <li><a className=" text-white px-0  text-sm hover:no-underline  " href="/">How it works</a></li>
+                        <li><button className=" text-white px-0  text-sm hover:no-underline  " onClick={()=>navigate("/how-It-Works")}>How it works</button></li>
                         <li><button className=" text-white px-0 py-0 text-sm hover:no-underline" onClick={()=>navigate("/fAQs")}>FAQs</button></li>
                     </ul>
                 </div>
@@ -61,11 +64,13 @@ export default function Footer() {
         </div>
         <div className="footerCopyright flex bg-sky-900">
           <div className="container text-center justify-center py-4 text-xs text-gray-300">
-            <p> © 2022 Copyright: RentalApp </p>
+            <h1> © 2022 Copyright: RentalApp </h1>
           </div>
 
         </div>
+        
       </footer>
+      <ContactUs onClose={handleOnClose} visible={showMyModal}   />
     </div>
   )
 }

@@ -3,8 +3,10 @@ import "../App.css";
 import { faSignInAlt} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {contract} from "../assets/contract1.png"; 
+import {useNavigate} from "react-router-dom"
 
-export default function firstSection() {
+export default function FirstSection() {
+    const navigate = useNavigate();
   return (
     <>
         <div className=' pt-5 '>
@@ -26,8 +28,8 @@ export default function firstSection() {
                             </div>
                              <br />
                             <div className=" flex flex-row justify-start items-start pr-3 sm:pr-16 xl:pr-64 2xl:pr-96">
-                                <a className='CreateAccbtn  text-white border bottom-2 border-white text-xs py-2 px-3 ' href='/signUp'>CREATE AN ACCOUNT</a>
-                                <a className='CreateAccbtn  text-white border bottom-2 border-white text-xs py-2 px-3 ml-1' href='/login'>LOG IN <FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon></a>
+                                <button className='CreateAccbtn  text-white border bottom-2 border-white text-xs py-2 px-3 ' onClick={()=>navigate("/signUp")}>CREATE AN ACCOUNT</button>
+                                <button className='CreateAccbtn  text-white border bottom-2 border-white text-xs py-2 px-3 ml-1' onClick={()=>navigate("/signUp")}>LOG IN <FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon></button>
                             </div>
 
                         </div>

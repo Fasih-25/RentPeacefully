@@ -39,7 +39,7 @@ export default function Navbar() {
                 <form className="d-flex lg:items-center items-start flex-col lg:flex-row" role="search">
                 <ul className="navbar-nav me-auto pt-1  mb-lg-0">
                     <li className='mx-2'><button className="dropdown-item text-white hover:text-white hover:bg-sky-800 " onClick={()=>navigate("/fAQs")}><FontAwesomeIcon icon={faQuestionCircle} className="homeIcon"></FontAwesomeIcon> FAQ</button></li>
-                    <li className='mx-2'><button className="dropdown-item text-white hover:text-white hover:bg-sky-800 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faExclamationCircle} className="homeIcon"></FontAwesomeIcon> How it works</button></li>
+                    <li className='mx-2'><button className="dropdown-item text-white hover:text-white hover:bg-sky-800 " onClick={()=>navigate("/how-It-Works")}><FontAwesomeIcon icon={faExclamationCircle} className="homeIcon"></FontAwesomeIcon> How it works</button></li>
                     <li className='mx-2'><button className="dropdown-item text-white hover:text-white hover:bg-sky-800 " onClick={()=>navigate("/signUp")}><FontAwesomeIcon icon={faPlusSquare} className="homeIcon"></FontAwesomeIcon> Create account</button></li>
                 </ul>
                     <button className="btn text-white px-2 lg:px-3 py-1" type="submit" onClick={()=>navigate("/login")}><FontAwesomeIcon icon={faSignInAlt}  className="homeIcon"></FontAwesomeIcon> Login</button>
