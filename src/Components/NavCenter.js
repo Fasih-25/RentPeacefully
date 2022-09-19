@@ -16,8 +16,8 @@ export default function NavCenter() {
             <div>
                 <section className="py-4 ">
                     <div className="flex flex-col sm:flex-row bg-teal-500 py-3 mx-5  rounded shadowBox centerNav text-center justify-center items-center">
-                        <button className={toggleState === 1 ? "text-white sm:w-1/3 bg-teal-700 py-1 xxsm:px-12 xsm:px-16 px-24  sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 "} onClick={() => toggleTab(1)} > For Tenants </button>
-                        <button className={toggleState === 2 ? "text-white sm:w-1/3 bg-teal-700 py-1 xxsm:px-11 xsm:px-16 px-24 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(2)} > For Landlords </button> 
+                        <button className={toggleState === 1 ? "text-white sm:w-1/3 bg-teal-700 py-1 xxsm:px-12 xsm:px-16 px-20  sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 "} onClick={() => toggleTab(1)} > For Tenants </button>
+                        <button className={toggleState === 2 ? "text-white sm:w-1/3 bg-teal-700 py-1 xxsm:px-11 xsm:px-16 px-20 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(2)} > For Landlords </button> 
                         <button className={toggleState === 3 ? "text-white sm:w-1/3 bg-teal-700 py-1 xxsm:px-5 xsm:px-10 px-16 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(3)} > For Service Providers </button>
                     </div>
                     <div className="">
