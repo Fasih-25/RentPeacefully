@@ -83,7 +83,7 @@ export default function All() {
                <h1 className='py-1 px-2'> 2 Properties or Rent </h1>
             </div>
         </div>
-        <div className="container flex">
+        <div className=" flex">
             <div className='flex flex-wrap justify-center'>
                 <PropertyCard />
                 <PropertyCard />

@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBath, faBed, faChair, faClock, faClockFour, faD, faDoorOpen, faDroplet, faDumbbell, faElevator, faFire, faGlassWaterDroplet, faGraduationCap, faHandRock, faHighlighter, faParking, faSquare, faStoreAlt, faStreetView, faSwimmingPool, faTemperatureArrowUp, faTemperatureFull, faTree, faUmbrella, faWheelchair, faWind} from '@fortawesome/free-solid-svg-icons';
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import "../App.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,33 +18,33 @@ export default function Details() {
     <div>
         <Navbar />
             <div className='propertyDetails '>
-               <div className='bg-black bg-opacity-70 h-screen justify-center flex-wrap py-5 px-4 '>
-                    <div className='flex justify-around top-0 flex-wrap pt-3 sm:pb-3'>
-                            <h3 className='text-white  font-bold bg-sky-500  py-2 px-2  text-lg shadowBox'> HOUSE </h3>
+               <div className='bg-gray-900 bg-opacity-70 h-screen justify-center flex-wrap py-2 mobile:py-5 px-4 '>
+                    <div className='flex justify-center mobile:justify-around  top-0 flex-wrap pt-3 sm:pb-3'>
+                            <h3 className='text-white  font-bold bg-sky-500  py-2 px-2  mobile:text-lg shadowBox'> HOUSE </h3>
                             <p className='text-white text-center pt-3 sm:pt-0 pb-2 md:pb-1 md:text-sm md:ml-72 lg:ml-96 xl:ml-96 2xl:ml-96 lg:text-sm'>Fords, Woodbridge Township, NJ, USA | Unit 555</p>
                     </div>
                     <div className='flex justify-around top-0 flex-wrap pt-1 sm:!pt-0 2xl:!pt-4   2xl:ml-8'>
                         <div className='pb-5 mb-2 items-center'>
-                            <h1 className='text-white text-center sm:text-left py-2 sm:py-4 text-2xl sm:text-3xl lg:text-4xl   '><strong>Real Estate Agent Property</strong></h1>
+                            <h1 className='text-white text-center sm:text-left py-2 sm:py-4 mobile:text-2xl sm:text-3xl lg:text-4xl   '><strong>Real Estate Agent Property</strong></h1>
                             <ul className='flex flex-row pt-3  md:!pt-7'>
-                                <li><h6 className=' text-white text-lg'><FontAwesomeIcon icon={faBed} className=" text-white text-3xl sm:text-2xl lg:text-3xl mx-2 font-bold"></FontAwesomeIcon> 3 Bed(s)</h6></li>
-                                <li><h6 className=' text-white text-lg'><FontAwesomeIcon icon={faBath} className=" text-white text-3xl sm:text-2xl lg:text-3xl mx-2 font-bold"></FontAwesomeIcon> 3 Bath(s)</h6></li>
-                                <li><h6 className=' text-white text-lg'><FontAwesomeIcon icon={faSquare} className=" text-white text-3xl sm:text-2xl lg:text-3xl mx-2 font-bold"></FontAwesomeIcon> 2000 Sq Ft</h6></li>
+                                <li><h6 className=' text-white mobile:text-lg'><FontAwesomeIcon icon={faBed} className=" text-white mobile:text-3xl sm:text-2xl lg:text-3xl mx-2 font-bold"></FontAwesomeIcon> 3 Bed(s)</h6></li>
+                                <li><h6 className=' text-white mobile:text-lg'><FontAwesomeIcon icon={faBath} className=" text-white mobile:text-3xl sm:text-2xl lg:text-3xl mx-2 font-bold"></FontAwesomeIcon> 3 Bath(s)</h6></li>
+                                <li><h6 className=' text-white mobile:text-lg'><FontAwesomeIcon icon={faSquare} className=" text-white mobile:text-3xl sm:text-2xl lg:text-3xl mx-2 font-bold"></FontAwesomeIcon> 2000 Sq Ft</h6></li>
                             </ul>
                         </div>
                         <div className=' mb-2 bg-white rounded w-96 sm:w-72 lg:w-80 xl:w-80 2xl:w-96 flex flex-col '>
-                            <h3 className='text-gray-400 text-center text-3xl sm:text-xl lg:text-2xl 2xl:text-3xl items-center py-2 pt-4 '>Monthly Price</h3>
-                            <h3 className='text-black text-center font-bold text-3xl sm:text-xl lg:text-2xl  2xl:text-3xl items-center py-1'>4000 USD</h3>
+                            <h3 className='text-gray-400 text-center mobile:text-3xl sm:text-xl lg:text-2xl 2xl:text-3xl items-center py-2 pt-4 '>Monthly Price</h3>
+                            <h3 className='text-black text-center font-bold mobile:text-3xl sm:text-xl lg:text-2xl  2xl:text-3xl items-center py-1'>4000 USD</h3>
                             <p className='text-gray-400 text-center  items-center py-1 pb-4' >Security deposit: 10000 USD </p>
                             <div className='bg-gray-500 text-center items-center flex justify-center py-3'>
                                     <ul className='flex flex-row'>
-                                    <li className='text-white lg:text-sm text-lg 2xl:text-xm ' > Available from: </li>
-                                    <li><h6 className=' text-white text-lg lg:text-sm 2xl:text-sm'><FontAwesomeIcon icon={faClockFour} className="ml-2 text-white"></FontAwesomeIcon> Right Now </h6></li>
+                                    <li className='text-white lg:text-sm mobile:text-lg 2xl:text-xm ' > Available from: </li>
+                                    <li><h6 className=' text-white mobile:text-lg lg:text-sm 2xl:text-sm'><FontAwesomeIcon icon={faClockFour} className="ml-2 text-white"></FontAwesomeIcon> Right Now </h6></li>
                                     </ul>
                             </div>
                         </div>
                     </div>
-                    <div className='container flex justify-center items-center pt-4 '>
+                    <div className='container flex justify-center items-center pt-1 mobile:pt-4 '>
                     <a className="btn  bg-sky-400 socialbtn text-white py-3 px-5 rounded-full" href="/listing/details">APPLY NOW</a>
                     </div>
                </div>

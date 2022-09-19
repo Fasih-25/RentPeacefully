@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React from "react";
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
 
@@ -14,7 +14,7 @@ import Navbar from './Components/Navbar'
             <div className='flex justify-center items-center flex-col'>
                 <h1 className='font-bold text-3xl pb-6'>General</h1>
                 <div className="accordion w-full  " id="accordionExample" >
-                    <div className="accordion-item shadowBox" >
+                    {/* <div className="accordion-item shadowBox" >
                         <h2 className="accordion-header" id="headingOne">
                         <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                          What's RentPeacefully? 
@@ -23,6 +23,18 @@ import Navbar from './Components/Navbar'
                         <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div className="accordion-body text-center text-sm 2xl:text-base md:px-14 ">
                             RentPeacefully is a blockchain based platform which enables Landlord to list properties for rent, successively create an easy, securely and safely Smart Contract and then deploy it to the public Ethereum Network, which will only work once both Parties have signed the agreement with their blockchain private keys. Built with blockchain Technology and Smart Contracts, which makes it the most transparent process possible and fosters trust between the parties.
+                        </div>
+                        </div>
+                    </div> */}
+                    <div className="accordion-item shadowBox " >
+                        <h2 className="accordion-header" id="headingFirst">
+                        <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseSecond" aria-expanded="false" aria-controls="collapseSecond">
+                        What's RentPeacefully? 
+                        </button>
+                        </h2>
+                        <div id="collapseSecond" className="accordion-collapse collapse" aria-labelledby="headingFirst" data-bs-parent="#accordionExample">
+                        <div className="accordion-body  text-center text-sm 2xl:text-base md:px-14 ">
+                        RentPeacefully is a blockchain based platform which enables Landlord to list properties for rent, successively create an easy, securely and safely Smart Contract and then deploy it to the public Ethereum Network, which will only work once both Parties have signed the agreement with their blockchain private keys. Built with blockchain Technology and Smart Contracts, which makes it the most transparent process possible and fosters trust between the parties.
                         </div>
                         </div>
                     </div>

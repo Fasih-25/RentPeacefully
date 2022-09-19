@@ -3,7 +3,7 @@ import React from 'react'
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCertificate, faDiamond, faDiamondTurnRight, faEnvelope,faLock, faUserAlt} from '@fortawesome/free-solid-svg-icons';
+import {faCertificate, faDiamond} from '@fortawesome/free-solid-svg-icons';
 
 export default function Pricing() {
   return (
@@ -282,7 +282,7 @@ export default function Pricing() {
             </div>
           </div>
           <div className='flex justify-center pt-10'>
-                <h1 className='text-2xl '>For Landlords and Real Estate Agents</h1>
+                <h1 className='text-2xl text-center'>For Landlords and Real Estate Agents</h1>
           </div>
           <div className='flex justify-center  pt-1  pb-3 '>
             <div className='pricingDetails w-full lg:w-fit mt-3 lg:mt-0 lg:mx-3 shadowBox rounded '>

@@ -52,7 +52,7 @@ export default function SignUp() {
       <div>
         <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50">
             <div className='flex justify-center items-center w-full px-6 py-4 mt-7 overflow-hidden shadowBox bg-sky-800 shadow-md sm:max-w-lg sm:rounded-lg z-10'>
-                  <h3 className="text-4xl text-slate-50">
+                  <h3 className="text-4xl text-slate-50 text-center">
                     Create an account
                   </h3>
             </div>  
@@ -151,14 +151,14 @@ export default function SignUp() {
                         </a>
                     </span>
                 </div>
-              <div className='text-center'> 
+              {/* <div className='text-center'> 
                 <a
                   href="#"
                   className="text-sm text-sky-500 hover:underline"
                 >
                     Forget Password?
                 </a>
-              </div>
+              </div> */}
             </div>
         </div>
         </div>

@@ -22,18 +22,18 @@ export default function HowItWorks() {
         <div>
             <section className="py-4 ">
                 <div className="flex flex-col sm:flex-row bg-purple-400 py-3 mx-5  rounded shadowBox centerNav text-center justify-center items-center">
-                    <button className={toggleState === 1 ? "text-white sm:w-1/3 bg-slate-900 bg-opacity-30 py-1 px-24  sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 "} onClick={() => toggleTab(1)} > For Tenants </button>
-                    <button className={toggleState === 2 ? "text-white sm:w-1/3 bg-slate-900 bg-opacity-30 py-1 px-24 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(2)} > For Landlords </button> 
-                    <button className={toggleState === 3 ? "text-white sm:w-1/3 bg-slate-900 bg-opacity-30 py-1 px-16 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(3)} > For Service Providers </button>
+                    <button className={toggleState === 1 ? "text-white sm:w-1/3 bg-slate-900 bg-opacity-30 py-1 xxsm:px-12 xsm:px-16 px-20  sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 "} onClick={() => toggleTab(1)} > For Tenants </button>
+                    <button className={toggleState === 2 ? "text-white sm:w-1/3 bg-slate-900 bg-opacity-30 py-1 xxsm:px-11 xsm:px-16 px-20 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(2)} > For Landlords </button> 
+                    <button className={toggleState === 3 ? "text-white sm:w-1/3 bg-slate-900 bg-opacity-30 py-1 xxsm:px-5 xsm:px-10  px-16 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(3)} > For Service Providers </button>
                 </div>
                 <div className="">
                 <div className="card shadowBox relative mx-3 -z-10 flex flex-col p-3">
                     <div className={toggleState === 1 ? "  flex-start " : "hidden"}>
                         <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
-                            <div className="md:text-center flex md:items-center md:justify-center lg:justify-start">
+                            <div className="md:text-center flex items-center justify-center lg:justify-start">
                                 <img src={require('./assets/searchForProperties1.png')} className="" alt="" />
                             </div>
-                            <div className=" md:justify-center lg:justify-start xl:pl-10 2xl:pl-60">
+                            <div className=" md:justify-center pt-6 sm:!pt-0 lg:justify-start xl:pl-10 2xl:pl-60">
                             {/* <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faHomeLg} className="text-green-600"></FontAwesomeIcon> Property </h4> */}
                             <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-3  "><strong>Search for your dream property</strong></h1>
                             <p className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:pr-6 xl:text-lg  ">Enter the country and city you are interested in, choose the most relevant result from a drop-down list, and go explore all the option you have.</p>
@@ -90,7 +90,7 @@ export default function HowItWorks() {
                             <div className="md:text-center flex md:items-center md:justify-center lg:justify-start shadowBox">
                                 <img src={require('./assets/property1.jpg')} className="" alt="" />
                             </div>
-                            <div className=" md:justify-center lg:justify-start lg:pl-8 xl:pl-10 2xl:pl-24">
+                            <div className=" md:justify-center lg:justify-start lg:pl-8 xl:pl-10 2xl:pl-24 pt-6 sm:!pt-0">
                                 {/* <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faHomeLg} className="text-green-600"></FontAwesomeIcon> Property </h4> */}
                                 <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-3  "><strong>List your property</strong></h1>
                                 <p className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:pr-6 xl:text-lg  ">Listing a property for rent on RentPeacefully is quick and easy. Add your property in seconds with photos, description, and list of amenities. Post your rental listing on the platform to boost its visibility.</p>

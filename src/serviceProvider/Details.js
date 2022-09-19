@@ -13,24 +13,24 @@ export default function Details() {
       <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
             <h2 className='lg:text-2xl py-2 xl:text-3xl xl:!py-4 '> Rentpeacefully's Profile </h2>    
       </div>
-      <div className=' px-16 sm:px-32'>
+      <div className=' px-10 sm:px-32 lg:px-5 xl:px-24 2xl:px-32'>
         <div className='mainDiv flex flex-wrap py-8 justify-center items-center xl:justify-between'> 
           <div className='flex flex-wrap justify-center items-center md:items-start pb-4 xl:!pb-0'>
-            <div className='flex flex-wrap flex-col justify-center items-center'>
+            <div className='flex flex-wrap flex-col justify-center items-center text-center'>
               <div className=''>
-              <img src={require('../assets/SP1.png')} alt="" className='h-56 w-56 rounded-full shadowBox' />
+                <img src={require('../assets/SP1.png')} alt="" className='h-56 w-56 rounded-full shadowBox' />
               </div>
               <div className='pt-4'>
-              <button className="signUpbtn bg-green-500 text-white text-xs font-medium  py-3 w-36 rounded-full " onClick={()=>navigate("/")}>
-                <FontAwesomeIcon icon={faShareNodes} className=" items-center justify-center  text-white text-lg rounded-full text px-1"></FontAwesomeIcon>  
-                SHARE PROFILE
-              </button>
+                <button className="signUpbtn bg-green-500 text-white text-xs font-medium  py-3 w-36 rounded-full " onClick={()=>navigate("/")}>
+                  <FontAwesomeIcon icon={faShareNodes} className=" items-center justify-center  text-white text-lg rounded-full text px-1"></FontAwesomeIcon>  
+                  SHARE PROFILE
+                </button>
               </div>
               <div className='pt-3'>
                 <h3>Member since October 16th, 2019</h3>
               </div>
             </div>
-            <div className='flex flex-col md:pl-24  justify-center items-center md:justify-start md:items-start pt-4 md:!pt-0'>
+            <div className='flex flex-col md:pl-24 justify-center items-center text-center md:justify-start md:items-start lg:text-left pt-4 md:!pt-0'>
               <div>
                 <h1 className='text-xl font-normal text-black'>Rentpeacefully (Admin)</h1>
               </div>
@@ -95,40 +95,40 @@ export default function Details() {
             <h1 className='font-bold text-xl text-center'>Areas serving</h1>
             <div className='pt-2'>
               <div className='bg-cyan-600 rounded-3xl  mt-2 xl:!mt-0 py-2 px-3 mx-3 '>
-                <p className='  font-bold text-white'>Buenos Aires, CABA, Argentina</p>
+                <p className='  font-bold text-white text-center'>Buenos Aires, CABA, Argentina</p>
               </div>
             </div>
           </div>
           <div className='container flex flex-col justify-center items-center pt-3 lg:!pt-0'>
-            <h1 className='font-bold text-xl text-center'>Skills</h1>
+            <h1 className='font-bold text-xl text-center '>Skills</h1>
             <div className='flex flex-wrap pt-2 justify-center items-center'>
               <div className='bg-purple-600 rounded-3xl py-2 px-3 mx-3 mt-2'>
-                  <p className='  font-bold text-white'>Handyman</p>
+                  <p className='  font-bold text-white text-center'>Handyman</p>
               </div>
               <div className='bg-purple-600 rounded-3xl mt-2    py-2 px-3 mx-3 '>
-                  <p className='  font-bold text-white'>Shopping</p>
+                  <p className='  font-bold text-white text-center'>Shopping</p>
               </div>
               <div className='bg-purple-600 rounded-3xl  mt-2  py-2 px-3 mx-3 '>
-                  <p className='  font-bold text-white'>Carpet Repair And Laying</p>
+                  <p className='  font-bold text-white text-center'>Carpet Repair And Laying</p>
               </div>
               <div className='bg-purple-600 rounded-3xl  mt-2  py-2 px-3 mx-3 '>
-                  <p className='  font-bold text-white'>Decking</p>
+                  <p className='  font-bold text-white text-center'>Decking</p>
               </div>
               <div className='bg-purple-600 rounded-3xl  mt-2  py-2 px-3 mx-3'>
-                  <p className='  font-bold text-white'>Landscape and Gardening</p>
+                  <p className='  font-bold text-white text-center'>Landscape and Gardening</p>
               </div>
             </div>
           </div>
         </div>
         <div className='flex justify-center items-center  sm:justify-start'>
           <div className='pt-16 pb-36'>
-              <div className='flex flex-col'>
-                <h1 className='text-4xl'>More about Rentpeacefully (Admin)</h1>
+              <div className='flex flex-col xxsm:text-center lg:text-left'>
+                <h1 className='text-4xl '>More about Rentpeacefully (Admin)</h1>
                 <p className='pt-4'>I'm a great RentPeacefully user</p>
               </div>
           </div>
         </div>
-        <div className='flex flex-col justify-center items-center  sm:justify-start sm:items-start pb-28'>
+        <div className='flex flex-col justify-center items-center text-center lg:text-left lg:justify-start lg:items-start pb-28'>
           <div className='pt-2 pb-4'>
             <div className='flex flex-row justify-center items-center'>
               <h1 className='text-5xl pr-3'>Reviews </h1>
