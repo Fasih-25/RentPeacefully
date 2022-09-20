@@ -18,31 +18,31 @@ import {useNavigate} from "react-router-dom";
                     {/* <div className="accordion-item shadowBox" >
                         <h2 className="accordion-header" id="headingOne">
                         <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                         What's RentPeacefully? 
+                         What's RentalApp? 
                         </button>
                         </h2>
                         <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div className="accordion-body text-center text-sm 2xl:text-base md:px-14 ">
-                            RentPeacefully is a blockchain based platform which enables Landlord to list properties for rent, successively create an easy, securely and safely Smart Contract and then deploy it to the public Ethereum Network, which will only work once both Parties have signed the agreement with their blockchain private keys. Built with blockchain Technology and Smart Contracts, which makes it the most transparent process possible and fosters trust between the parties.
+                            RentalApp is a blockchain based platform which enables Landlord to list properties for rent, successively create an easy, securely and safely Smart Contract and then deploy it to the public Ethereum Network, which will only work once both Parties have signed the agreement with their blockchain private keys. Built with blockchain Technology and Smart Contracts, which makes it the most transparent process possible and fosters trust between the parties.
                         </div>
                         </div>
                     </div> */}
                     <div className="accordion-item shadowBox " >
                         <h2 className="accordion-header" id="headingFirst">
                         <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseSecond" aria-expanded="false" aria-controls="collapseSecond">
-                        What's RentPeacefully? 
+                        What's RentalApp? 
                         </button>
                         </h2>
                         <div id="collapseSecond" className="accordion-collapse collapse" aria-labelledby="headingFirst" data-bs-parent="#accordionExample">
                         <div className="accordion-body  text-center text-sm 2xl:text-base md:px-14 ">
-                        RentPeacefully is a blockchain based platform which enables Landlord to list properties for rent, successively create an easy, securely and safely Smart Contract and then deploy it to the public Ethereum Network, which will only work once both Parties have signed the agreement with their blockchain private keys. Built with blockchain Technology and Smart Contracts, which makes it the most transparent process possible and fosters trust between the parties.
+                        RentalApp is a blockchain based platform which enables Landlord to list properties for rent, successively create an easy, securely and safely Smart Contract and then deploy it to the public Ethereum Network, which will only work once both Parties have signed the agreement with their blockchain private keys. Built with blockchain Technology and Smart Contracts, which makes it the most transparent process possible and fosters trust between the parties.
                         </div>
                         </div>
                     </div>
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header" id="headingTwo">
                         <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            How RentPeacefully works? 
+                            How RentalApp works? 
                         </button>
                         </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -147,7 +147,7 @@ import {useNavigate} from "react-router-dom";
                         </h2>
                         <div id="collapseTen" className="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Yes, every action taken is a transaction saved on blockchain, however, RentPeacefully offers a user-friendly interface so you can see it much understandably. 
+                            Yes, every action taken is a transaction saved on blockchain, however, RentalApp offers a user-friendly interface so you can see it much understandably. 
                             </div>
                         </div>
                     </div>
@@ -196,7 +196,7 @@ import {useNavigate} from "react-router-dom";
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading14">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                            Can I list my property on RentPeacefully?  
+                            Can I list my property on RentalApp?  
                             </button>
                         </h2>
                         <div id="collapse14" className="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample">
@@ -238,7 +238,7 @@ import {useNavigate} from "react-router-dom";
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading17">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
-                            Can I rent a property on RentPeacefully?  
+                            Can I rent a property on RentalApp?  
                             </button>
                         </h2>
                         <div id="collapse17" className="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#accordionExample">
@@ -292,7 +292,7 @@ import {useNavigate} from "react-router-dom";
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading21">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
-                            Can I list the services I provide on RentPeacefully? 
+                            Can I list the services I provide on RentalApp? 
                             </button>
                         </h2>
                         <div id="collapse21" className="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#accordionExample">
