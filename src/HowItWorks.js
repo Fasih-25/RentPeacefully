@@ -130,7 +130,7 @@ export default function HowItWorks() {
                             <hr className="mb-5 mt-5 pb-3"></hr>
                             
                             <div className="flex flex-col-reverse lg:flex-row-reverse pt-14 xl:pl-7 ">
-                                <div className="container md:text-center flex md:items-center md:justify-center lg:justify-start w-full h-full">
+                                <div className="container md:text-center flex md:items-center md:justify-center  w-full h-full">
                                     <img src={require('./assets/contract2.png')} className="" alt="" />
                                 </div>
                                 <div className="container md:justify-center lg:!justify-center items-center ">
