@@ -29,11 +29,11 @@ export default function All() {
     <div>
       <Navbar />
         <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
-            <div className='flex justify-center items-center'>
+            {/* <div className='flex justify-center items-center'>
                 <button className='btn btn-primary'>filters</button>
-            </div>
+            </div> */}
             <h2 className='lg:text-2xl py-2 xl:text-3xl xl:!py-4 '> Properties for Rent </h2>
-            <div className='flex flex-row justify-center items-center'>
+            {/* <div className='flex flex-row justify-center items-center'>
                 <FontAwesomeIcon icon={faLocation} className=" items-center justify-center py-2 px-2 text-white text-xl rounded-full text "></FontAwesomeIcon>
                 <PlacesAutocomplete
                 value={address}
@@ -76,7 +76,7 @@ export default function All() {
                     </div>
                 )}
                 </PlacesAutocomplete>
-            </div> 
+            </div>  */}
         </div>
         <div className="container flex justify-center items-center py-20">
             <div className="card flex justify-center items-center text-white 2xl:text-3xl font-bold bg-green-500 ">

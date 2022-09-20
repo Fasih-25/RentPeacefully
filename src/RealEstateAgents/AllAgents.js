@@ -29,12 +29,12 @@ export default function AllAgents() {
   return (
     <div>
       <Navbar />
-      <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
-            <div className='flex justify-center items-center'>
+      <disv className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
+            {/* <div className='flex justify-center items-center'>
                 <button className='btn btn-primary'>filters</button>
-            </div>
+            </div> */}
             <h2 className='lg:text-2xl py-2 xl:text-3xl xl:!py-4 '> Top Real Estate Agents </h2>
-            <div className='flex flex-row justify-center items-center'>
+            {/* <div className='flex flex-row justify-center items-center'>
                 <FontAwesomeIcon icon={faLocation} className=" items-center justify-center py-2 px-2 text-white text-xl rounded-full text "></FontAwesomeIcon>
                 <PlacesAutocomplete
                 value={address}
@@ -77,8 +77,8 @@ export default function AllAgents() {
                     </div>
                 )}
                 </PlacesAutocomplete>
-            </div> 
-        </div>
+            </div>  */}
+        </disv>
         <div className='flex justify-center items-center py-8 '>
             <h1 className='text-3xl'>Results: <span className='text-white bg-blue-500 text-2xl px-2 pb-1 font-bold'> 3 </span></h1>
         </div>
