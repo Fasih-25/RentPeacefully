@@ -28,8 +28,8 @@ export default function Navbar() {
                     <FontAwesomeIcon icon={faAddressBook} className="homeIcon"></FontAwesomeIcon> Directory
                     </a>
                     <ul className="dropdown-menu ">
-                        <div className='hover:bg-green-600'><li><button className="dropdown-item text-zinc-900 hover:bg-green-600  hover:!text-slate-300" onClick={()=>navigate("/topServiceProviders")}><FontAwesomeIcon icon={faScrewdriverWrench} className="homeIcon"></FontAwesomeIcon> Top Service Providers</button></li></div>
-                        <div className='hover:bg-green-600'><li><button className="dropdown-item text-zinc-900 hover:bg-green-600  hover:!text-slate-300" onClick={()=>navigate("/topRealEstateAgents")}><FontAwesomeIcon icon={faUserAlt} className="homeIcon"></FontAwesomeIcon> Top Real Estate Agent</button></li></div>
+                        <div className='hover:bg-green-600'><li><button className="dropdown-item text-zinc-900 hover:bg-green-600  hover:!text-slate-100" onClick={()=>navigate("/topServiceProviders")}><FontAwesomeIcon icon={faScrewdriverWrench} className="homeIcon"></FontAwesomeIcon> Top Service Providers</button></li></div>
+                        <div className='hover:bg-green-600'><li><button className="dropdown-item text-zinc-900 hover:bg-green-600  hover:!text-slate-100" onClick={()=>navigate("/topRealEstateAgents")}><FontAwesomeIcon icon={faUserAlt} className="homeIcon"></FontAwesomeIcon> Top Real Estate Agent</button></li></div>
                     </ul>
                     </li>
                     <li className="nav-item px-2  lg:!px-0">
