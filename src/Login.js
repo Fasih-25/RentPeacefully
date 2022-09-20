@@ -73,15 +73,15 @@ export default function Login() {
                 <div className="mt-4 text-grey-600 text-center">
                     Don't have an account?{" "}
                     <span>
-                        <a className="text-sky-500 hover:underline" href="/SignUp">
+                        <button className="text-sky-500 hover:underline" onClick={()=>navigate("/SignUp")}>
                             Sign up
-                        </a>
+                        </button>
                     </span>
                 </div>
                 <div className="mt-1 text-grey-600 text-center">
                     Resend?{" "}
                     <span>
-                        <button onClick={handleEmailVerifiy} className="text-sky-500 hover:underline" href="/SignUp">
+                        <button onClick={handleEmailVerifiy} className="text-sky-500 hover:underline" >
                             email verification link
                         </button>
                     </span>
