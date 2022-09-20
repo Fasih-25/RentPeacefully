@@ -29,7 +29,7 @@ export default function AllAgents() {
   return (
     <div>
       <Navbar />
-      <disv className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
+      <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
             {/* <div className='flex justify-center items-center'>
                 <button className='btn btn-primary'>filters</button>
             </div> */}
@@ -78,7 +78,7 @@ export default function AllAgents() {
                 )}
                 </PlacesAutocomplete>
             </div>  */}
-        </disv>
+        </div>
         <div className='flex justify-center items-center py-8 '>
             <h1 className='text-3xl'>Results: <span className='text-white bg-blue-500 text-2xl px-2 pb-1 font-bold'> 3 </span></h1>
         </div>
