@@ -53,7 +53,7 @@ export default function ContactUs({visible, onClose}) {
       <div id='container' onClick={handleOnClose}  className='fixed inset-0 bg-slate-900 bg-opacity-30 backdrop-blur-sm flex justify-center  items-center z-10'>
       <div className='bg-white p-2 rounded first-letter:'>
         <div className=' flex justify-end items-end z-10'>
-            <h1 className=' bg-slate-500 rounded-full px-2 py-1 ' onClick={Close}><FontAwesomeIcon icon={faClose} className=" text-base text-gray-50 hover:text-black "></FontAwesomeIcon></h1>
+            <h1 className=' bg-slate-500 rounded-full px-2 py-1 cursor-pointer' onClick={Close}><FontAwesomeIcon icon={faClose} className=" text-base text-gray-50 hover:text-black "></FontAwesomeIcon></h1>
         </div>
         <div className="flex flex-col items-center min-h-fit w-full pt-6 sm:justify-center sm:pt-0 bg-gray-50 ">
             <div className='flex justify-center items-center w-full px-6 py-4 mt-3 overflow-hidden shadowBox bg-sky-800 shadow-md sm:max-w-lg sm:rounded-lg z-10'>

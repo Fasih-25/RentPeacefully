@@ -10,7 +10,7 @@ import Navbar from './Components/Navbar'
         <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around  shadowBox' >
             <h2 className='lg:text-2xl py-2 xl:text-3xl xl:!py-4 '> Frequently Asked Questions (FAQ)</h2>    
         </div>
-        <div className='py-10 px-3 lg:!px-10 xl:!px-20 2xl:!px-40 flex flex-col mb-5'>
+        <div className='py-10 px-3 lg:!px-10 xl:!px-20 2xl:!px-40 flex flex-col mb-5 animate-textIn ease-in'>
             <div className='flex justify-center items-center flex-col'>
                 <h1 className='font-bold text-3xl pb-6'>General</h1>
                 <div className="accordion w-full  " id="accordionExample" >

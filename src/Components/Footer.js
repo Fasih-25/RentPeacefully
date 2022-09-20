@@ -17,26 +17,26 @@ export default function Footer() {
             <div className="row mx-20 md:mx-44 flex justify-between">
                 {/* <hr className='md:hidden w-1 ' /> */}
                 <div className='col-md-3 text-center sm:!text-left  '>
-                    <h5 className='text-xl font-medium'>RentalApp</h5>
+                    <h5 className='text-xl font-normal'>RentalApp</h5>
                     <ul className='text-center sm:!text-left '>
-                        <li><button className="dropdown-item text-slate-100 hover:bg-sky-700 text-sm pt-2 px-0" onClick={()=>setShowMyModal(true)}>Contact us</button></li>
+                        <li><button className="dropdown-item text-slate-100  text-sm pt-2 px-0" onClick={()=>setShowMyModal(true)}>Contact Us</button></li>
                     </ul>
                 </div>
                 {/* <hr className='md:hidden w-1' /> */}
                 <div className='col-md-3 text-center sm:!text-left  top-4 md:top-0'>
-                    <h5 className='text-xl font-medium'>Help</h5>
+                    <h5 className='text-xl font-normal'>Help</h5>
                     <ul className='text-center sm:!text-left pt-2'>
-                        <li><button className=" text-slate-100 px-0  text-sm hover:no-underline  " onClick={()=>navigate("/how-It-Works")}>How it works</button></li>
+                        <li><button className=" text-slate-100 px-0  text-sm hover:no-underline  " onClick={()=>navigate("/how-It-Works")}>How It Works</button></li>
                         <li><button className=" text-slate-100 px-0 py-0 text-sm hover:no-underline" onClick={()=>navigate("/fAQs")}>FAQs</button></li>
                     </ul>
                 </div>
                 {/* <hr className='md:hidden w-1' /> */}
                 <div className='col-md-3 text-center sm:!text-left top-8 md:top-0 '>
-                    <h5 className='text-xl font-medium'>Legal</h5>
+                    <h5 className='text-xl font-normal'>Legal</h5>
                     <ul className='text-center sm:!text-left pt-2 '>
-                        <li><a className=" text-slate-100 px-0 text-sm hover:no-underline  " href="/">Terms of use</a></li>
-                        <li><a className=" text-slate-100 px-0 py-0 text-sm hover:no-underline" href="/">Legal Disclaimer</a></li>
-                        <li><a className=" text-slate-100 px-0 py-0  text-sm hover:no-underline" href="/">Privacy Policy</a></li>
+                        <li><a className=" text-slate-100 hover:text-slate-100 px-0 text-sm hover:no-underline  " href="/">Terms of use</a></li>
+                        <li><a className=" text-slate-100 hover:text-slate-100 px-0 py-0 text-sm hover:no-underline" href="/">Legal Disclaimer</a></li>
+                        <li><a className=" text-slate-100 hover:text-slate-100 px-0 py-0  text-sm hover:no-underline" href="/">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
