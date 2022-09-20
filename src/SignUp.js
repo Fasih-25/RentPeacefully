@@ -146,9 +146,9 @@ export default function SignUp() {
                 <div className="mt-4 text-grey-600 text-center">
                     Already have an account?{" "}
                     <span>
-                        <a className="text-sky-500 hover:underline" href="/login">
+                        <button className="text-sky-500 hover:underline" onClick={()=>navigate("/login")}>
                             Log in
-                        </a>
+                        </button>
                     </span>
                 </div>
               {/* <div className='text-center'> 
