@@ -37,7 +37,7 @@ export default function Navbar() {
                     </li> 
                 </ul>
                  {/* <form className="d-flex lg:items-center items-start flex-col lg:flex-row" role="search"> */}
-                 <ul className="navbar-nav me-auto lg:pt-1  mb-lg-0">
+                 <ul className="navbar-nav me-auto lg:pt-1  mb-lg-0 flex lg:items-center items-start flex-col lg:flex-row">
                     <li className='mx-2'><button className="dropdown-item text-slate-100 active:bg-sky-600 hover:bg-sky-800 hover:!text-slate-300 pb-3 lg:!pb-0" onClick={()=>navigate("/fAQs")}><FontAwesomeIcon icon={faQuestionCircle} className="homeIcon"></FontAwesomeIcon> FAQ</button></li>
                     <li className='mx-2'><button className="dropdown-item text-slate-100 active:bg-sky-600 hover:bg-sky-800 hover:!text-slate-300 pb-3 lg:!pb-0" onClick={()=>navigate("/how-It-Works")}><FontAwesomeIcon icon={faExclamationCircle} className="homeIcon"></FontAwesomeIcon> How it works</button></li>
                     <li className='mx-2'><button className="dropdown-item text-slate-100 active:bg-sky-600 hover:bg-sky-800 hover:!text-slate-300 pb-2   lg:!pb-0" onClick={()=>navigate("/signUp")}><FontAwesomeIcon icon={faPlusSquare} className="homeIcon"></FontAwesomeIcon> Create account</button></li>
