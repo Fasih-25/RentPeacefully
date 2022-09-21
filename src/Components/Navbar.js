@@ -36,14 +36,14 @@ export default function Navbar() {
                         <button className="nav-link text-slate-100 hover:!text-slate-300 active:bg-sky-600" onClick={()=>navigate("/pricing")}><FontAwesomeIcon icon={faGift} className="homeIcon"></FontAwesomeIcon> pricing</button>
                     </li> 
                 </ul>
-                <form className="d-flex lg:items-center items-start flex-col lg:flex-row" role="search">
-                <ul className="navbar-nav me-auto lg:pt-1  mb-lg-0">
+                 {/* <form className="d-flex lg:items-center items-start flex-col lg:flex-row" role="search"> */}
+                 <ul className="navbar-nav me-auto lg:pt-1  mb-lg-0">
                     <li className='mx-2'><button className="dropdown-item text-slate-100 active:bg-sky-600 hover:bg-sky-800 hover:!text-slate-300 pb-3 lg:!pb-0" onClick={()=>navigate("/fAQs")}><FontAwesomeIcon icon={faQuestionCircle} className="homeIcon"></FontAwesomeIcon> FAQ</button></li>
                     <li className='mx-2'><button className="dropdown-item text-slate-100 active:bg-sky-600 hover:bg-sky-800 hover:!text-slate-300 pb-3 lg:!pb-0" onClick={()=>navigate("/how-It-Works")}><FontAwesomeIcon icon={faExclamationCircle} className="homeIcon"></FontAwesomeIcon> How it works</button></li>
                     <li className='mx-2'><button className="dropdown-item text-slate-100 active:bg-sky-600 hover:bg-sky-800 hover:!text-slate-300 pb-2   lg:!pb-0" onClick={()=>navigate("/signUp")}><FontAwesomeIcon icon={faPlusSquare} className="homeIcon"></FontAwesomeIcon> Create account</button></li>
                 </ul>
                     <button className="btn text-slate-100 px-2 lg:px-3 py-1 hover:!text-slate-300 active:bg-sky-600 focus:bg-sky-600 pb-3 lg:!pb-0" type="submit" onClick={()=>navigate("/login")}><FontAwesomeIcon icon={faSignInAlt}  className="homeIcon"></FontAwesomeIcon> Login</button>
-                </form>
+                {/* </form> */}
                 </div>
             </div>
         </nav>
