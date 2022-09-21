@@ -224,11 +224,11 @@ export default function Pricing() {
               </div>
               <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
               
-              <div className='pt-5 2xl:!pt-4 pb-3 flex justify-center items-center '>
+              <div className='pt-5 pb-3 flex justify-center items-center '>
                   <h1 className='font-bold text-white text-lg'>Real Estate Agents</h1>
               </div>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base px-11 text-center'><span className='font-bold'>Unlimited</span> Active Listings Which Includes Smart Contract</h1>
+                  <h1 className=' text-white text-base px-8 text-center'><span className='font-bold'>Unlimited</span> Active Listings Which Includes Smart Contract</h1>
               </div>
               <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
               <div className='pt-3 pb-1  flex justify-center items-center'>
