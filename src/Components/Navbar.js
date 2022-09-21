@@ -11,8 +11,8 @@ export default function Navbar() {
     const navigate = useNavigate();
   return (
     <div className=''>
-        <nav className="navbar pt-2.5 pb-2.5 navbar-expand-lg bg-NavBar-10 px-2 lg:!px-0  ">
-            <div className="container-fluid  ">
+        <nav className="navbar pt-2.5 pb-2.5 navbar-expand-lg bg-NavBar-10 px-2 lg:!px-0  flex items-center">
+            <div className="container-fluid flex items-center ">
                  <img className='logoImage' height="30px !important" src={logo} alt=''></img>
                 <Link className="navbar-brand text-slate-100 font-bold hover:!text-slate-300" to="/">RentalApp</Link>
                 <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,11 +20,11 @@ export default function Navbar() {
                 </button>
                 <div className="collapse justify-between navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item !text-slate-100 px-2 lg:!px-0">
-                    <Link className="nav-link active:bg-sky-600 !text-slate-100 hover:!text-slate-300 focus:ring-sky-50 active" aria-current="page" to="/propertiesForRent"><FontAwesomeIcon icon={faHome} className="homeIcon"></FontAwesomeIcon> Properties for Rent</Link>
+                    <li className="nav-item !text-slate-100 focus:text-slate-700 px-2 lg:!px-0">
+                    <Link className="nav-link btn lg:px-1 py-1 focus:bg-slate-300 focus:!text-slate-700 active:bg-sky-600 !text-slate-100 hover:!text-slate-300  " aria-current="page" to="/propertiesForRent"><FontAwesomeIcon icon={faHome} className="homeIcon"></FontAwesomeIcon> Properties for Rent</Link>
                     </li>
                     <li className="nav-item dropdown px-2 lg:!px-0">
-                    <a className="nav-link dropdown-toggle active:bg-sky-600 text-slate-100 hover:!text-slate-300" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a className="nav-link dropdown-toggle active:bg-sky-600 text-slate-100 hover:!text-slate-300 btn lg:px-1 py-1 focus:bg-slate-300 focus:text-slate-700" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <FontAwesomeIcon icon={faAddressBook} className="homeIcon"></FontAwesomeIcon> Directory
                     </a>
                     <ul className="dropdown-menu ">
@@ -33,15 +33,15 @@ export default function Navbar() {
                     </ul>
                     </li>
                     <li className="nav-item px-2  lg:!px-0">
-                        <button className="nav-link text-slate-100 hover:!text-slate-300 active:bg-sky-600" onClick={()=>navigate("/pricing")}><FontAwesomeIcon icon={faGift} className="homeIcon"></FontAwesomeIcon> pricing</button>
+                        <button className="nav-link text-slate-100 hover:!text-slate-300 active:bg-sky-600 btn lg:px-1 py-1 focus:bg-slate-300 focus:text-slate-700" onClick={()=>navigate("/pricing")}><FontAwesomeIcon icon={faGift} className="homeIcon"></FontAwesomeIcon> pricing</button>
                     </li> 
                 </ul>
                  <ul className="navbar-nav  lg:pt-1  mb-lg-0 flex lg:items-center lg:justify-end items-start flex-col lg:flex-row">
-                    <li className='mx-2'><button className="dropdown-item text-slate-100 active:bg-sky-600 hover:bg-sky-800 hover:!text-slate-300 pb-3 lg:!pb-0" onClick={()=>navigate("/fAQs")}><FontAwesomeIcon icon={faQuestionCircle} className="homeIcon"></FontAwesomeIcon> FAQ</button></li>
-                    <li className='mx-2'><button className="dropdown-item text-slate-100 active:bg-sky-600 hover:bg-sky-800 hover:!text-slate-300 pb-3 lg:!pb-0" onClick={()=>navigate("/how-It-Works")}><FontAwesomeIcon icon={faExclamationCircle} className="homeIcon"></FontAwesomeIcon> How it works</button></li>
-                    <li className='mx-2'><button className="dropdown-item text-slate-100 active:bg-sky-600 hover:bg-sky-800 hover:!text-slate-300 pb-2   lg:!pb-0" onClick={()=>navigate("/signUp")}><FontAwesomeIcon icon={faPlusSquare} className="homeIcon"></FontAwesomeIcon> Create account</button></li>
+                    <li className='mx-2'><button className="btn dropdown-item lg:px-1 py-1 text-slate-100 active:bg-sky-600 hover:bg-sky-800 focus:bg-slate-300 focus:text-slate-700 hover:!text-slate-300 pb-3 lg:!pb-0" onClick={()=>navigate("/fAQs")}><FontAwesomeIcon icon={faQuestionCircle} className="homeIcon"></FontAwesomeIcon> FAQ</button></li>
+                    <li className='mx-2'><button className="btn dropdown-item lg:px-1 py-1 text-slate-100 active:bg-sky-600 hover:bg-sky-800 focus:bg-slate-300 focus:text-slate-700 hover:!text-slate-300 pb-3 lg:!pb-0" onClick={()=>navigate("/how-It-Works")}><FontAwesomeIcon icon={faExclamationCircle} className="homeIcon"></FontAwesomeIcon> How it works</button></li>
+                    <li className='mx-2'><button className="btn dropdown-item lg:px-1 py-1 text-slate-100 active:bg-sky-600 hover:bg-sky-800 focus:bg-slate-300 focus:text-slate-700 hover:!text-slate-300 pb-2   lg:!pb-0" onClick={()=>navigate("/signUp")}><FontAwesomeIcon icon={faPlusSquare} className="homeIcon"></FontAwesomeIcon> Create account</button></li>
                 </ul>
-                    <button className="btn text-slate-100 px-2 lg:px-3 py-1 hover:!text-slate-300 active:bg-sky-600 focus:bg-sky-600 pb-3 lg:!pb-0" type="submit" onClick={()=>navigate("/login")}><FontAwesomeIcon icon={faSignInAlt}  className="homeIcon"></FontAwesomeIcon> Login</button>
+                    <button className="btn text-slate-100 px-2 lg:px-3 py-1 hover:!text-slate-300   focus:bg-slate-300 focus:text-slate-700 pb-3 lg:!pb-0" type="submit" onClick={()=>navigate("/login")}><FontAwesomeIcon icon={faSignInAlt}  className="homeIcon"></FontAwesomeIcon> Login</button>
                 </div>
             </div>
         </nav>
