@@ -26,7 +26,7 @@ export default function Footer() {
                 <div className='col-md-3 text-center sm:!text-left  top-4 md:top-0'>
                     <h5 className='text-xl font-normal'>Help</h5>
                     <ul className='text-center sm:!text-left pt-2'>
-                        <li><button className=" text-slate-100 px-0  text-sm hover:no-underline  " onClick={()=>navigate("/how-It-Works")}>How It Works</button></li>
+                        <li><button className=" text-slate-100 px-0 sm:!text-left text-sm hover:no-underline  " onClick={()=>navigate("/how-It-Works")}>How It Works</button></li>
                         <li><button className=" text-slate-100 px-0 py-0 text-sm hover:no-underline" onClick={()=>navigate("/fAQs")}>FAQs</button></li>
                     </ul>
                 </div>
