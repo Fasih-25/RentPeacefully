@@ -45,7 +45,7 @@ export default function Pricing() {
           </div>
         </div> 
         <div className="py-3 my-2 flex flex-wrap 2xl:flex-row justify-center lg:justify-around ">
-          <div className="pricingPlans h-fit   2xl:w-1/4 rounded-md shadowBox">
+          <div className="pricingPlans h-fit   2xl:w-1/4 rounded-md shadowBox mb-5 ">
             <div className='bg-indigo-700 h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
               <FontAwesomeIcon icon={faCertificate} className=" text-xl text-slate-50 "></FontAwesomeIcon><h3 className='  text-2xl text-slate-50 px-1'> Basic</h3>
@@ -96,7 +96,7 @@ export default function Pricing() {
           </div>
 
           
-          <div className="pricingPlans h-fit mt-7 lg:mt-0  2xl:w-1/4 rounded-md shadowBox">
+          <div className="pricingPlans h-fit   2xl:!w-1/4 rounded-md shadowBox mb-5">
             <div className='bg-fuchsia-800 h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
               <FontAwesomeIcon icon={faCertificate} className=" text-xl text-slate-50 "></FontAwesomeIcon><h3 className='  text-2xl text-slate-50 px-1'> Plus</h3>
@@ -148,7 +148,7 @@ export default function Pricing() {
 
 
 
-          <div className="pricingPlans h-fit mt-7 2xl:mt-0 2xl:w-1/4 rounded-md shadowBox">
+          <div className="pricingPlans h-fit  2xl:!w-1/4 rounded-md shadowBox mb-5 ">
             <div className='bg-teal-600 h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
               <FontAwesomeIcon icon={faCertificate} className=" text-xl text-slate-50 "></FontAwesomeIcon><h3 className='  text-2xl text-slate-50 px-1'> Professional</h3>
@@ -200,7 +200,7 @@ export default function Pricing() {
 
 
 
-          <div className="pricingPlans h-fit mt-7 2xl:mt-0  2xl:w-1/4 rounded-md shadowBox">
+          <div className="pricingPlans h-fit  2xl:!w-1/4 rounded-md shadowBox">
             <div className='bg-amber-500 h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
               <FontAwesomeIcon icon={faDiamond} className=" text-xl text-slate-50 "></FontAwesomeIcon><h3 className='  text-2xl text-slate-50 px-1'> Enterprise</h3>
