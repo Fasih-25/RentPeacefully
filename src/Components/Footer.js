@@ -13,17 +13,17 @@ export default function Footer() {
   return (
     <div>
       <footer className='bg-Footer-20 text-center md:text-left pt-4 mt-4 text-slate-100  bottom-0 w-full mb-0 '>
-        <div className="container ">
-            <div className="row mx-20 md:mx-44 flex justify-between">
+        <div className="container  ">
+            <div className="flex-col sm:flex-row mx-20 lg:mx-44 flex justify-between">
                 {/* <hr className='md:hidden w-1 ' /> */}
-                <div className='col-md-3 text-center sm:!text-left  '>
+                <div className='col-md-3 text-center sm:!text-left mb-4 '>
                     <h5 className='text-xl font-normal'>RentalApp</h5>
-                    <ul className='text-center sm:!text-left '>
-                        <li><button className="dropdown-item text-slate-100  text-sm pt-2 px-0" onClick={()=>setShowMyModal(true)}>Contact Us</button></li>
+                    <ul className='text-center sm:!text-left pt-2'>
+                        <li><button className="dropdown-item text-slate-100  text-sm  px-0" onClick={()=>setShowMyModal(true)}>Contact Us</button></li>
                     </ul>
                 </div>
                 {/* <hr className='md:hidden w-1' /> */}
-                <div className='col-md-3 text-center sm:!text-left  top-4 md:top-0'>
+                <div className='col-md-3 text-center sm:!text-left  mb-4'>
                     <h5 className='text-xl font-normal'>Help</h5>
                     <ul className='text-center sm:!text-left pt-2'>
                         <li><button className=" text-slate-100 px-0 sm:!text-left text-sm hover:no-underline  " onClick={()=>navigate("/how-It-Works")}>How It Works</button></li>
@@ -31,7 +31,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 {/* <hr className='md:hidden w-1' /> */}
-                <div className='col-md-3 text-center sm:!text-left top-8 md:top-0 '>
+                <div className='col-md-3 text-center sm:!text-left  '>
                     <h5 className='text-xl font-normal'>Legal</h5>
                     <ul className='text-center sm:!text-left pt-2 '>
                         <li><a className=" text-slate-100 hover:text-slate-100 px-0 text-sm hover:no-underline  " href="/">Terms of use</a></li>

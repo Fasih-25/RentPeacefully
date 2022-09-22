@@ -56,7 +56,7 @@ export default function Search(props) {
                         placeholder: ' Search',
                         className: 'location-search-input',
                       })}
-                    className="w-96 shadow-sm text-left py-1 flex justify-start outline-0 "
+                    className="xxsm:w-64 xsm:w-72 sm:w-96 shadow-sm text-left py-1 flex justify-start outline-0 "
 
                     />
                     <div className="autocomplete-dropdown-container">
