@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState} from 'react'
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
 import { Select, Option } from "@material-tailwind/react";
@@ -7,6 +7,9 @@ import { faEnvelope, faUserAlt, faLock} from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [message, setMessage] = useState("");
     let navigate = useNavigate();
     function handleForgetPassword()
   {
@@ -16,6 +19,31 @@ export default function Login() {
   {
     navigate("/emailVerification")
   }
+  let handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      let res = await fetch("https://nodejs-rental-api.herokuapp.com/user/login", {
+        method: "POST",
+        body: JSON.stringify({
+          email: email,
+          password: password,
+        }),
+        headers:{
+            "Content-Type":'application/json',
+            "Accept":'application/json'
+        }
+                    
+      });
+      let resJson = await res.json();
+      if (res.status === 200) {
+        navigate("/")
+      } else {
+        setMessage("Some Error occured");
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
   return (
     <div>
       <Navbar />
@@ -41,6 +69,8 @@ export default function Login() {
                                 type="email"
                                 placeholder='Email'
                                 name="email"
+                                value={email}
+                                onChange={(e)=>setEmail(e.target.value)}
                                 className="block w-full px-2 xl:!py-3 py-2 mx-3 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                             />
                         </div>
@@ -57,17 +87,20 @@ export default function Login() {
                             <input
                                 type="password"
                                 placeholder='Password'
-                                name="password_confirmation"
+                                name="password"
+                                value={password}
+                                onChange={(e)=>setPassword(e.target.value)}
                                 className="block w-full xl:!py-3 px-2 py-2 mx-3 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                             />
                         </div>
                     </div>
                   
                     <div className="flex items-center mt-4">
-                        <button className="w-full px-4 py-3 mx-24   tracking-wide text-white transition-colors duration-200 transform bg-teal-500 shadowBox  rounded-md focus:outline-none">
+                        <button onClick={handleLogin} className="w-full px-4 py-3 mx-24   tracking-wide text-white transition-colors duration-200 transform bg-teal-500 shadowBox  rounded-md focus:outline-none">
                             LOG IN
                         </button>
                     </div>
+                    <div className="message">{message ? <p>{message}</p> : null}</div>
                     <hr className='mt-3' />
                 </form>
                 <div className="mt-4 text-grey-600 text-center">

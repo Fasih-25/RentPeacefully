@@ -8,80 +8,45 @@ import {faEnvelope,faLock, faPhoneAlt, faUserAlt} from '@fortawesome/free-solid-
 import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
+    
     const [userType, setUserType] = useState("")
-    const [username, setUserName] = useState("")
-    const [lastName, setLastName] = useState("")
+    const [userName, setUserName] = useState("")
     const [email, setEmail] = useState("")
     const [phoneNo, setPhoneNo] = useState("")
     const [password, setPassword] = useState("")
     const [message, setMessage] = useState("");
     let navigate = useNavigate();
-   async function handleSelect()
-    {
-        // console.warn(username, lastName, email,password)
-        let item={username, email, password, phoneNo}
-        console.log(item);
-        
-        let result = await fetch("https://nodejs-rental-api.herokuapp.com/user/register",{
-            method:"POST",
-            body:JSON.stringify(item),
-            headers:{
-                "Content-Type":'application/json',
-                "Accept":'application/json'
-            }
-        
-        })
-        // .then((Response) => Response.json())
-        // .then((result) => {
-  
-        //   if (result.Status == 'Success')
 
-        //           navigate("/Dashboard");
-
-        //   else
-  
-        //     alert('Sorrrrrry !!!! Un-authenticated User !!!!!')
-        // })
-        result = await result.json()
-        console.warn("Result = ",result)
+    let handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const requestOptions = {
+                method: 'POST',
+                headers: {    
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*' },
+                body: JSON.stringify({ userName, email, password, phoneNo, userType})};
+                
+          let res = await fetch("https://nodejs-rental-api.herokuapp.com/user/register",requestOptions);
+          let resJson = await res.json();
+          if (res.status === 200) {
+            setUserName("");
+            setEmail("");
+            setPhoneNo("");
+            setUserType("");
+            setPassword("");
+            setMessage("User created successfully");
+            navigate("/")
+          } else {
+            setMessage("Some error occured");
+          }
+        } catch (err) {
+          console.log(err);
+        }
+      };
         
-    }
-
-// let handleSubmit = async (e) => {
-//     e.preventDefault();
-//     try {
-//       let res = await fetch("localhost:3001/user/register", {
-//         mode: 'no-cors',
-//         method: "POST",
-//         body: JSON.stringify({
-//           username: username,
-//           email: email,
-//           password: password,
-//         //   phoneNo: phoneNo,
-//         //   userType: "",
-//         }),
-//         // headers:{
-//         //     "Content-Type":'application/json',
-//         //     "Accept":'application/json'
-//         // }
-                    
-//       });
-//       let resJson = await res.json();
-//       if (res.status === 200) {
-//         setUserName("");
-//         setEmail("");
-//         setPhoneNo("");
-//         setUserType("");
-//         setMessage("User created successfully");
-//       } else {
-//         setMessage("Some error occured");
-//       }
-//     } catch (err) {
-//       console.log(err);
-//     }
-//   };
-    
-    // const [retypePassword, setretypePassword] = useState("")
+        // const [retypePassword, setretypePassword] = useState("")
 
   return (
     <div>
@@ -95,14 +60,16 @@ export default function SignUp() {
             </div>  
             <div className="w-full px-6 py-4 outline-sky-600 border overflow-hidden bg-white shadow-md sm:max-w-lg sm:rounded-lg ">
                 <form >
-                  {/* <div className="w-full">
-                    <Select className='flex justify-center text-center items-center' onChange={(e)=>setUserType(e.target.value)}>
-                      <Option value={userType} select="Selected" className=' text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Tenant</Option>
-                      <Option value={userType} className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Landlord</Option>
-                      <Option value={userType} className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Service Provider</Option>
-                      <Option value={userType} className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Real Estate Agent</Option>
-                    </Select>
-                  </div> */}
+                    <div className="w-full">
+                        {/* <Select  className='flex justify-center text-center items-center' defaultValue={userType} onChange={setUserType}
+                        options={options} /> */}
+                        <Select  className='flex justify-center text-center items-center' value={userType} onChange={(e)=>setUserType(e)}>
+                            <Option value="I am a Tenant"  className=' text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Tenant</Option>
+                            <Option value="I am a Landlord"  className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Landlord</Option>
+                            <Option value="I am a Service Provider"  className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Service Provider</Option>
+                            <Option value="I am a Real Estate Agent" className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Real Estate Agent</Option>
+                        </Select>
+                    </div>
                     <div>
                         <div className="flex flex-row items-center justify-center mt-4">
                             <FontAwesomeIcon icon={faUserAlt} className=" text-3xl text-gray-400 "></FontAwesomeIcon>
@@ -110,8 +77,8 @@ export default function SignUp() {
                                 type="text"
                                 placeholder='Name'
                                 required
-                                name="username"
-                                value={username}
+                                name="userName"
+                                value={userName}
                                 onChange={(e)=>setUserName(e.target.value)}
                                 className="block w-full px-2 xl:!py-3 py-2 mx-3 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                             />
