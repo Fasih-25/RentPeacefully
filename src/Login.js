@@ -35,10 +35,14 @@ export default function Login() {
                     
       });
       let resJson = await res.json();
-      if (res.status === 200) {
-        navigate("/")
+      if (resJson.error == "User does not exist") {
+        // navigate("/")
+        console.log(email,password);
+        setMessage("USER Does Not Exist");
+
       } else {
-        setMessage("Some Error occured");
+        // setMessage("Some Error occured");
+        navigate("/")
       }
     } catch (err) {
       console.log(err);
@@ -94,13 +98,13 @@ export default function Login() {
                             />
                         </div>
                     </div>
-                  
+                    <div className="message text-red-600 font-bold text-center mt-3">{message ? <p>{message}</p> : null}</div>
                     <div className="flex items-center mt-4">
                         <button onClick={handleLogin} className="w-full px-4 py-3 mx-24   tracking-wide text-white transition-colors duration-200 transform bg-teal-500 shadowBox  rounded-md focus:outline-none">
                             LOG IN
                         </button>
                     </div>
-                    <div className="message">{message ? <p>{message}</p> : null}</div>
+                   
                     <hr className='mt-3' />
                 </form>
                 <div className="mt-4 text-grey-600 text-center">
