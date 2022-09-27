@@ -29,19 +29,45 @@ export default function SignUp() {
                 body: JSON.stringify({ userName, email, password, phoneNo, userType})};
                 
           let res = await fetch("https://nodejs-rental-api.herokuapp.com/user/register",requestOptions);
-          let resJson = await res.json();
-          if (res.status === 200) {
+        // if(email == "" && password == "")
+        // {
+            // let res = await fetch("https://nodejs-rental-api.herokuapp.com/user/register", {
+            // // mode: 'no-cors',
+            // method: "POST",
+            // body: JSON.stringify({
+            //   userName: userName,
+            //   email: email,
+            //   password: password,
+            //   phoneNo: phoneNo,
+            //   userType: userType,
+            // }),
+        //     headers:{
+        //         "Content-Type":'application/json',
+        //         "Accept":'application/json'
+        //     }
+                        
+        //   });
+        // }
+        // else
+        // {  
+        let resJson = await res.json();
+        //   if (res.status === 200) {
+             if (resJson.message == "The email address you have entered is already associated with another account.") {
             setUserName("");
             setEmail("");
             setPhoneNo("");
             setUserType("");
             setPassword("");
+            setMessage("");
             console.log(userType, userName,email,password,phoneNo)
             // setMessage("User created successfully");
-            navigate("/")
+            // navigate("/")
+            alert("This Email is already registered, Please Try Different one");
           } else {
-            setMessage("Some error occured");
+            // setMessage("Some error occured");
+            navigate("/")
           }
+        // }
         } catch (err) {
           console.log(err);
         }
@@ -60,11 +86,11 @@ export default function SignUp() {
                   </h3>
             </div>  
             <div className="w-full px-6 py-4 outline-sky-600 border overflow-hidden bg-white shadow-md sm:max-w-lg sm:rounded-lg ">
-                <form >
+                <form onSubmit={handleSubmit}>
                     <div className="w-full">
                         {/* <Select  className='flex justify-center text-center items-center' defaultValue={userType} onChange={setUserType}
                         options={options} /> */}
-                        <Select  className='flex justify-center text-center items-center' value={userType} onChange={(e)=>setUserType(e)}>
+                        <Select required className='flex justify-center text-center items-center' value={userType} onChange={(e)=>setUserType(e)}>
                             <Option value="I am a Tenant"  className=' text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Tenant</Option>
                             <Option value="I am a Landlord"  className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Landlord</Option>
                             <Option value="I am a Service Provider"  className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Service Provider</Option>
@@ -156,7 +182,7 @@ export default function SignUp() {
                     </div>
                   
                     <div className="flex items-center mt-4">
-                        <button onClick={handleSubmit} className="w-full px-4 py-3 mx-5  tracking-wide text-white transition-colors duration-200 transform bg-teal-500 shadowBox  rounded-md focus:outline-none">
+                        <button type='submit'  className="w-full px-4 py-3 mx-5  tracking-wide text-white transition-colors duration-200 transform bg-teal-500 shadowBox  rounded-md focus:outline-none">
                             CREATE NEW ACCOUNT
                         </button>
                     </div>

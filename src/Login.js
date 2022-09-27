@@ -60,7 +60,7 @@ export default function Login() {
                   </h3>
             </div>  
             <div className="w-full px-6 py-4 outline-sky-600 border overflow-hidden bg-white shadow-md sm:max-w-lg sm:rounded-lg ">
-                <form>
+                <form onSubmit={handleLogin}>
                     <div className="mt-4">
                         {/* <label
                             htmlFor="email"
@@ -72,6 +72,7 @@ export default function Login() {
                             <FontAwesomeIcon icon={faEnvelope} className=" text-3xl text-gray-400 "></FontAwesomeIcon>
                             <input
                                 type="email"
+                                required
                                 placeholder='Email'
                                 name="email"
                                 value={email}
@@ -91,6 +92,7 @@ export default function Login() {
                             <FontAwesomeIcon icon={faLock} className=" text-3xl text-gray-400 "></FontAwesomeIcon>
                             <input
                                 type="password"
+                                required
                                 placeholder='Password'
                                 name="password"
                                 value={password}
@@ -101,7 +103,7 @@ export default function Login() {
                     </div>
                     <div className="message text-red-600 font-bold text-center mt-3">{message ? <p>{message}</p> : null}</div>
                     <div className="flex items-center mt-4">
-                        <button onClick={handleLogin} className="w-full px-4 py-3 mx-24   tracking-wide text-white transition-colors duration-200 transform bg-teal-500 shadowBox  rounded-md focus:outline-none">
+                        <button type='submit' className="w-full px-4 py-3 mx-24   tracking-wide text-white transition-colors duration-200 transform bg-teal-500 shadowBox  rounded-md focus:outline-none">
                             LOG IN
                         </button>
                     </div>
