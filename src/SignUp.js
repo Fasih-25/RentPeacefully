@@ -38,7 +38,7 @@ export default function SignUp() {
             setPassword("");
             console.log(userType, userName,email,password,phoneNo)
             // setMessage("User created successfully");
-            // navigate("/")
+            navigate("/")
           } else {
             setMessage("Some error occured");
           }

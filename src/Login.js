@@ -38,7 +38,8 @@ export default function Login() {
       if (resJson.error == "User does not exist") {
         // navigate("/")
         console.log(email,password);
-        setMessage("USER Does Not Exist");
+        // setMessage("USER Does Not Exist");
+        alert("User does Not exist");
 
       } else {
         // setMessage("Some Error occured");
