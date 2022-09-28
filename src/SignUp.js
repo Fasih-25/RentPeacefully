@@ -52,7 +52,7 @@ export default function SignUp() {
         // {  
         let resJson = await res.json();
         //   if (res.status === 200) {
-             if (resJson.message == "The email address you have entered is already associated with another account.") {
+             if (resJson.message === "The email address you have entered is already associated with another account.") {
             setUserName("");
             setEmail("");
             setPhoneNo("");

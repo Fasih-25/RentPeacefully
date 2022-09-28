@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import  axios  from 'axios';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,6 +11,8 @@ import {
   getLatLng,
 } from 'react-places-autocomplete';
 import PropertyCard from '../Components/PropertyCard';
+var Datalength;
+
 
 export default function All() {
     const [address, setAddress] = useState("");
@@ -25,7 +28,26 @@ export default function All() {
   setAddress(value);
   setCoordinates(latlng);
  }
+
+ const [posts, setPosts] = useState([]);
+
+useEffect(() => {
+            axios.get(
+          `https://nodejs-rental-api.herokuapp.com/property/`
+        )
+        .then((res) =>{
+        console.log(res);
+        Datalength = res.data.length;
+        setPosts(res.data);
+        
+    })
+        .catch (err => { 
+        console.log(err);
+    })
+  }, []);
+
   return (
+
     <div>
       <Navbar />
         <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
@@ -80,22 +102,17 @@ export default function All() {
         </div>
         <div className="container flex justify-center items-center py-20">
             <div className="card flex justify-center items-center text-white 2xl:text-3xl font-bold bg-green-500 ">
-               <h1 className='py-1 px-2'> 2 Properties or Rent </h1>
+               <h1 className='py-1 px-2'> {Datalength} Properties for Rent </h1>
             </div>
         </div>
-        <div className=" flex">
-            <div className='flex flex-wrap justify-center'>
-                <PropertyCard />
-                <PropertyCard />
-                <PropertyCard />
-                <PropertyCard />
-                <PropertyCard />
-                <PropertyCard />
+        <div className=" flex justify-center">
+            <div className='flex flex-wrap justify-center '>
+                    {posts.map((item)=>{
+                        return <PropertyCard id = {item.id}  propertyName = {item.propertyName}  bedrooms = {item.rooms} bathroom = {item.bathrooms} address ={item.address} area = {item.area} price = {item.price} propertyType = {item.propertyType} securityDeposit = {item.securityDeposit} />
+                    })}
             </div>    
         </div>
-        {/* <div className="container flex flex-row">
-            <PropertyCard />
-        </div> */}
+        
       <Footer />
     </div>
   )
