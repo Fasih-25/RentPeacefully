@@ -59,7 +59,7 @@ export default function Details() {
             </div>
 
             <div className=' bg-slate-700 w-full py-3  '>
-                <div className='flex text-center justify-center items-center  lg:mx-56 2xl:mx-72' >
+                <div className='flex text-center justify-center items-center  lg:mx-72 2xl:mx-96 2xl:px-52' >
                     <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
