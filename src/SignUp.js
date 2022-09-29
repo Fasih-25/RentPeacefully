@@ -20,6 +20,10 @@ export default function SignUp() {
     let handleSubmit = async (e) => {
         e.preventDefault();
         try {
+            if(userType==""){
+                alert("Please Select User Type")
+            }
+            else{
             const requestOptions = {
                 method: 'POST',
                 headers: {    
@@ -29,6 +33,7 @@ export default function SignUp() {
                 body: JSON.stringify({ userName, email, password, phoneNo, userType})};
                 
           let res = await fetch("https://nodejs-rental-api.herokuapp.com/user/register",requestOptions);
+                
         // if(email == "" && password == "")
         // {
             // let res = await fetch("https://nodejs-rental-api.herokuapp.com/user/register", {
@@ -67,6 +72,7 @@ export default function SignUp() {
             // setMessage("Some error occured");
             navigate("/")
           }
+        }
         // }
         } catch (err) {
           console.log(err);
@@ -90,7 +96,7 @@ export default function SignUp() {
                     <div className="w-full">
                         {/* <Select  className='flex justify-center text-center items-center' defaultValue={userType} onChange={setUserType}
                         options={options} /> */}
-                        <Select required className='flex justify-center text-center items-center' value={userType} onChange={(e)=>setUserType(e)}>
+                        <Select  className='flex justify-center text-center items-center' value={userType} onChange={(e)=>setUserType(e)} required>
                             <Option value="I am a Tenant"  className=' text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Tenant</Option>
                             <Option value="I am a Landlord"  className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Landlord</Option>
                             <Option value="I am a Service Provider"  className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Service Provider</Option>
@@ -186,7 +192,7 @@ export default function SignUp() {
                             CREATE NEW ACCOUNT
                         </button>
                     </div>
-                    <div className="message">{message ? <p>{message}</p> : null}</div>
+                    {/* <div className="message">{messag    e ? <p>{message}</p> : null}</div> */}
                     <hr className='mt-3' />
                 </form>
                 <div className="mt-4 text-grey-600 text-center">

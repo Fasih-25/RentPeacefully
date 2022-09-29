@@ -24,8 +24,8 @@ export default function All() {
  const handleSelect = async value => {
   const results = await geocodeByAddress(value);
   const latlng = await getLatLng(results[0]);
-  console.log(latlng);
-  setAddress(value);
+//   console.log(latlng);
+//   setAddress(value);
   setCoordinates(latlng);
  }
 
@@ -100,19 +100,20 @@ useEffect(() => {
                 </PlacesAutocomplete>
             </div>  */}
         </div>
+        <div className='px-2'>
         <div className="container flex justify-center items-center py-20">
             <div className="card flex justify-center items-center text-white 2xl:text-3xl font-bold bg-green-500 ">
                <h1 className='py-1 px-2'> {Datalength} Properties for Rent </h1>
             </div>
         </div>
-        <div className=" flex justify-center">
+        <div className=" flex justify-center ">
             <div className='flex flex-wrap justify-center '>
                     {posts.map((item)=>{
-                        return <PropertyCard id = {item.id}  propertyName = {item.propertyName}  bedrooms = {item.rooms} bathroom = {item.bathrooms} address ={item.address} area = {item.area} price = {item.price} propertyType = {item.propertyType} securityDeposit = {item.securityDeposit} />
+                        return <PropertyCard id = {item.id} propertyImage = {item.propertyImage}  propertyName = {item.propertyName}  bedrooms = {item.rooms} bathroom = {item.bathrooms} address ={item.address} area = {item.area} price = {item.price} propertyType = {item.propertyType} securityDeposit = {item.securityDeposit} data = {posts} />
                     })}
             </div>    
         </div>
-        
+        </div>
       <Footer />
     </div>
   )

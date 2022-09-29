@@ -3,7 +3,7 @@ import {useLocation} from 'react-router-dom';
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBath, faBed, faChair, faClock, faClockFour, faD, faDoorOpen, faDroplet, faDumbbell, faElevator, faFire, faGlassWaterDroplet, faGraduationCap, faHandRock, faHighlighter, faParking, faSquare, faStoreAlt, faStreetView, faSwimmingPool, faTemperatureArrowUp, faTemperatureFull, faTree, faUmbrella, faWheelchair, faWind} from '@fortawesome/free-solid-svg-icons';
+import {faBath, faBed, faChair, faClock, faClockFour, faD, faDoorOpen, faDroplet, faDumbbell, faElevator, faFire, faGaugeHigh, faGlassWaterDroplet, faGraduationCap, faHandRock, faHighlighter, faParking, faSquare, faStoreAlt, faStreetView, faSwimmingPool, faTemperatureArrowUp, faTemperatureFull, faTree, faUmbrella, faWheelchair, faWind} from '@fortawesome/free-solid-svg-icons';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
@@ -22,7 +22,7 @@ export default function Details() {
     
     <div>
         <Navbar />
-            <div className='propertyDetails '>
+            <div className='propertyDetails  '>
                <div className='bg-gray-900 bg-opacity-70 h-screen justify-center flex-wrap py-2 mobile:py-5 px-4 '>
                     
                     <div className='flex justify-around top-0 flex-wrap pt-10 sm:!pt-10 2xl:!pt-10   2xl:ml-8'>
@@ -34,7 +34,7 @@ export default function Details() {
                             <ul className='flex flex-row pt-3  md:!pt-7'>
                                 <li><h6 className=' text-white mobile:text-lg'><FontAwesomeIcon icon={faBed} className=" text-white mobile:text-3xl sm:text-2xl lg:text-3xl mx-2 font-bold"></FontAwesomeIcon> {location.state.bedrooms} Bed(s)</h6></li>
                                 <li><h6 className=' text-white mobile:text-lg'><FontAwesomeIcon icon={faBath} className=" text-white mobile:text-3xl sm:text-2xl lg:text-3xl mx-2 font-bold"></FontAwesomeIcon> {location.state.bathroom} Bath(s)</h6></li>
-                                <li><h6 className=' text-white mobile:text-lg'><FontAwesomeIcon icon={faSquare} className=" text-white mobile:text-3xl sm:text-2xl lg:text-3xl mx-2 font-bold"></FontAwesomeIcon> {location.state.area}</h6></li>
+                                <li><h6 className=' text-white mobile:text-lg'><FontAwesomeIcon icon={faSquare} className=" text-white mobile:text-3xl sm:text-2xl lg:text-3xl mx-2 font-bold"></FontAwesomeIcon> {location.state.area} Sq Ft</h6></li>
                             </ul>
                         </div>
                         <div>
@@ -77,24 +77,12 @@ export default function Details() {
                     <SwiperSlide>
                         <img
                             className="object-fill w-full h-96"
-                            src={require('../assets/listing1-3.jpeg')}
+                            // src={require('../assets/listing1-3.jpeg')}
+                            src = {location.state.propertyImage}
                             alt="image slide 1"
                         />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                            className="object-fill w-full h-96"
-                            src={require('../assets/listing1-1.png')}
-                            alt="image slide 2"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                            className="object-fill w-full h-96"
-                            src={require('../assets/listing1-2.jpeg')}
-                            alt="image slide 3"
-                        />
-                    </SwiperSlide>
+                   
                 </Swiper>
                 </div>
             </div>
@@ -109,33 +97,33 @@ export default function Details() {
                             <h3 className='font-bold text-4xl py-5'> Amenities </h3>
                         </div>
                         <div className='flex justify-between mx-3'>
-                        <div>
+                        <div flex items-start>
                             <ul>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold'><FontAwesomeIcon icon={faBath} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Washer/Dryer in unit </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold'><FontAwesomeIcon icon={faDumbbell} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Gym</h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold'><FontAwesomeIcon icon={faParking} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Parking Spot</h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold'><FontAwesomeIcon icon={faTemperatureFull} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Air Conditioning </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold'><FontAwesomeIcon icon={faD} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Dishwasher </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold'><FontAwesomeIcon icon={faStoreAlt} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Storage </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold'><FontAwesomeIcon icon={faHandRock} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Hardwood Floor </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold'><FontAwesomeIcon icon={faWind} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> balcony </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold'><FontAwesomeIcon icon={faStreetView} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> View </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold'><FontAwesomeIcon icon={faHighlighter} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> High Rise </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center '><FontAwesomeIcon icon={faBath} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Washer/Dryer in unit </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faDumbbell} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Gym</h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faParking} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Parking Spot</h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faTemperatureFull} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Air Conditioning </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faD} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Dishwasher </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faStoreAlt} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Storage </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faHandRock} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Hardwood Floor </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faWind} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> balcony </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faStreetView} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> View </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faGaugeHigh} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> High Rise </h6></li>
 
                             </ul>
                         </div>
                         <div className='flex items-start justify-start'>
                         <ul>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold '><FontAwesomeIcon icon={faSwimmingPool} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Pool </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold '><FontAwesomeIcon icon={faElevator } className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Elevator </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold '><FontAwesomeIcon icon={faFire} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Fire Place </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold '><FontAwesomeIcon icon={faDoorOpen} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Doorman </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold '><FontAwesomeIcon icon={faUmbrella} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Deck </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold '><FontAwesomeIcon icon={faWheelchair} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Wheelchair Accessible </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold '><FontAwesomeIcon icon={faTree} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Garden </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold '><FontAwesomeIcon icon={faChair} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Furnished </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold '><FontAwesomeIcon icon={faGraduationCap} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Student Friendly </h6></li>
-                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold '><FontAwesomeIcon icon={faDroplet} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Utilities Included </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faSwimmingPool} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Pool </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faElevator } className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Elevator </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faFire} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Fire Place </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faDoorOpen} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Doorman </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faUmbrella} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Deck </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faWheelchair} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Wheelchair Accessible </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faTree} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Garden </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faChair} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Furnished </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faGraduationCap} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Student Friendly </h6></li>
+                            <li><h6 className=' text-black py-2 text-sm lg:text-sm font-bold flex xxsm:flex-col mobile:flex-row text-center items-center'><FontAwesomeIcon icon={faDroplet} className=" text-black text-xl sm:text-2xl lg:text-2xl mx-2 font-bold"></FontAwesomeIcon> Utilities Included </h6></li>
 
                         </ul>
                         </div>
