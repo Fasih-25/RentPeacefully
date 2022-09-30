@@ -17,7 +17,7 @@ export default function HowItWorks() {
     <Navbar />
     <SecondSection />
     <div className='flex justify-center items-center pt-10'>
-        <h1 className='text-5xl font-semibold text-center'>How RentalApp works?</h1>
+        <h1 className='xxsm:text-2xl mobile:text-5xl font-semibold text-center'>How RentalApp works?</h1>
     </div>
         <div>
             <section className="py-4 ">
@@ -143,13 +143,13 @@ export default function HowItWorks() {
 
                     <div className={toggleState === 3 ? "flex-start" : "hidden"} >
                         <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 justify-around 2xl:justify-start">
-                            <div className="md:text-center flex items-center    justify-center lg:justify-center 2xl:pl-36">
+                            <div className=" md:text-center flex items-center    justify-center lg:!justify-center 2xl:pl-36">
                                 <img src={require('./assets/service1.jpg')} className="" alt="" />
                             </div>
-                            <div className=" md:justify-center lg:justify-start xl:pl-10 2xl:pl-96 2xl:ml-12">
+                            <div className="flex md:justify-center lg:justify-start xl:pl-10 2xl:pl-96 2xl:ml-12 flex-col">
                                 {/* <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faWrench} className="text-green-600"></FontAwesomeIcon> Services </h4> */}
-                                <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-3  "><strong>List your service</strong></h1>
-                                <p className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:pr-6 xl:text-lg  ">Listing a service on RentPeacefully is quick and easy. Add a brief description of the service you provide and wait to get contacted by a Landlord.</p>
+                                <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-2  "><strong>List your service</strong></h1>
+                                <p className="text-center mb-2 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:!pr-6 xl:text-lg  ">Listing a service on RentPeacefully is quick and easy. Add a brief description of the service you provide and wait to get contacted by a Landlord.</p>
                             </div>
                         </div>
                             

@@ -12,7 +12,7 @@ export default function FirstSection() {
         <div className='firstSection top-3 '>
          <section className='h-screen relative overflow-hidden cursor-default rgbaGradient flex flex-col  items-center justify-around'>
          <div className=' top-0 w-full h-full left-0 right-0 bottom-0 px-3' >
-            <div className=' flex justify-around flex-col pt-6 xsm:pt-16 md:pt-10 mt-3   '>
+            <div className=' flex justify-around flex-col pt-6 xsm:pt-7 md:pt-10 mt-3   '>
                 <div className=' flex  flex-col  mt-1 sm:!mt-14 text-center md:mb-5'>
                     <h1 className='blinkText text-white font-bold xsm:text-2xl sm:text-4xl 2xl:text-4xl sm:mx-40 lg:mb-4 mb-2 text-center animate-flash'>Launching Soon</h1>
                     <h1 className='blinkText text-white font-bold xsm:text-xl sm:text-3xl 2xl:text-4xl px-0 sm:px-0 text-center animate-flash'>Free Registration For First 100 Landlords and Agents </h1>
@@ -20,7 +20,7 @@ export default function FirstSection() {
                 <div className='flex flex-col  sm:flex-row justify-center items-center  md:pt-32 pt-16 lg:pt-24 xl:pt-44 xl:px-24'>
                     <div className="flex flex-col text-center md:text-left justify-center sm:!justify-start md:items-start items-center  2xl:px-16">
                         <div className="flex flex-col  text-white justify-center sm:!justify-start md:text-left items-center text-center md:items-start">
-                            <h2 className='fadeInLeft font-bold xsm:text-xl sm:text-3xl xl:text-4xl 2xl:text-5xl  sm:px-0 sm:pr-4  sm:text-left  mb-1 sm:!mb-4'>Manage descentralized rental agreements easily with our app</h2>
+                            <h2 className='fadeInLeft font-bold xsm:text-xl sm:text-3xl xl:text-4xl 2xl:text-4xl  sm:px-0 sm:pr-4  sm:text-left  mb-1 sm:!mb-4'>Manage descentralized rental agreements easily with our app</h2>
                             {/* <hr className='text-white border border-t-8 bg-white mb-2 sm:!mb-4 ' /> */}
                             <hr className='text-white bg-white font-extrabold bg-opacity-100  pb-0  w-full  my-2'/>
                             <h6 className='xsm:text-base sm:text-left 2xl:text-lg'>Let your Residential Lease Agreement be managed by an Ethereum Smart Contract created by the Tenant and approved by the Landlord.</h6>

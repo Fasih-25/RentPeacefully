@@ -11,7 +11,7 @@ export default function Pricing() {
       <Navbar />
         <div className='mx-2'>
             <div className='flex justify-center items-center pt-3'>
-                <h1 className='font-semibold text-4xl '>Our princing plans</h1>
+                <h1 className='font-semibold text-center text-4xl '>Our princing plans</h1>
             </div>
             <div className='flex justify-center items-center pt-3'>
                 <p className='py-3 text-gray-400 font-bold text-center '>Try a RentalApp plan. Designed to maximise your success.</p>
@@ -301,12 +301,12 @@ export default function Pricing() {
           </div>
           <div className='flex justify-center  pt-1  pb-3 '>
             <div className='pricingDetails w-full lg:w-fit mt-3 lg:mt-0 lg:mx-3 shadowBox rounded '>
-              <div className='bg-indigo-700 bg-opacity-70 h-full rounded lg:px-20'>
+              <div className='bg-indigo-700 bg-opacity-70 h-full rounded lg:px-[68px]'>
                 <div>
                   <h1 className='font-bold text-white text-center text-xl pt-9 pb-3'>Highlight your advertisement (5$)</h1>
                 </div>
                 <div>
-                  <h5 className='text-white text-center px-3  pb-14 lg:pb-14'>Make your advertisement more visible than the others</h5>
+                  <h5 className='text-white text-center px-3  pb-14 lg:pb-16'>Make your advertisement more visible than the others</h5>
                 </div>
               </div>
             </div>

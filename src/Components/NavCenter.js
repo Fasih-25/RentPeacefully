@@ -80,8 +80,8 @@ export default function NavCenter() {
                              
                              <hr className="mb-5 mt-5 pb-3"></hr>
                              
-                             <div className="flex flex-col-reverse lg:flex-row-reverse pt-14 xl:pl-7 ">
-                                <div className="md:text-center flex md:items-center md:justify-center lg:justify-start lg:w-3/4 2xl:w-2/4">
+                             <div className="flex flex-col-reverse lg:flex-row-reverse pt-14 xl:pl-7 justify-around">
+                                <div className="md:text-center flex items-center justify-center lg:w-3/4 2xl:w-2/4">
                                     <img src={require('../assets/keyman2.jpg')} className="" alt="" />
                                 </div>
                                     <div className=" md:justify-center lg:justify-start ">
@@ -127,7 +127,7 @@ export default function NavCenter() {
                                 <div className="md:text-center flex md:items-center md:justify-center lg:justify-end  ">
                                     <img src={require('../assets/service2.jpg')} className="" alt="" />
                                 </div>
-                                    <div className="flex flex-col md:justify-center lg:justify-start mb-20 2xl:-ml-56">
+                                    <div className="flex flex-col md:justify-center lg:justify-start mb-20 ">
                                         <h4 className="text-red-500 font-bold text-center lg:!text-left mb-3 "><FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon> Score</h4>
                                         <h1 className="text-slate-600 text-center lg:!text-left text-3xl md:text-3xl mb-4  "><strong>Get a Score </strong></h1>
                                         <h3 className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg xl:text-lg lg:text-base 2xl:text-sm">Get a great score for your services so your service ad can reach more Landlords.</h3>

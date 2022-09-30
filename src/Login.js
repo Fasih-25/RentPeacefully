@@ -103,7 +103,7 @@ export default function Login() {
                     </div>
                     <div className="message text-red-600 font-bold text-center mt-3">{message ? <p>{message}</p> : null}</div>
                     <div className="flex items-center mt-4">
-                        <button type='submit' className="w-full px-4 py-3 mx-24   tracking-wide text-white transition-colors duration-200 transform bg-teal-500 shadowBox  rounded-md focus:outline-none">
+                        <button type='submit' className="w-full px-4 py-3 xxsm:mx-16 xsm:mx-24   tracking-wide text-white transition-colors duration-200 transform bg-teal-500 shadowBox  rounded-md focus:outline-none">
                             LOG IN
                         </button>
                     </div>

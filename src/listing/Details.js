@@ -23,6 +23,7 @@ export default function Details() {
     <div>
         <Navbar />
             <div className='propertyDetails  '>
+            
                <div className='bg-gray-900 bg-opacity-70 h-screen justify-center flex-wrap py-2 mobile:py-5 px-4 '>
                     
                     <div className='flex justify-around top-0 flex-wrap pt-10 sm:!pt-10 2xl:!pt-10   2xl:ml-8'>
@@ -59,7 +60,7 @@ export default function Details() {
             </div>
 
             <div className=' bg-slate-700 w-full py-3  '>
-                <div className='flex text-center justify-center items-center  lg:mx-72 2xl:mx-96 2xl:px-52' >
+                <div className='flex text-center justify-center items-center  lg:mx-72 2xl:mx-96 px-' >
                     <Swiper
                     spaceBetween={30}
                     centeredSlides={true}

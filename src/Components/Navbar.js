@@ -24,7 +24,7 @@ export default function Navbar() {
                     <Link className="nav-link btn lg:px-1 py-1  focus:bg-slate-300 focus:!text-slate-700 active:bg-sky-600 !text-slate-100 hover:!text-slate-300  " aria-current="page" to="/propertiesForRent"><FontAwesomeIcon icon={faHome} className="homeIcon"></FontAwesomeIcon> Properties for Rent</Link>
                     </li>
                     <li className="nav-item dropdown px-2 lg:!px-0">
-                    <a className="nav-link dropdown-toggle  text-slate-100 hover:!text-slate-300 lg:btn lg:px-1 py-1 lg:focus:bg-slate-300 lg:focus:text-slate-700" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a className="nav-link dropdown-toggle  text-slate-100 hover:!text-slate-300 lg:btn lg:px-1 py-1 lg:focus:bg-slate-300 lg:focus:!text-slate-700" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <FontAwesomeIcon icon={faAddressBook} className="homeIcon"></FontAwesomeIcon> Directory
                     </a>
                     <ul className="dropdown-menu ">
