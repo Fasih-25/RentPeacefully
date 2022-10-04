@@ -10,6 +10,7 @@ import {
   geocodeByPlaceId,
   getLatLng,
 } from 'react-places-autocomplete';
+import {useLocation} from 'react-router-dom';
 import PropertyCard from '../Components/PropertyCard';
 var Datalength;
 
@@ -30,20 +31,65 @@ export default function All() {
  }
 
  const [posts, setPosts] = useState([]);
+ const location = useLocation();
+//  console.log(location.state.longitude)
+//  console.log(location.state.latitude)
+var latitude = location.state.latitude;
+var longitude = location.state.longitude;
+// console.log(latitude)
+// console.log(longitude)
+//  let searchProperty = async (e) => {
+//   // POST request using fetch with async/await
+//   const requestOptions = {
+//       method: 'POST   ',
+//       headers: { 'Content-Type': 'application/json' },
+//       body: JSON.stringify({ longitude: "66.990501", latitude: "24.860966" })
+//   };
+//   const response = await fetch('https://nodejs-rental-api.herokuapp.com/property/searchProperty', requestOptions);
+//   const data = await response.json();
+//   // setPosts(response.data);
+//   // console.log(response)
+// }
+
+
 
 useEffect(() => {
-            axios.get(
-          `https://nodejs-rental-api.herokuapp.com/property/`
-        )
-        .then((res) =>{
-        console.log(res);
-        Datalength = res.data.length;
-        setPosts(res.data);
+   
+  //   const requestOptions = {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/json' },
+  //     body: JSON.stringify({ longitude: "66.990501", latitude: "24.860966"})
+  // };
+  // fetch('https://nodejs-rental-api.herokuapp.com/property/searchProperty', requestOptions)
+  // .then((res) =>{
+  //       console.log(res);
+  //       // Datalength = res.data.length;
+       
+  //       setPosts(res.data);
         
-    })
-        .catch (err => { 
-        console.log(err);
-    })
+  //   })
+  //       .catch (err => { 
+  //       console.log(err);
+  //   })
+  var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "longitude": latitude,
+  "latitude": longitude
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://nodejs-rental-api.herokuapp.com/property/searchProperty", requestOptions)
+  .then(response => response.json())
+  .then(result => setPosts(result.users))
+  .catch(error => console.log('error', error));
   }, []);
 
   return (
@@ -108,9 +154,22 @@ useEffect(() => {
         </div>
         <div className=" flex justify-center ">
             <div className='flex flex-wrap justify-center '>
-                    {posts.map((item)=>{
+              
+              
+                    { posts == "" ? ( <>
+                      <div className='font-medium  text-3xl text-center py-20'> <h1> Nothing found 😢</h1> </div>
+                    </>)
+                    :
+                     (
+                      <>
+                      
+                      { posts.map((item, index)=>{
                         return <PropertyCard id = {item.id} propertyImage = {item.propertyImage}  propertyName = {item.propertyName}  bedrooms = {item.rooms} bathroom = {item.bathrooms} address ={item.address} area = {item.area} price = {item.price} propertyType = {item.propertyType} securityDeposit = {item.securityDeposit} data = {posts} />
                     })}
+                      </>
+                    )
+                    }
+                  
             </div>    
         </div>
         </div>
@@ -118,3 +177,27 @@ useEffect(() => {
     </div>
   )
 }
+       //   axios.get(
+          // `https://nodejs-rental-api.herokuapp.com/property/`, 
+          // { 
+    //         axios.get(
+    //       `https://nodejs-rental-api.herokuapp.com/property/searchProperty`, 
+    //       {
+    //           longitude: "66.990501",
+    //           latitude: "24.860966"
+                
+              
+    //         }
+
+    //     )
+    //     .then((res) =>{
+    //     console.log(res);
+    //     Datalength = res.data.length;
+    //     // console.log(location.state.id)
+    //     // console.log(location.state.id)
+    //     setPosts(res.data);
+        
+    // })
+    //     .catch (err => { 
+    //     console.log(err);
+    // })

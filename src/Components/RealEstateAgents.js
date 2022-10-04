@@ -1,18 +1,19 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCertificate} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
-export default function RealEstateAgents() {
+export default function RealEstateAgents(props) {
   return (
     <div>
-       <div className='flex flex-wrap justify-center  mt-6 py-5 px-1 md:!px-5'>
-       <a href="/RealEstateAgents/AgentsDetails" className='cursor-pointer '>
+       <div className='flex flex-wrap justify-center sm:justify-between  mt-6 py-5 px-1 md:!px-5'>
+       <Link to="/realEstateAgents/AllAgents" className='cursor-pointer '>
          <div className='flex justify-start  '>
            <img src={require('../assets/noProfilePicture.png')} alt="" className='h-24 w-24 rounded-full shadowBox' />
-         </div></a>
-         <div className='flex justify-start flex-col items-start pl-12 pt-4 lg:!pt-0'>
-            <div className='flex'>
-                <h1 className='text-2xl'>Real Estate Agent test Rent  <FontAwesomeIcon icon={faCertificate} className=" items-center justify-center  text-gray-600 text-xl rounded-full text "></FontAwesomeIcon> </h1>
+         </div></Link>
+         <div className='flex justify-center sm:justify-start flex-col items-center  sm:items-start px-3  pt-4 lg:!pt-0'>
+            <div className='flex '>
+                <h1 className='text-2xl'>{props.userName} <FontAwesomeIcon icon={faCertificate} className=" items-center justify-center  text-gray-600 text-xl rounded-full text "></FontAwesomeIcon> </h1>
             </div>
             <div className='flex flex-row pt-2'>
                 <span className='text-white bg-amber-400 text-base px-2 pb-1 font-bold shadowBox'> 4 </span> 
@@ -26,10 +27,10 @@ export default function RealEstateAgents() {
                 <p className='font-semibold text-lg ml-1 text-slate-400'> (1 review)</p>
             </div>
             <div  className=' pt-3'>
-                <p className='font-semibold text-lg ml-1 text-slate-400'>Nice to meet you! I'm realestateagenttest rent</p>
+                <p className='font-semibold text-lg ml-1 text-slate-400'>Nice to meet you! I'm {props.userName} </p>
             </div>
          </div>
-        <div className='flex'>
+        <div className='flex pt-2 sm:!pt-0'>
             <div className='flex flex-col'>
                 <p className='font-semibold text-base'> Total Rented: 1</p>
                 <p className='font-semibold text-base'> Total Rented: 1</p>

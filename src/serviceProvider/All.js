@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import  axios  from 'axios';
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,6 +11,7 @@ import {
   getLatLng,
 } from 'react-places-autocomplete';
 import ServiceProvider from '../Components/ServiceProvider';
+var Datalength;
 
 export default function All() {
     const [address, setAddress] = useState("");
@@ -21,10 +23,28 @@ export default function All() {
  const handleSelect = async value => {
   const results = await geocodeByAddress(value);
   const latlng = await getLatLng(results[0]);
-  console.log(latlng);
+//   console.log(latlng);
   setAddress(value);
   setCoordinates(latlng);
  }
+
+ const [posts, setPosts] = useState([]);
+
+useEffect(() => {
+            axios.get(
+          `https://nodejs-rental-api.herokuapp.com/ratings/topServiceProvider`
+        )
+        .then((res) =>{
+        console.log(res);
+        Datalength = res.data.length;
+        setPosts(res.data);
+        // console.log(Datalength)
+    })
+        .catch (err => { 
+        console.log(err);
+    })
+  }, []);
+
   return (
     <div>
       <Navbar />
@@ -79,13 +99,16 @@ export default function All() {
             </div>  */}
         </div>
         <div className='flex justify-center items-center py-8 '>
-            <h1 className='text-3xl'>Results: <span className='text-white bg-blue-500 text-2xl px-2 pb-1 font-bold'> 3 </span></h1>
+            <h1 className='text-3xl'>Results: <span className='text-white bg-blue-500 text-2xl px-2 pb-1 font-bold'>{Datalength}</span></h1>
         </div>
         <div className='flex justify-center items-center mt-10 mb-10'>
             <div className='flex flex-wrap shadowBox flex-col px-2 py-2'>
+                {/* <ServiceProvider />
                 <ServiceProvider />
-                <ServiceProvider />
-                <ServiceProvider />
+                <ServiceProvider /> */}
+                {posts.map((item)=>{
+                        return  <ServiceProvider  userName = {item.userName} />
+                    })}
             </div>
         </div>
       <Footer />

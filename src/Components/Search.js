@@ -15,6 +15,7 @@ import { useNavigate} from 'react-router-dom';
 // import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 
 export default function Search(props) {
+  let navigate = useNavigate();
     const [address, setAddress] = useState("");
     const [coordinates,setCoordinates] = useState({
       lat:null,
@@ -28,6 +29,18 @@ export default function Search(props) {
   setAddress(value);
   setCoordinates(latlng);
  }
+
+ const toDetails=()=>{
+  if(props.title == "Properties For Rent")
+  navigate('/listing/all',{state:{longitude: coordinates.lat, latitude:coordinates.lng  }});
+  
+  if(props.title == "Top Real Estate Agents")
+     navigate('/realEstateAgents/AllAgents',{state:props});
+  
+     if(props.title == "Top Service Providers")
+     navigate('/serviceProvider/All',{state:props});
+}
+    
   return (
     <div>
       <Navbar />
@@ -36,11 +49,11 @@ export default function Search(props) {
         </div>
         <h2 className='pt-5 pb-1 text-center text-4xl font-normal'>Enter a city 🌇</h2>
         <div className="flex justify-center items-center flex-row">
-            {/* <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center">
               <p>lat: {coordinates.lat}</p>
-              <p>long: {coordinates.lat}</p>
+              <p>long: {coordinates.lng}</p>
               <p>address: {address}</p>
-            </div> */}
+            </div>
             <div className="container flex justify-center mb-24 pt-10">
              
             <FontAwesomeIcon icon={faLocation} className=" items-center justify-center py-2 px-2 text-blue-900 hover:text-black text-xl rounded-full text "></FontAwesomeIcon>
@@ -50,19 +63,22 @@ export default function Search(props) {
                 onSelect={handleSelect}
               >
                 {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-                  <div className='flex justify-center flex-col' >
+                  <div className='flex justify-center  flex-col' >
+                    <div className='flex flex-row'>
                     <input
                       {...getInputProps({
                         placeholder: ' Search',
                         className: 'location-search-input',
                       })}
-                    className="xxsm:w-64 xsm:w-72 sm:w-96 shadow-sm text-left py-1 flex justify-start outline-0 "
+                    className="xxsm:w-44 xsm:w-56  sm:w-96 shadow-sm text-left py-1 flex justify-start outline-0 px-2"
 
                     />
+                    <button className="btn btn-primary px-2 mx-2 xxsm:text-sm mobile:text-base  " onClick={()=>toDetails()}  >search</button>
+                    </div>
                     <div className="autocomplete-dropdown-container">
                       {loading && <div>Loading...</div>}
                       {suggestions.map(suggestion => {
-                        console.log (suggestion);
+                        {/* console.log (suggestion); */}
                         const className = suggestion.active
                           ? 'suggestion-item--active'
                           : 'suggestion-item';
