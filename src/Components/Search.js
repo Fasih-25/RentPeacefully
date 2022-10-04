@@ -49,11 +49,11 @@ export default function Search(props) {
         </div>
         <h2 className='pt-5 pb-1 text-center text-4xl font-normal'>Enter a city 🌇</h2>
         <div className="flex justify-center items-center flex-row">
-            <div className="flex flex-col justify-center items-center">
+            {/* <div className="flex flex-col justify-center items-center">
               <p>lat: {coordinates.lat}</p>
               <p>long: {coordinates.lng}</p>
               <p>address: {address}</p>
-            </div>
+            </div> */}
             <div className="container flex justify-center mb-24 pt-10">
              
             <FontAwesomeIcon icon={faLocation} className=" items-center justify-center py-2 px-2 text-blue-900 hover:text-black text-xl rounded-full text "></FontAwesomeIcon>
