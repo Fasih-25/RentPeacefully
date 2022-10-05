@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faFacebook, faGooglePlus, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import ContactUs from './ContactUs';
+import { Button } from 'bootstrap';
 
 export default function Footer() {
   const [showMyModal, setShowMyModal] = useState(false)
@@ -54,12 +55,12 @@ export default function Footer() {
           <hr className='text-slate-800 my-4' />
         </div>
         <div className="text-center mb-3 justify-center text-xl ">
-          <a className="  px-2 " href="/"><FontAwesomeIcon icon={faFacebook} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-blue-900 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></a>
-          <a className="  px-2 " href="/"><FontAwesomeIcon icon={faTwitter} className="socialbtn items-center justify-center py-2 px-2 bg-sky-400 text-slate-100 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></a>
-          <a className="  px-2 " href="/"><FontAwesomeIcon icon={faGooglePlus} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-red-600 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></a>
-          <a className="  px-2 " href="/"><FontAwesomeIcon icon={faLinkedin} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-blue-800 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></a>
-          <a className="  px-2 " href="/"><FontAwesomeIcon icon={faInstagram} className="socialbtn items-center justify-center py-2 px-2 bg-sky-900 text-gray-100 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></a>
-          <a className="  px-2 " href="/"><FontAwesomeIcon icon={faEnvelope} className="socialbtn items-center justify-center py-2 px-2 bg-gray-800 text-gray-100 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></a>
+          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faFacebook} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-blue-900 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faTwitter} className="socialbtn items-center justify-center py-2 px-2 bg-sky-400 text-slate-100 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faGooglePlus} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-red-600 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faLinkedin} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-blue-800 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faInstagram} className="socialbtn items-center justify-center py-2 px-2 bg-sky-900 text-gray-100 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faEnvelope} className="socialbtn items-center justify-center py-2 px-2 bg-gray-800 text-gray-100 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
                   
         </div>
         <div className="footerCopyright flex bg-Footer-10">
