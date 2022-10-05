@@ -35,9 +35,9 @@ export default function Footer() {
                 <div className='col-md-3 text-center sm:!text-left  '>
                     <h5 className='text-xl font-normal'>Legal</h5>
                     <ul className='text-center sm:!text-left pt-2 '>
-                        <li><a className=" text-slate-100 hover:text-slate-100 px-0 text-sm hover:no-underline  " href="/">Terms of use</a></li>
-                        <li><a className=" text-slate-100 hover:text-slate-100 px-0 py-0 text-sm hover:no-underline" href="/">Legal Disclaimer</a></li>
-                        <li><a className=" text-slate-100 hover:text-slate-100 px-0 py-0  text-sm hover:no-underline" href="/">Privacy Policy</a></li>
+                        <li><button className=" text-slate-100 hover:text-slate-100 px-0 text-sm hover:no-underline  " onClick={()=>navigate("/")}>Terms of use</button></li>
+                        <li><button className=" text-slate-100 hover:text-slate-100 px-0 py-0 text-sm hover:no-underline" onClick={()=>navigate("/")}>Legal Disclaimer</button></li>
+                        <li><button className=" text-slate-100 hover:text-slate-100 px-0 py-0  text-sm hover:no-underline" onClick={()=>navigate("/")}>Privacy Policy</button></li>
                     </ul>
                 </div>
             </div>
