@@ -18,6 +18,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 export default function Details() {
     let navigate = useNavigate();
     const location = useLocation();
+    var shuffleimages = location.state.shuffleData
   return (
     
     <div>
@@ -65,24 +66,35 @@ export default function Details() {
                     spaceBetween={30}
                     centeredSlides={true}
                     autoplay={{
-                        delay: 2500,
+                        delay: 3500,
                         disableOnInteraction: false,
                     }}
                     pagination={{
                         clickable: true,
                     }}
-                    navigation={true}
+                    // navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper text-black"
                     >
-                    <SwiperSlide>
+                    {shuffleimages.map((x) => (
+                        <SwiperSlide >
+                            <img
+                                className="object-fill w-full h-96"
+                                key={x.id}
+                                src={x.image}
+                                // src={require('../assets/listing1.png')}
+                                alt="image slide 1"
+                            />
+                            </SwiperSlide>
+                    ))}
+                    {/* <SwiperSlide>
                         <img
                             className="object-fill w-full h-96"
                             // src={require('../assets/listing1-3.jpeg')}
                             src = {location.state.propertyImage}
                             alt="image slide 1"
                         />
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                    
                 </Swiper>
                 </div>

@@ -11,6 +11,8 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
+
+  
 export default function PropertyCard(props) {
     let navigate = useNavigate();
     // console.log(props.propertyImage);
@@ -25,7 +27,9 @@ export default function PropertyCard(props) {
         //   console.log(images);
         // var images11;
         // images11 = props.propertyImage[0];
-        // console.log(setImages);  
+        // console.log(setImages); 
+       
+        // console.log(shuffleData); 
     return (
         
     <div>
@@ -36,25 +40,27 @@ export default function PropertyCard(props) {
                   spaceBetween={30}
                   centeredSlides={true}
                   autoplay={{
-                      delay: 2500,
+                      delay: 4500,
                       disableOnInteraction: false,
                   }}
                   pagination={{
                       clickable: true,
                   }}
-                  navigation={true}
+                //   navigation={true}
                   modules={[Autoplay, Pagination, Navigation]}
                   className="mySwiper"
               >
-                  
+                  {props.shuffleData.map((x) => (
                     <SwiperSlide>
                         <img
                             className="object-fill w-full h-96"
-                            src={props.propertyImage}
+                            key={x.id}
+                            src={x.image}
                             // src={require('../assets/listing1.png')}
                             alt="image slide 1"
                         />
                   </SwiperSlide>
+                  ))}
                   {/* <SwiperSlide>
                         <img
                             className="object-fill w-full h-96"
