@@ -90,8 +90,13 @@ fetch("https://nodejs-rental-api.herokuapp.com/property/searchProperty", request
   .then(response => response.json())
   .then(result => setPosts(result.users))
   .catch(error => console.log('error', error));
+//   .then((response) =>{
+//     // console.log(res);
+//     Datalength = response.users.length;
+// })
   }, []);
-
+  console.log(posts.length)
+  Datalength = posts.length;
   return (
 
     <div>

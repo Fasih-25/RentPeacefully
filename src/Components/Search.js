@@ -75,7 +75,7 @@ export default function Search(props) {
                     />
                     <button className="btn btn-primary px-2 mx-2 xxsm:text-sm mobile:text-base  " onClick={()=>toDetails()}  >search</button>
                     </div>
-                    <div className="autocomplete-dropdown-container">
+                    <div className="autocomplete-dropdown-container xxsm:w-44 xsm:w-56  sm:w-96 border outline-2 ">
                       {loading && <div>Loading...</div>}
                       {suggestions.map(suggestion => {
                         {/* console.log (suggestion); */}
@@ -84,8 +84,8 @@ export default function Search(props) {
                           : 'suggestion-item';
                         // inline style for demonstration purpose
                         const style = suggestion.active
-                          ? { backgroundColor: '#fafafa', cursor: 'pointer' }
-                          : { backgroundColor: '#ffffff', cursor: 'pointer' };
+                          ? { backgroundColor: '#3f729b', cursor: 'pointer', color: 'white', padding: '5px' }
+                          : { backgroundColor: '#ffffff', cursor: 'pointer', padding: '5px' };
                         return (
                           <div
                             {...getSuggestionItemProps(suggestion, {
@@ -94,6 +94,7 @@ export default function Search(props) {
                             })}
                           >
                             <span>{suggestion.description}</span>
+                            <hr />
                           </div>
                         );
                       })}
