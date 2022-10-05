@@ -119,8 +119,9 @@
   background-size: cover !important;
 }
 .pricingPlans{
-  background-image: url(assets/forest3.jpg);
+  background-image: url(assets/forest.jpg);
   background-repeat: no-repeat;
+  background-size: cover !important;
   /* height: 100%;
   width: 25%; */
 }
