@@ -20,60 +20,47 @@ export default function SignUp() {
     let handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            if(userType==""){
-                alert("Please Select User Type")
+            if(userType =="" || password.length<6 || userName == "" || phoneNo == "" || email == ""){
+            
+                if(userType==""){
+                    alert("Please Select User Type")
+                }
+                if(password.length<6){
+                // alert("password needs atleast 6 charaters")
+                    setMessage("password needs atleast 6 charaters"); 
+                }
             }
-            else{
-            const requestOptions = {
-                method: 'POST',
-                headers: {    
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*' },
-                body: JSON.stringify({ userName, email, password, phoneNo, userType})};
+            else
+            {
+                const requestOptions = {
+                    method: 'POST',
+                    headers: {    
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*' },
+                    body: JSON.stringify({ userName, email, password, phoneNo, userType})};
+                    
+                let res = await fetch("https://nodejs-rental-api.herokuapp.com/user/register",requestOptions);
                 
-          let res = await fetch("https://nodejs-rental-api.herokuapp.com/user/register",requestOptions);
-                
-        // if(email == "" && password == "")
-        // {
-            // let res = await fetch("https://nodejs-rental-api.herokuapp.com/user/register", {
-            // // mode: 'no-cors',
-            // method: "POST",
-            // body: JSON.stringify({
-            //   userName: userName,
-            //   email: email,
-            //   password: password,
-            //   phoneNo: phoneNo,
-            //   userType: userType,
-            // }),
-        //     headers:{
-        //         "Content-Type":'application/json',
-        //         "Accept":'application/json'
-        //     }
-                        
-        //   });
-        // }
-        // else
-        // {  
-        let resJson = await res.json();
-        //   if (res.status === 200) {
-             if (resJson.message === "The email address you have entered is already associated with another account.") {
-            setUserName("");
-            setEmail("");
-            setPhoneNo("");
-            setUserType("");
-            setPassword("");
-            setMessage("");
-            console.log(userType, userName,email,password,phoneNo)
-            // setMessage("User created successfully");
-            // navigate("/")
-            alert("This Email is already registered, Please Try Different one");
-          } else {
-            // setMessage("Some error occured");
-            navigate("/")
-          }
-        }
-        // }
+                let resJson = await res.json();
+                //   if (res.status === 200) {
+                    if (resJson.message === "The email address you have entered is already associated with another account.") {
+                    setUserName("");
+                    setEmail("");
+                    setPhoneNo("");
+                    setUserType("");
+                    setPassword("");
+                    setMessage("");
+                    console.log(userType, userName,email,password,phoneNo)
+                    // setMessage("User created successfully");
+                    // navigate("/")
+                    alert("This Email is already registered, Please Try Different one");
+                } else {
+                    // setMessage("Some error occured");
+                    navigate("/")
+                }
+            }
+
         } catch (err) {
           console.log(err);
         }
@@ -172,6 +159,7 @@ export default function SignUp() {
                                 className="block w-full px-2 xl:!py-3 py-2 mx-3 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                             />
                         </div>
+                        <div className="message flex justify-center items-center text-red-600 font-bold pt-2">{message ? <p>{message}</p> : null}</div>
                     </div>
                     <div className="mt-4">
                         {/* <div className="flex flex-row items-center justify-center mt-4">
