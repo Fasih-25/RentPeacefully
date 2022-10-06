@@ -12,6 +12,7 @@ import {
 } from 'react-places-autocomplete';
 import {useLocation} from 'react-router-dom';
 import PropertyCard from '../Components/PropertyCard';
+import LoadingSpinner from '../Components/LoadingSpinner';
 var Datalength;
 
 function shuffle(array) {
@@ -34,8 +35,8 @@ export default function All() {
       lat:null,
       lng:null
     });
-
- const handleSelect = async value => {
+  const [isLoading, setIsLoading] = useState(false);
+  const handleSelect = async value => {
   const results = await geocodeByAddress(value);
   const latlng = await getLatLng(results[0]);
 //   console.log(latlng);
@@ -98,10 +99,12 @@ var requestOptions = {
   body: raw,
   redirect: 'follow'
 };
-
+setIsLoading(true);
 fetch("https://nodejs-rental-api.herokuapp.com/property/searchProperty", requestOptions)
   .then(response => response.json())
-  .then(result => setPosts(result.users))
+  .then(result => {
+    setPosts(result.users)
+    setIsLoading(false) })
   .catch(error => console.log('error', error));
 //   .then((response) =>{
 //     // console.log(res);
@@ -112,6 +115,9 @@ fetch("https://nodejs-rental-api.herokuapp.com/property/searchProperty", request
   Datalength = posts.length;
   var setData = [{id: 0, image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'},{ id: 1, image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80' },{ id: 2, image: 'https://images.unsplash.com/photo-1617104678098-de229db51175?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1828&q=80' }, { id: 3, image: 'https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' },{ id: 4, image: 'https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80' },];    
   var shuffleData = shuffle(setData);
+  // console.log(posts)
+  // var check = post
+  // console.log(check)
   return (
 
     <div>
@@ -174,22 +180,25 @@ fetch("https://nodejs-rental-api.herokuapp.com/property/searchProperty", request
         </div>
         <div className=" flex justify-center ">
             <div className='flex flex-wrap justify-center '>
-              
-              
-                    { posts == "" ? ( <>
-                      <div className='font-medium  text-3xl text-center py-20'> <h1> Nothing found 😢</h1> </div>
-                    </>)
-                    :
-                     (
-                      <>
-                      
+            {isLoading ? <LoadingSpinner /> :(
+                    <>
+                    { (!Datalength == 0) ?
+                     ( 
+                      <>                      
                       { posts.map((item, index)=>{
                         return <PropertyCard id = {item.id} propertyImage = {item.propertyImage}  propertyName = {item.propertyName}  bedrooms = {item.rooms} bathroom = {item.bathrooms} address ={item.address} area = {item.area} price = {item.price} propertyType = {item.propertyType} securityDeposit = {item.securityDeposit} data = {posts} shuffleData = {shuffleData} />
                     })}
+                    </>
+                    )
+                    :
+                     (
+                      <>
+                      <div className='font-medium  text-3xl text-center py-20 '> <h1 className=''> Nothing found 😢</h1> </div>
                       </>
                     )
                     }
-                  
+                    </>
+                    )}
             </div>    
         </div>
         </div>

@@ -12,6 +12,7 @@ import {
 } from 'react-places-autocomplete';
 import ServiceProvider from '../Components/ServiceProvider';
 import RealEstateAgents from '../Components/RealEstateAgents';
+import LoadingSpinner from '../Components/LoadingSpinner';
 var Datalength;
 
 export default function AllAgents() {
@@ -30,8 +31,9 @@ export default function AllAgents() {
  }
 
  const [posts, setPosts] = useState([]);
-
+ const [isLoading, setIsLoading] = useState(false);
 useEffect(() => {
+    setIsLoading(true);
             axios.get(
           `https://nodejs-rental-api.herokuapp.com/topUsers/allEstateAgent`
         )
@@ -39,6 +41,7 @@ useEffect(() => {
         console.log(res);
         Datalength = res.data.length;
         setPosts(res.data);
+        setIsLoading(false)
         // console.log(Datalength)
     })
         .catch (err => { 
@@ -103,15 +106,32 @@ useEffect(() => {
             <h1 className='text-3xl'>Results: <span className='text-white bg-blue-500 text-2xl px-2 pb-1 font-bold'>{Datalength}</span></h1>
         </div>
         <div className='flex justify-center items-center mt-10 mb-10'>
-            <div className='flex flex-wrap shadowBox flex-col px-2 py-2'>
-            {posts.map((item)=>{
-                        return  <RealEstateAgents userName = {item.userName} />
-                    })}
-
-               {/* <RealEstateAgents />
-               <RealEstateAgents />
-               <RealEstateAgents /> */}
-            </div>
+        
+        {isLoading ? <LoadingSpinner /> 
+        :
+        (
+            <>
+                <div className='flex flex-wrap shadowBox flex-col px-2 py-2'>
+            
+                    { 
+                        (!Datalength == 0) ?
+                        ( 
+                            <>                      
+                                {posts.map((item)=>{
+                                    return  <RealEstateAgents userName = {item.userName} />
+                                })}
+                            </>
+                        )
+                        :
+                        (
+                            <>
+                                <div className='font-medium  text-3xl text-center py-20 '> <h1 className=''> Nothing found 😢</h1> </div>
+                            </>
+                        )
+                    }
+                </div>
+            </>
+        )}   
         </div>
       <Footer />
     </div>

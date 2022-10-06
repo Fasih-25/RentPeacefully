@@ -11,6 +11,7 @@ import {
   getLatLng,
 } from 'react-places-autocomplete';
 import ServiceProvider from '../Components/ServiceProvider';
+import LoadingSpinner from '../Components/LoadingSpinner';
 var Datalength;
 
 export default function All() {
@@ -21,29 +22,31 @@ export default function All() {
     });
 
  const handleSelect = async value => {
-  const results = await geocodeByAddress(value);
-  const latlng = await getLatLng(results[0]);
-//   console.log(latlng);
-  setAddress(value);
-  setCoordinates(latlng);
- }
+    const results = await geocodeByAddress(value);
+    const latlng = await getLatLng(results[0]);
+    //   console.log(latlng);
+    setAddress(value);
+    setCoordinates(latlng);
+  }
 
- const [posts, setPosts] = useState([]);
-
-useEffect(() => {
-            axios.get(
-          `https://nodejs-rental-api.herokuapp.com/ratings/topServiceProvider`
-        )
+  const [posts, setPosts] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  useEffect(() => {
+    setIsLoading(true);
+      axios.get(
+        `https://nodejs-rental-api.herokuapp.com/ratings/topServiceProvider`
+      )
         .then((res) =>{
         console.log(res);
         Datalength = res.data.length;
         setPosts(res.data);
+        setIsLoading(false)
         // console.log(Datalength)
-    })
-        .catch (err => { 
-        console.log(err);
-    })
-  }, []);
+      })
+          .catch (err => { 
+          console.log(err);
+      })
+    }, []);
 
   return (
     <div>
@@ -102,14 +105,39 @@ useEffect(() => {
             <h1 className='text-3xl'>Results: <span className='text-white bg-blue-500 text-2xl px-2 pb-1 font-bold'>{Datalength}</span></h1>
         </div>
         <div className='flex justify-center items-center mt-10 mb-10'>
-            <div className='flex flex-wrap shadowBox flex-col px-2 py-2'>
-                {/* <ServiceProvider />
+            {/* <div className='flex flex-wrap shadowBox flex-col px-2 py-2'>
                 <ServiceProvider />
-                <ServiceProvider /> */}
+                <ServiceProvider />
+                <ServiceProvider />
                 {posts.map((item)=>{
                         return  <ServiceProvider  userName = {item.userName} />
                     })}
-            </div>
+                    
+            </div> */}
+          {isLoading ? <LoadingSpinner /> 
+          :
+          (
+            <>
+              <div className='flex flex-wrap shadowBox flex-col px-2 py-2'>
+                { 
+                  (!Datalength == 0) ?
+                  ( 
+                    <>                      
+                      {posts.map((item)=>{
+                        return  <ServiceProvider  userName = {item.userName} />
+                      })}
+                    </>
+                  )
+                  :
+                  (
+                    <>
+                      <div className='font-medium  text-3xl text-center py-20 '> <h1 className=''> Nothing found 😢</h1> </div>
+                    </>
+                  )
+                }
+              </div>
+            </>
+          )} 
         </div>
       <Footer />
     </div>
