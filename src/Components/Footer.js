@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faFacebook, faGooglePlus, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import ContactUs from './ContactUs';
-import { Button } from 'bootstrap';
 
 export default function Footer() {
   const [showMyModal, setShowMyModal] = useState(false)
