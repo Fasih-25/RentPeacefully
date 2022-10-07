@@ -359,9 +359,10 @@ module.exports = {
           },
         },
         flash: {
-          '20%, 40%': {opacity: '0'},
+          '20%': {opacity: '0'},
           '50%': {opacity: '1'},
           '75%': {opacity: '0'},
+          '100%' : {opacity: '1'},
         },
         textIn:{
           '0%':{

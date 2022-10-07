@@ -58,8 +58,8 @@ export default function Footer() {
           <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faTwitter} className="socialbtn items-center justify-center py-2 px-2 bg-sky-400 text-slate-100 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
           <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faGooglePlus} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-red-600 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
           <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faLinkedin} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-blue-800 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
-          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faInstagram} className="socialbtn items-center justify-center py-2 px-2 bg-sky-900 text-gray-100 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
-          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faEnvelope} className="socialbtn items-center justify-center py-2 px-2 bg-gray-800 text-gray-100 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faInstagram} className="socialbtn items-center justify-center py-2 px-2 bg-sky-900 text-gray-100 hover:text-gray-400 text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faEnvelope} className="socialbtn items-center justify-center py-2 px-2 bg-gray-800 text-gray-100 hover:text-gray-400 text-xl rounded-full text "></FontAwesomeIcon></button>
                   
         </div>
         <div className="footerCopyright flex bg-Footer-10">

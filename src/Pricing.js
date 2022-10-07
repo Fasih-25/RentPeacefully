@@ -90,7 +90,7 @@ export default function Pricing() {
               </div>
               <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base '>Inclusion in Service Providers Search Engine</h1>
+                  <h1 className=' text-white text-base text-center '>Inclusion in Service Providers Search Engine</h1>
               </div>
               <hr className='text-white bg-white font-bold pb-0 px-4 mx-14 '/>
             </div>
@@ -142,7 +142,7 @@ export default function Pricing() {
               </div>
               <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base '>Inclusion in Service Providers Search Engine</h1>
+                  <h1 className=' text-white text-base text-center'>Inclusion in Service Providers Search Engine</h1>
               </div>
               <hr className='text-white bg-white font-bold pb-0 px-4 mx-14 '/>
             </div>
@@ -194,7 +194,7 @@ export default function Pricing() {
               </div>
               <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base '>Inclusion in Service Providers Search Engine</h1>
+                  <h1 className=' text-white text-base text-center'>Inclusion in Service Providers Search Engine</h1>
               </div>
               <hr className='text-white bg-white font-bold pb-0 px-4 mx-14 '/>
             </div>
@@ -246,7 +246,7 @@ export default function Pricing() {
               </div>
               <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base '>Inclusion in Service Providers Search Engine</h1>
+                  <h1 className=' text-white text-base text-center'>Inclusion in Service Providers Search Engine</h1>
               </div>
               <hr className='text-white bg-white font-bold pb-0 px-4 mx-14 '/>
             </div>
