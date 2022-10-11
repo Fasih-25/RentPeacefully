@@ -27,9 +27,9 @@ export default function Navbar() {
                     <a className="nav-link dropdown-toggle  text-slate-100 hover:!text-slate-300 lg:btn lg:px-1 py-1 lg:focus:bg-slate-300 lg:focus:!text-slate-700" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <FontAwesomeIcon icon={faAddressBook} className="homeIcon"></FontAwesomeIcon> Directory
                     </a>
-                    <ul className="dropdown-menu ">
-                        <div className='hover:bg-green-600'><li><button className="dropdown-item text-zinc-900 hover:bg-green-600  hover:!text-slate-100" onClick={()=>navigate("/topServiceProviders")}><FontAwesomeIcon icon={faScrewdriverWrench} className="homeIcon"></FontAwesomeIcon> Top Service Providers</button></li></div>
-                        <div className='hover:bg-green-600'><li><button className="dropdown-item text-zinc-900 hover:bg-green-600  hover:!text-slate-100" onClick={()=>navigate("/topRealEstateAgents")}><FontAwesomeIcon icon={faUserAlt} className="homeIcon"></FontAwesomeIcon> Top Real Estate Agent</button></li></div>
+                    <ul className="dropdown-menu px-2 ">
+                        <div className=' hover:shadow-md'><li><button className="dropdown-item text-zinc-900 hover:bg-green-500  hover:!text-slate-50" onClick={()=>navigate("/topServiceProviders")}><FontAwesomeIcon icon={faScrewdriverWrench} className="homeIcon"></FontAwesomeIcon> Top Service Providers</button></li></div>
+                        <div className=' hover:shadow-md'><li><button className="dropdown-item text-zinc-900 hover:bg-green-500  hover:!text-slate-50" onClick={()=>navigate("/topRealEstateAgents")}><FontAwesomeIcon icon={faUserAlt} className="homeIcon"></FontAwesomeIcon> Top Real Estate Agent</button></li></div>
                     </ul>
                     </li>
                     <li className="nav-item px-2  lg:!px-0">
