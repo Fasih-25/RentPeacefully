@@ -14,6 +14,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import FirstNavBar from '../Components/FirstNavBar';
 
 export default function Details() {
     let navigate = useNavigate();
@@ -22,6 +23,7 @@ export default function Details() {
   return (
     
     <div>
+        <FirstNavBar />
         <Navbar />
             <div className='propertyDetails  '>
             

@@ -11,6 +11,7 @@ import {
   getLatLng,
 } from 'react-places-autocomplete';
 import { useNavigate} from 'react-router-dom';
+import FirstNavBar from './FirstNavBar';
 
 // import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 
@@ -43,6 +44,7 @@ export default function Search(props) {
     
   return (
     <div>
+      <FirstNavBar />
       <Navbar />
         <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
           <h2 className='lg:text-2xl py-2 xl:text-3xl xl:!py-4 '> {props.title} </h2> 

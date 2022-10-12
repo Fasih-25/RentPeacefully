@@ -6,6 +6,7 @@ import { Select, Option } from "@material-tailwind/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEnvelope,faLock, faPhoneAlt, faUserAlt} from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from "react-router-dom";
+import FirstNavBar from './Components/FirstNavBar';
 
 export default function SignUp() {
     
@@ -70,6 +71,7 @@ export default function SignUp() {
 
   return (
     <div>
+        <FirstNavBar />
       <Navbar />
       <div>
         <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50">

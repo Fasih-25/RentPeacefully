@@ -4,11 +4,13 @@ import Navbar from '../Components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCertificate, faLink, faShare, faShareNodes } from '@fortawesome/free-solid-svg-icons';
 import {useNavigate} from "react-router-dom"
+import FirstNavBar from '../Components/FirstNavBar';
 
 export default function Details() {
   const navigate = useNavigate();
   return (
     <div>
+      <FirstNavBar />
       <Navbar />
       <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
             <h2 className='lg:text-2xl py-2 xl:text-3xl xl:!py-4 '> Rentpeacefully's Profile </h2>    

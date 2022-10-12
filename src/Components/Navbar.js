@@ -14,7 +14,7 @@ export default function Navbar() {
     const navigate = useNavigate();
   return (
     <div className=''>
-        <nav className="navbar pt-2.5 pb-2.5 navbar-expand-lg bg-slate-50 px-2 lg:!px-0  flex items-center justify-center lg:justify-evenly">
+        <nav className="navbar pt-2.5 pb-2.5 navbar-expand-lg bg-slate-50 px-2 lg:!px-0  flex items-center justify-center lg:justify-around">
             <div className='flex flex-row'>
                 <img className='logoImage' height="30px !important" src={logo} alt=''></img>
                 <Link className="navbar-brand text-gray-900 focus:text-gray-900 font-bold hover:!text-gray-700" to="/">RentalApp</Link>
@@ -40,6 +40,9 @@ export default function Navbar() {
                     </li>
                     <li className="nav-item px-2  lg:!px-0 mx-3">
                         <button className="nav-link text-gray-900 hover:!text-gray-700 hover:!bg-gray-300 active:bg-gray-300 btn lg:px-1 py-2  focus:bg-gray-300 focus:text-slate-700 border-0 outline-0" onClick={()=>navigate("/pricing")}><FontAwesomeIcon icon={faGift} className="homeIcon"></FontAwesomeIcon> pricing</button>
+                    </li>
+                    <li className='nav-item px-2  lg:!px-0 mx-3'>
+                        <button className=" text-gray-900 px-2 lg:px-3 py-2  hover:!text-gray-700 hover:!bg-gray-300  focus:bg-gray-300 focus:text-gray-700 " type="submit" onClick={()=>setShowMyModal(true)}><FontAwesomeIcon icon={faPhoneAlt}  className="homeIcon"></FontAwesomeIcon> Contact Us </button>
                     </li> 
                 </ul>
                  <ul className="navbar-nav    lg:mb-0 flex lg:!items-center lg:justify-end items-start flex-col lg:flex-row">
@@ -50,9 +53,9 @@ export default function Navbar() {
                     <button className=" hidden btn text-gray-900 px-2 lg:px-3 py-1 hover:!text-gray-700 hover:!bg-gray-300  focus:bg-gray-300 focus:text-gray-700 pb-3 lg:!pb-0" type="submit" onClick={()=>navigate("/login")}><FontAwesomeIcon icon={faSignInAlt}  className="homeIcon"></FontAwesomeIcon> Login</button>
                 </div>
             </div>
-            <div className='hidden lg:block'>
-            <button className=" text-gray-900 px-2 lg:px-3 py-2 pt-3 hover:!text-gray-700 hover:!bg-gray-300  focus:bg-gray-300 focus:text-gray-700 " type="submit" onClick={()=>setShowMyModal(true)}><FontAwesomeIcon icon={faPhoneAlt}  className="homeIcon"></FontAwesomeIcon> Contact Us </button>
-            </div>
+            {/* <div className='hidden lg:block'>
+                <button className=" text-gray-900 px-2 lg:px-3 py-2 pt-3 hover:!text-gray-700 hover:!bg-gray-300  focus:bg-gray-300 focus:text-gray-700 " type="submit" onClick={()=>setShowMyModal(true)}><FontAwesomeIcon icon={faPhoneAlt}  className="homeIcon"></FontAwesomeIcon> Contact Us </button>
+            </div> */}
         </nav>
         <ContactUs onClose={handleOnClose} visible={showMyModal}   />
     </div>

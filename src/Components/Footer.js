@@ -46,7 +46,7 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-        <hr className='text-slate-50 py-2 my-7' />
+        <hr className='text-slate-900  my-3' />
         <div className='mb-4'>
           <div className='text-center'>
            <ul className='flex flex-row justify-center items-center mb-4'>

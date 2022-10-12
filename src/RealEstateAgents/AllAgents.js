@@ -13,6 +13,7 @@ import {
 import ServiceProvider from '../Components/ServiceProvider';
 import RealEstateAgents from '../Components/RealEstateAgents';
 import LoadingSpinner from '../Components/LoadingSpinner';
+import FirstNavBar from '../Components/FirstNavBar';
 var Datalength;
 
 export default function AllAgents() {
@@ -51,6 +52,7 @@ useEffect(() => {
 
   return (
     <div>
+      <FirstNavBar />
       <Navbar />
       <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
             {/* <div className='flex justify-center items-center'>

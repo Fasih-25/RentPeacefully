@@ -2,11 +2,13 @@ import React from "react";
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
 import {useNavigate} from "react-router-dom";
+import FirstNavBar from "./Components/FirstNavBar";
 
  export default function FAQs() {
     const navigate = useNavigate();
     return (
      <div>
+        <FirstNavBar />
         <Navbar />
         <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around  shadowBox' >
             <h2 className='lg:text-2xl py-2 xl:text-3xl xl:!py-4 '> Frequently Asked Questions (FAQ)</h2>    

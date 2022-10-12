@@ -1,4 +1,6 @@
 import { Fragment } from 'react'
+import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/ERT.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { faGift, faHome, faAddressBook, faQuestionCircle, faExclamationCircle, faPlusSquare, faSignInAlt, faScrewdriverWrench, faUserAlt, faClockFour, faPhoneAlt} from '@fortawesome/free-solid-svg-icons'; 
@@ -44,9 +46,10 @@ export default function FirstNavBar() {
                         <ul className='flex flex-col lg:flex-row '>
                             {/* <button className='text-white' onClick={()=>navigate("/login")}>LOGIN </button>  
                             <button className='text-white mx-2' onClick={()=>navigate("/signUp")}>/ REGISTER</button>    */}
-                            <li className='pb-3 lg:!pb-0 px-2 '><button className=" text-slate-50 hover:bg-yellow-400 focus:hover:bg-yellow-400 hover:text-slate-900 ease-in-out duration-500  lg:px-2 rounded-sm" onClick={()=>navigate("/fAQs")}><FontAwesomeIcon icon={faQuestionCircle} className="homeIcon"></FontAwesomeIcon> FAQ</button></li>
-                            <li className='pb-3 lg:!pb-0 px-2 '><button className=" text-slate-50 hover:bg-yellow-400 focus:hover:bg-yellow-400 hover:text-slate-900 ease-in-out duration-500  lg:px-2 rounded-sm" onClick={()=>navigate("/signUp")}><FontAwesomeIcon icon={faPlusSquare} className="homeIcon"></FontAwesomeIcon> SIGN UP</button></li>
-                            <li className='pb-3 lg:!pb-0 px-2 '><button className=" text-slate-50 hover:bg-yellow-400 focus:hover:bg-yellow-400 hover:text-slate-900 ease-in-out duration-500  lg:px-2 rounded-sm" onClick={()=>navigate("/login")}><FontAwesomeIcon icon={faSignInAlt}  className="homeIcon"></FontAwesomeIcon> LOGIN</button></li>
+                            <li className='pb-3 lg:!pb-0 px-2 '><button className=" text-slate-50 hover:bg-yellow-300 focus:hover:bg-yellow-300 hover:text-slate-900 ease-in-out duration-500  lg:px-2 rounded-sm lg:py-1" onClick={()=>navigate("/fAQs")}><FontAwesomeIcon icon={faQuestionCircle} className="homeIcon"></FontAwesomeIcon> FAQ</button></li>
+                            <li className='pb-3 lg:!pb-0 px-2 '><button className=" text-slate-50 hover:bg-yellow-300 focus:hover:bg-yellow-300 hover:text-slate-900 ease-in-out duration-500  lg:px-2 rounded-sm lg:py-1" onClick={()=>navigate("/how-It-Works")}><FontAwesomeIcon icon={faExclamationCircle} className="homeIcon"></FontAwesomeIcon> How it works</button></li>
+                            <li className='pb-3 lg:!pb-0 px-2 '><button className=" text-slate-50 hover:bg-yellow-300 focus:hover:bg-yellow-300 hover:text-slate-900 ease-in-out duration-500  lg:px-2 rounded-sm lg:py-1" onClick={()=>navigate("/signUp")}><FontAwesomeIcon icon={faPlusSquare} className="homeIcon"></FontAwesomeIcon> SIGN UP</button></li>
+                            <li className='pb-3 lg:!pb-0 px-2 '><button className=" text-slate-50 hover:bg-yellow-300 focus:hover:bg-yellow-300 hover:text-slate-900 ease-in-out duration-500  lg:px-2 rounded-sm lg:py-1" onClick={()=>navigate("/login")}><FontAwesomeIcon icon={faSignInAlt}  className="homeIcon"></FontAwesomeIcon> LOGIN</button></li>
                         </ul>    
                     </div>
                 </div>

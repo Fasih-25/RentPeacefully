@@ -13,6 +13,7 @@ import {
 import {useLocation} from 'react-router-dom';
 import PropertyCard from '../Components/PropertyCard';
 import LoadingSpinner from '../Components/LoadingSpinner';
+import FirstNavBar from '../Components/FirstNavBar';
 var Datalength;
 
 function shuffle(array) {
@@ -121,6 +122,7 @@ fetch("https://nodejs-rental-api.herokuapp.com/property/searchProperty", request
   return (
 
     <div>
+      <FirstNavBar />
       <Navbar />
         <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
             {/* <div className='flex justify-center items-center'>

@@ -23,7 +23,7 @@ export default function NavCenter() {
                     <div className="">
                     <div className="card shadowBox relative mx-3 -z-10 flex flex-col p-3">
                         <div className={toggleState === 1 ? "  flex-start " : "hidden"}>
-                            <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
+                            <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
                                 <div className="md:text-center flex items-center justify-center lg:!justify-center">
                                     <img src={require('../assets/property2.jpg')} className="" alt="" />
                                 </div>
@@ -34,7 +34,7 @@ export default function NavCenter() {
                                 </div>
                              </div>
                              
-                             <hr className="mb-5 mt-5 pb-3"></hr>
+                             <hr className=""></hr>
                              
                              <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 ">
                                 <div className="md:text-center flex items-center justify-center lg:justify-center lg:w-3/4 2xl:w-2/4">
@@ -47,7 +47,7 @@ export default function NavCenter() {
                                 </div>
                              </div>
                              
-                             <hr className="mb-5 mt-5 pb-3"></hr>
+                             <hr className=""></hr>
 
                              <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
                                 <div className="md:text-center flex md:items-center md:justify-center lg:items-start lg:justify-start  lg:w-full lg:h-full">
@@ -56,7 +56,7 @@ export default function NavCenter() {
                                 <div className=" md:justify-center lg:justify-start lg:pl-5 xl:pl-10 2xl:pl-30 lg:pt-0 ">
                                     <h4 className="text-blue-800 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faFile} className="text-blue-800"></FontAwesomeIcon> Smart Contract </h4>
                                     <h1 className="text-slate-600 text-center lg:!text-left text-2xl md:text-3xl mb-3 px-6 md:px-0 "><strong>The answer: Smart Contracts!</strong></h1>
-                                    <h1 className="text-center mb-4 lg:!text-left text-base lg:mt-6 md:text-base lg:text-base xl:text-lg 2xl:text-lg">
+                                    <h1 className="text-center  lg:!text-left text-base lg:mt-6 md:text-base lg:text-base xl:text-lg 2xl:text-lg">
                                         <p className="pt-4"><strong>Clauses:</strong> The clauses are written in the Smart Contract, which are publicly visible and immutable in the Ethereum Network and displayed as a document on the platform for both parties.</p>
                                         <p className="pt-4"><strong>Escrow account:</strong> Deposit the rent payment to the Smart Contract escrow Account, this one will lock the payment once a maintenance request is submited. There's no need to appeal to a bank.</p>
                                         <p className="pt-4"><strong>Rental agreement activity processing:</strong> The contract will process all the rental agreement activities, such as: maintenance request, dispute mediation and arbitration and payment deposits. All the actions taken can be read on the Ethereum network and on the platform in a user-friendly way for both parties.</p>
@@ -67,7 +67,7 @@ export default function NavCenter() {
                         </div>
 
                         <div className={toggleState === 2 ? "flex-start" : "hidden"} >
-                            <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
+                            <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
                                 <div className="md:text-center flex items-center justify-center lg:justify-start shadowBox">
                                     <img src={require('../assets/property1.jpg')} className="" alt="" />
                                 </div>
@@ -78,7 +78,7 @@ export default function NavCenter() {
                                 </div>
                              </div>
                              
-                             <hr className="mb-5 mt-5 pb-3"></hr>
+                             <hr className=""></hr>
                              
                              <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 justify-around">
                                 <div className="md:text-center flex items-center justify-center lg:w-3/4 2xl:w-2/4">
@@ -110,7 +110,7 @@ export default function NavCenter() {
                         </div>
 
                         <div className={toggleState === 3 ? "flex-start" : "hidden"} >
-                            <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 justify-around 2xl:justify-start">
+                            <div className="flex flex-col lg:flex-row py-14 xl:pl-7 justify-around 2xl:justify-start">
                                 <div className="md:text-center flex items-center justify-center lg:justify-center 2xl:pl-36">
                                     <img src={require('../assets/service1.jpg')} className="" alt="" />
                                 </div>
@@ -121,7 +121,7 @@ export default function NavCenter() {
                                 </div>
                             </div>
                              
-                             <hr className="mb-5 mt-5 pb-3"></hr>
+                             <hr className=""></hr>
                              
                              <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 justify-around">
                                 <div className="md:text-center flex md:items-center md:justify-center lg:justify-end  ">

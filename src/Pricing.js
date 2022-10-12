@@ -4,10 +4,12 @@ import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCertificate, faDiamond} from '@fortawesome/free-solid-svg-icons';
+import FirstNavBar from './Components/FirstNavBar';
 
 export default function Pricing() {
   return (
     <div>
+      <FirstNavBar />
       <Navbar />
         <div className='mx-2'>
             <div className='flex justify-center items-center pt-3'>

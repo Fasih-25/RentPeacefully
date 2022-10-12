@@ -6,6 +6,8 @@ import "./App.css";
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChain, faFile, faHomeLg, faStar, faWrench } from '@fortawesome/free-solid-svg-icons';
+import FirstNavBar from './Components/FirstNavBar';
+
 export default function HowItWorks() {
     const [toggleState, setToggleState] = useState(1);
 
@@ -14,6 +16,7 @@ export default function HowItWorks() {
   }; 
   return (
     <div>
+    <FirstNavBar />
     <Navbar />
     <SecondSection />
     <div className='flex justify-center items-center pt-10'>
