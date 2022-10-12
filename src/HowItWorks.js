@@ -19,20 +19,20 @@ export default function HowItWorks() {
     <FirstNavBar />
     <Navbar />
     <SecondSection />
-    <div className='flex justify-center items-center pt-10'>
+    <div className='flex justify-center items-center py-10'>
         <h1 className='xxsm:text-2xl mobile:text-5xl font-semibold text-center'>How RentalApp works?</h1>
     </div>
         <div>
             <section className="py-4 ">
-                <div className="flex flex-col sm:flex-row bg-purple-400 py-3 mx-5  rounded shadowBox centerNav text-center justify-center items-center">
-                    <button className={toggleState === 1 ? "text-white sm:w-1/3 bg-slate-900 bg-opacity-30 py-1 xxsm:px-12 xsm:px-16 px-20  sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 "} onClick={() => toggleTab(1)} > For Tenants </button>
-                    <button className={toggleState === 2 ? "text-white sm:w-1/3 bg-slate-900 bg-opacity-30 py-1 xxsm:px-11 xsm:px-16 px-20 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(2)} > For Landlords </button> 
-                    <button className={toggleState === 3 ? "text-white sm:w-1/3 bg-slate-900 bg-opacity-30 py-1 xxsm:px-5 xsm:px-10  px-16 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(3)} > For Service Providers </button>
+                <div className="flex flex-col sm:flex-row bg-black py-3 mx-5  rounded shadowBox centerNav text-center justify-center items-center">
+                    <button className={toggleState === 1 ? "text-black font-bold sm:w-1/3 bg-yellow-400 py-1 xxsm:px-12 xsm:px-16 px-20  sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white font-bold sm:w-1/3 "} onClick={() => toggleTab(1)} > For Tenants </button>
+                    <button className={toggleState === 2 ? "text-black font-bold sm:w-1/3 bg-yellow-400 py-1 xxsm:px-11 xsm:px-16 px-20 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white font-bold sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(2)} > For Landlords </button> 
+                    <button className={toggleState === 3 ? "text-black font-bold sm:w-1/3 bg-yellow-400 py-1 xxsm:px-5 xsm:px-10  px-16 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white font-bold sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(3)} > For Service Providers </button>
                 </div>
                 <div className="">
                 <div className="card shadowBox relative mx-3 -z-10 flex flex-col p-3">
                     <div className={toggleState === 1 ? "  flex-start " : "hidden"}>
-                        <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
+                        <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
                             <div className="md:text-center flex items-center justify-center lg:justify-start">
                                 <img src={require('./assets/searchForProperties1.png')} className="" alt="" />
                             </div>
@@ -43,9 +43,9 @@ export default function HowItWorks() {
                             </div>
                             </div>
                             
-                            <hr className="mb-5 mt-5 pb-3"></hr>
+                            <hr className=""></hr>
                             
-                            <div className="flex flex-col-reverse lg:flex-row-reverse justify-evenly   pt-14 xl:pl-7 ">
+                            <div className="flex flex-col-reverse lg:flex-row-reverse justify-evenly   py-14 xl:pl-7 ">
                                 <div className="md:text-center flex md:items-center md:justify-center lg:justify-center lg:w-3/4 2xl:w-2/4">
                                     <img src={require('./assets/ApplyToday.jpg')} className="" alt="" />
                                 </div>
@@ -56,9 +56,9 @@ export default function HowItWorks() {
                                 </div>
                             </div>
                             
-                            <hr className="mb-5 mt-5 pb-3"></hr>
+                            <hr className=""></hr>
 
-                            <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
+                            <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
                                 <div className="md:text-center flex md:items-center md:justify-center lg:items-start lg:justify-start  lg:w-full lg:h-full">
                                     <img src={require('./assets/contract1.png')} className="" alt="" />
                                 </div>
@@ -73,9 +73,9 @@ export default function HowItWorks() {
                                     </p>
                                 </div>  
                             </div>
-                            <hr className="mb-5 mt-5 pb-3"></hr>
+                            <hr className=""></hr>
                             
-                            <div className="flex flex-col-reverse lg:flex-row-reverse pt-14 xl:pl-7 ">
+                            <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 ">
                                 <div className="container md:text-center flex md:items-center md:justify-center w-full h-full">
                                     <img src={require('./assets/contract2.png')} className="" alt="" />
                                 </div>
@@ -89,7 +89,7 @@ export default function HowItWorks() {
                     </div>
 
                     <div className={toggleState === 2 ? "flex-start" : "hidden"} >
-                        <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
+                        <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
                             <div className="md:text-center flex md:items-center md:justify-center lg:justify-start shadowBox">
                                 <img src={require('./assets/property1.jpg')} className="" alt="" />
                             </div>
@@ -100,9 +100,9 @@ export default function HowItWorks() {
                             </div>
                             </div>
                             
-                            <hr className="mb-5 mt-5 pb-3"></hr>
+                            <hr className=""></hr>
                             
-                            <div className="flex flex-col-reverse lg:flex-row-reverse pt-14 xl:pl-7 lg:justify-evenly ">
+                            <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 lg:justify-evenly ">
                             <div className="md:text-center flex md:items-center md:justify-center lg:justify-center lg:w-3/4 2xl:w-2/4">
                                 <img src={require('./assets/ApplyToday.jpg')} className="" alt="" />
                             </div>
@@ -113,9 +113,9 @@ export default function HowItWorks() {
                             </div>
                             </div>
                             
-                            <hr className="mb-5 mt-5 pb-3"></hr>
+                            <hr className=""></hr>
 
-                            <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
+                            <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
                                 <div className="md:text-center flex md:items-center md:justify-center lg:items-start lg:justify-start  lg:w-full lg:h-full">
                                     <img src={require('./assets/contract1.png')} className="" alt="" />
                                 </div>
@@ -130,9 +130,9 @@ export default function HowItWorks() {
                                     </p>
                                 </div>  
                             </div>
-                            <hr className="mb-5 mt-5 pb-3"></hr>
+                            <hr className=""></hr>
                             
-                            <div className="flex flex-col-reverse lg:flex-row-reverse pt-14 xl:pl-7 ">
+                            <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 ">
                                 <div className="container md:text-center flex md:items-center md:justify-center  w-full h-full">
                                     <img src={require('./assets/contract2.png')} className="" alt="" />
                                 </div>
@@ -145,7 +145,7 @@ export default function HowItWorks() {
                     </div>
 
                     <div className={toggleState === 3 ? "flex-start" : "hidden"} >
-                        <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 justify-around 2xl:justify-start">
+                        <div className="flex flex-col lg:flex-row py-14 xl:pl-7 justify-around 2xl:justify-start">
                             <div className=" md:text-center flex items-center    justify-center lg:!justify-center 2xl:pl-36">
                                 <img src={require('./assets/service1.jpg')} className="" alt="" />
                             </div>
@@ -156,9 +156,9 @@ export default function HowItWorks() {
                             </div>
                         </div>
                             
-                            <hr className="mb-5 mt-5 pb-3"></hr>
+                            <hr className=""></hr>
                             
-                            <div className="flex flex-col-reverse lg:flex-row-reverse pt-14 xl:pl-7 justify-evenly  ">
+                            <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 justify-evenly  ">
                                 <div className="container md:text-center flex md:items-center md:justify-center lg:justify-center  ">
                                     <img src={require('./assets/service2.jpg')} className="" alt="" />
                                 </div>

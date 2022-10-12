@@ -57,7 +57,7 @@ export default function ContactUs({visible, onClose}) {
         <div className=' flex justify-end items-end z-10  '>
             <h1 className=' bg-slate-500 rounded-full px-2 py-1 cursor-pointer' onClick={Close}><FontAwesomeIcon icon={faClose} className=" text-base text-gray-50 hover:text-black "></FontAwesomeIcon></h1>
         </div>
-            <div className='flex justify-center items-center w-full px-6 py-4 mt-3 overflow-hidden shadowBox bg-sky-800 shadow-md sm:max-w-lg sm:rounded-lg z-10'>
+            <div className='flex justify-center items-center w-full px-6 py-4 mt-3 overflow-hidden shadowBox bg-black shadow-md sm:max-w-lg sm:rounded-lg z-10'>
                   <h3 className="text-4xl text-slate-50">
                     Contact Us
                   </h3>
@@ -143,8 +143,8 @@ export default function ContactUs({visible, onClose}) {
                     </div>
                   
                     <div className="flex items-center flex-col mt-4">
-                        <button onClick={handleSelect} className="w-full px-4 py-3 mx-5  tracking-wide text-white transition-colors duration-200 transform bg-purple-400 shadowBox  rounded-md focus:outline-none">
-                            SEND<FontAwesomeIcon icon={faPaperPlane} className="mx-2 text-xl text-slate-50"></FontAwesomeIcon>
+                        <button onClick={handleSelect} className="w-full px-4 py-3 mx-5  tracking-wide text-slate-50 font-bold transition-colors duration-200 transform bg-gray-900 hover:bg-yellow-400 hover:text-gray-900 shadowBox  rounded-md focus:outline-none">
+                            SEND<FontAwesomeIcon icon={faPaperPlane} className="mx-2 text-xl "></FontAwesomeIcon>
                         </button>
                         {/* <button onClick={onClose} className=" mt-2 w-full px-4 py-3 mx-5  tracking-wide text-white transition-colors duration-200 transform bg-red-500 shadowBox  rounded-md focus:outline-none">
                             Close
