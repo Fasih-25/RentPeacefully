@@ -67,7 +67,7 @@ export default function Footer() {
           <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faEnvelope} className="socialbtn items-center justify-center py-2 px-2 bg-gray-800 text-gray-100 hover:text-gray-400 text-xl rounded-full text "></FontAwesomeIcon></button>
                   
         </div>
-        <div className="footerCopyright flex bg-Footer-10">
+        <div className="footerCopyright flex bg-[#f9f9f9]">
           <div className="container text-center justify-center py-4 text-xs text-black">
             <h1> © 2022 Copyright: RentalApp </h1>
           </div>
