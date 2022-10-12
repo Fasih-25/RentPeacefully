@@ -15,45 +15,45 @@ export default function NavCenter() {
         <div>
             <div>
                 <section className="py-4 ">
-                    <div className="flex flex-col sm:flex-row bg-teal-500 py-3 mx-5  rounded shadowBox centerNav text-center justify-center items-center">
-                        <button className={toggleState === 1 ? "text-white sm:w-1/3 bg-teal-700 py-1 xxsm:px-12 xsm:px-16 px-20  sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 "} onClick={() => toggleTab(1)} > For Tenants </button>
-                        <button className={toggleState === 2 ? "text-white sm:w-1/3 bg-teal-700 py-1 xxsm:px-11 xsm:px-16 px-20 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(2)} > For Landlords </button> 
-                        <button className={toggleState === 3 ? "text-white sm:w-1/3 bg-teal-700 py-1 xxsm:px-5 xsm:px-10 px-16 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(3)} > For Service Providers </button>
+                    <div className="flex flex-col sm:flex-row bg-black py-3 mx-5  rounded shadowBox centerNav text-center justify-center items-center">
+                        <button className={toggleState === 1 ? "text-black sm:w-1/3 bg-yellow-400 py-1 xxsm:px-12 xsm:px-16 px-20  sm:px-0 mx-3 text-center !outline-0 rounded hover:bg-yellow-400 font-bold" : "text-white sm:w-1/3 font-bold"} onClick={() => toggleTab(1)} > For Tenants </button>
+                        <button className={toggleState === 2 ? "text-black sm:w-1/3 bg-yellow-400 py-1 xxsm:px-11 xsm:px-16 px-20 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded hover:bg-yellow-400 font-bold" : "text-white sm:w-1/3 mt-2 sm:!mt-0 font-bold"} onClick={() => toggleTab(2)} > For Landlords </button> 
+                        <button className={toggleState === 3 ? "text-black sm:w-1/3 bg-yellow-400 py-1 xxsm:px-5 xsm:px-10 px-16 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded hover:bg-yellow-400 font-bold" : "text-white sm:w-1/3 mt-2 sm:!mt-0 font-bold"} onClick={() => toggleTab(3)} > For Service Providers </button>
                     </div>
                     <div className="">
                     <div className="card shadowBox relative mx-3 -z-10 flex flex-col p-3">
                         <div className={toggleState === 1 ? "  flex-start " : "hidden"}>
                             <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
-                                <div className="md:text-center flex items-center justify-center lg:justify-start">
+                                <div className="md:text-center flex items-center justify-center lg:!justify-center">
                                     <img src={require('../assets/property2.jpg')} className="" alt="" />
                                 </div>
                                 <div className=" md:justify-center lg:justify-start xl:pl-10 2xl:pl-60">
-                                <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faHomeLg} className="text-green-600"></FontAwesomeIcon> Property </h4>
-                                <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-3  "><strong>Know all the property details before applying</strong></h1>
-                                <h1 className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:pr-6 xl:text-lg  ">Know the property you want to rent, the amenities it offers, price, rules and more.</h1>
+                                    <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faHomeLg} className="text-green-600"></FontAwesomeIcon> Property </h4>
+                                    <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-3  "><strong>Know all the property details before applying</strong></h1>
+                                    <h1 className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:pr-6 xl:text-lg  ">Know the property you want to rent, the amenities it offers, price, rules and more.</h1>
                                 </div>
                              </div>
                              
                              <hr className="mb-5 mt-5 pb-3"></hr>
                              
-                             <div className="flex flex-col-reverse lg:flex-row-reverse pt-14 xl:pl-7 ">
-                                <div className="md:text-center flex items-center justify-center lg:justify-start lg:w-3/4 2xl:w-2/4">
+                             <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 ">
+                                <div className="md:text-center flex items-center justify-center lg:justify-center lg:w-3/4 2xl:w-2/4">
                                     <img src={require('../assets/keyman1.jpg')} className="" alt="" />
                                 </div>
                                 <div className=" md:justify-center lg:justify-start ">
                                 <h4 className="text-red-500 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faChain} className="text-red-500"></FontAwesomeIcon> Signature</h4>
                                 <h1 className="text-slate-600 text-center lg:!text-left text-3xl md:text-3xl mb-4  "><strong>Blockchain Signature </strong></h1>
-                                <h1 className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg xl:text-lg lg:text-base 2xl:text-sm">Sign the Residential Lease Agreement with your blockchain private key. The Signature will be publicly visible and immutable in the Ethereum Network.</h1>
+                                <h1 className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg xl:text-lg lg:text-base 2xl:text-base">Sign the Residential Lease Agreement with your blockchain private key. The Signature will be publicly visible and immutable in the Ethereum Network.</h1>
                                 </div>
                              </div>
                              
                              <hr className="mb-5 mt-5 pb-3"></hr>
 
-                             <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
+                             <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
                                 <div className="md:text-center flex md:items-center md:justify-center lg:items-start lg:justify-start  lg:w-full lg:h-full">
                                     <img src={require('../assets/contract2.png')} className="" alt="" />
                                 </div>
-                                <div className=" md:justify-center lg:justify-start lg:pl-5 xl:pl-10 2xl:pl-30 pt-4 lg:pt-0 ">
+                                <div className=" md:justify-center lg:justify-start lg:pl-5 xl:pl-10 2xl:pl-30 lg:pt-0 ">
                                     <h4 className="text-blue-800 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faFile} className="text-blue-800"></FontAwesomeIcon> Smart Contract </h4>
                                     <h1 className="text-slate-600 text-center lg:!text-left text-2xl md:text-3xl mb-3 px-6 md:px-0 "><strong>The answer: Smart Contracts!</strong></h1>
                                     <h1 className="text-center mb-4 lg:!text-left text-base lg:mt-6 md:text-base lg:text-base xl:text-lg 2xl:text-lg">
@@ -80,7 +80,7 @@ export default function NavCenter() {
                              
                              <hr className="mb-5 mt-5 pb-3"></hr>
                              
-                             <div className="flex flex-col-reverse lg:flex-row-reverse pt-14 xl:pl-7 justify-around">
+                             <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 justify-around">
                                 <div className="md:text-center flex items-center justify-center lg:w-3/4 2xl:w-2/4">
                                     <img src={require('../assets/keyman2.jpg')} className="" alt="" />
                                 </div>
@@ -91,7 +91,7 @@ export default function NavCenter() {
                                 </div>
                              </div>
                              
-                             <hr className="mb-5 mt-5 pb-3"></hr>
+                             {/* <hr className="mb-5 mt-5 pb-3"></hr> */}
 
                              {/* <div className="flex flex-col lg:flex-row pt-14 xl:pl-7 ">
                                 <div className="contract4 md:text-center flex md:items-center md:justify-center lg:items-start lg:justify-start lg:w-full">
@@ -123,7 +123,7 @@ export default function NavCenter() {
                              
                              <hr className="mb-5 mt-5 pb-3"></hr>
                              
-                             <div className="flex flex-col-reverse lg:flex-row-reverse pt-14 xl:pl-7 justify-around">
+                             <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 justify-around">
                                 <div className="md:text-center flex md:items-center md:justify-center lg:justify-end  ">
                                     <img src={require('../assets/service2.jpg')} className="" alt="" />
                                 </div>

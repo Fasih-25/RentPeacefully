@@ -55,7 +55,9 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .firstSection{
-  background-image: url(assets/architecture.jpg);
+  /* background-image: url(assets/architecture.jpg); */
+  background-image: url(assets/construction.jpg);
+  /* background-image: url(assets/house2.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   

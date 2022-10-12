@@ -8,13 +8,19 @@ export default function ThirdSection() {
     <div>
       <div className='container pb-5 pt-5'>
         <section className='flex flex-col justify-center items-center'>
-            <h2 className='font-bold text-black text-center leading-tight text-5xl lg:text-4xl pb-2'>Why is RentalApp so great?</h2>
-            <div className="row flex justify-center mt-3">
-                <div className="flex justify-center">
-                    <img src={require('../assets/contract3.png')}  alt="" />
-                </div>
+           <div className='flex flex-col'>
+            <div className='flex flex-col lg:flex-row justify-around 2xl:justify-around '>
+              <div className='flex items-center justify-center'>
+                <h2 className='font-bold text-black text-center text-5xl  lg:text-4xl pb-2'>Why is RentalApp so great?</h2>
+              </div>
+              <div className=" flex justify-center items-center mt-3">
+                  <div className="flex justify-center items-center">
+                      <img src={require('../assets/contract3.png')}  alt="" />
+                  </div>
+              </div>
             </div>
-            <p className='!px-12 mb-5 pb-3 text-gray-400 text-xl md:text-xl md:!px-20 lg:text-lg lg:!px-12 xl:text-xl xl:!px-32 2xl:!px-64 text-center'>Built with blockchain Technology and Smart Contracts, which makes it the most transparent process possible and fosters trust between the parties.</p>
+            <p className=' py-8 !px-12 mb-5 pb-3 text-gray-400 text-xl md:text-xl md:!px-20 lg:text-lg lg:!px-12 xl:text-xl xl:!px-32 2xl:!px-64 text-center'>Built with blockchain Technology and Smart Contracts, which makes it the most transparent process possible and fosters trust between the parties.</p>
+            </div>
             <div className="container row flex flex-row justify-center items-center  px-5">
                 <div className="flex justify-center flex-col sm:w-1/3 px-1">
                     <FontAwesomeIcon icon={faBank} className="text-5xl text-red-600"></FontAwesomeIcon>
