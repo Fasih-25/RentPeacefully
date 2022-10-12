@@ -50,7 +50,7 @@ export default function ContactUs({visible, onClose}) {
     if(!visible) return null;
   return (
     <div>
-      <div id='container' onClick={handleOnClose}  className='fixed inset-0 bg-slate-900 bg-opacity-30 backdrop-blur-sm flex justify-center  items-center z-10'>
+      <div id='container' onClick={handleOnClose}  className='fixed inset-0 bg-slate-900 bg-opacity-30 backdrop-blur-sm flex justify-center  items-center z-30'>
       <div className='bg-white p-2 rounded first-letter:'>
         
         <div className="flex flex-col items-right  min-h-fit w-full pt-2 sm:justify-center sm:pt-0 bg-gray-50 ">
@@ -143,7 +143,7 @@ export default function ContactUs({visible, onClose}) {
                     </div>
                   
                     <div className="flex items-center flex-col mt-4">
-                        <button onClick={handleSelect} className="w-full px-4 py-3 mx-5  tracking-wide text-slate-50 font-bold transition-colors duration-200 transform bg-gray-900 hover:bg-yellow-400 hover:text-gray-900 shadowBox  rounded-md focus:outline-none">
+                        <button onClick={handleSelect} className="w-full px-4 py-3 mx-5  tracking-wide text-slate-50 font-bold transition-colors duration-200 transform bg-gray-500 hover:bg-yellow-400 hover:text-gray-900 shadowBox  rounded-md focus:outline-none">
                             SEND<FontAwesomeIcon icon={faPaperPlane} className="mx-2 text-xl "></FontAwesomeIcon>
                         </button>
                         {/* <button onClick={onClose} className=" mt-2 w-full px-4 py-3 mx-5  tracking-wide text-white transition-colors duration-200 transform bg-red-500 shadowBox  rounded-md focus:outline-none">
