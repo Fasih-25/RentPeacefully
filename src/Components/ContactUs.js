@@ -64,14 +64,6 @@ export default function ContactUs({visible, onClose}) {
             </div>  
             <div className="w-full px-6 py-4 outline-sky-600 border overflow-hidden bg-white shadow-md sm:max-w-lg sm:rounded-lg ">
                 <form >
-                  {/* <div className="w-full">
-                    <Select className='flex justify-center text-center items-center' onChange={(e)=>setusertype(e.target.value)}>
-                      <Option value={"i am Tenant"} Select="Selected" className=' text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Tenant</Option>
-                      <Option value={"i am Landlord"} className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Landlord</Option>
-                      <Option value={"i am Service Provider"} className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Service Provider</Option>
-                      <Option value={"i am Real Estate Agent"} className='text-blue-500 font-bold hover:bg-teal-600 hover:text-white'>I am a Real Estate Agent</Option>
-                    </Select>
-                  </div> */}
                     <div>
                         <div className="flex flex-row items-center justify-center mt-4">
                             <FontAwesomeIcon icon={faUserAlt} className=" text-3xl text-gray-400 "></FontAwesomeIcon>
@@ -146,9 +138,6 @@ export default function ContactUs({visible, onClose}) {
                         <button onClick={handleSelect} className="w-full px-4 py-3 mx-5  tracking-wide text-slate-50 font-bold transition-colors duration-200 transform bg-gray-500 hover:bg-yellow-400 hover:text-gray-900 shadowBox  rounded-md focus:outline-none">
                             SEND<FontAwesomeIcon icon={faPaperPlane} className="mx-2 text-xl "></FontAwesomeIcon>
                         </button>
-                        {/* <button onClick={onClose} className=" mt-2 w-full px-4 py-3 mx-5  tracking-wide text-white transition-colors duration-200 transform bg-red-500 shadowBox  rounded-md focus:outline-none">
-                            Close
-                        </button> */}
                     </div>
                     <hr className='mt-3' />
                 </form>
