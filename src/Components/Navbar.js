@@ -17,7 +17,7 @@ export default function Navbar() {
         <nav className="navbar pt-2.5 pb-2.5 navbar-expand-lg bg-slate-50 px-2 lg:!px-0  flex items-center justify-center lg:justify-around">
             <div className='flex flex-row'>
                 <img className='logoImage' height="30px !important" src={logo} alt=''></img>
-                <Link className="navbar-brand text-gray-900 focus:text-gray-900 font-bold hover:!text-gray-700" to="/">RentalApp</Link>
+                <Link className="navbar-brand text-gray-900 font-bold" to="/">RentalApp</Link>
             </div>
             <div className=" flex items-center justify-between"> 
                 <button className="navbar-toggler hidden" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,8 +34,8 @@ export default function Navbar() {
                     <FontAwesomeIcon icon={faAddressBook} className="homeIcon"></FontAwesomeIcon> Directory
                     </a>
                     <ul className="dropdown-menu px-2 ">
-                        <div className=' hover:shadow-md'><li><button className="dropdown-item text-zinc-900 hover:bg-green-500  hover:!text-slate-50" onClick={()=>navigate("/topServiceProviders")}><FontAwesomeIcon icon={faScrewdriverWrench} className="homeIcon"></FontAwesomeIcon> Top Service Providers</button></li></div>
-                        <div className=' hover:shadow-md'><li><button className="dropdown-item text-zinc-900 hover:bg-green-500  hover:!text-slate-50" onClick={()=>navigate("/topRealEstateAgents")}><FontAwesomeIcon icon={faUserAlt} className="homeIcon"></FontAwesomeIcon> Top Real Estate Agent</button></li></div>
+                        <div className=' hover:shadow-md'><li><button className="dropdown-item text-zinc-900 hover:bg-green-500  hover:!text-slate-50 rounded-sm" onClick={()=>navigate("/topServiceProviders")}><FontAwesomeIcon icon={faScrewdriverWrench} className="homeIcon"></FontAwesomeIcon> Top Service Providers</button></li></div>
+                        <div className=' hover:shadow-md'><li><button className="dropdown-item text-zinc-900 hover:bg-green-500  hover:!text-slate-50 rounded-sm" onClick={()=>navigate("/topRealEstateAgents")}><FontAwesomeIcon icon={faUserAlt} className="homeIcon"></FontAwesomeIcon> Top Real Estate Agent</button></li></div>
                     </ul>
                     </li>
                     <li className="nav-item px-2  lg:!px-0 mx-3">

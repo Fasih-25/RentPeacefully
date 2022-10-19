@@ -46,7 +46,7 @@ export default function Search(props) {
     <div>
       <FirstNavBar />
       <Navbar />
-        <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
+        <div className='text-center bg-black text-slate-50 flex flex-row justify-around ' >
           <h2 className='lg:text-2xl py-2 xl:text-3xl xl:!py-4 '> {props.title} </h2> 
         </div>
         <h2 className='pt-5 pb-1 text-center text-4xl font-normal'>Enter a city 🌇</h2>

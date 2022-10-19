@@ -69,56 +69,40 @@ var longitude = location.state.longitude;
 
 
 useEffect(() => {
-   
-  //   const requestOptions = {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/json' },
-  //     body: JSON.stringify({ longitude: "66.990501", latitude: "24.860966"})
-  // };
-  // fetch('https://nodejs-rental-api.herokuapp.com/property/searchProperty', requestOptions)
-  // .then((res) =>{
-  //       console.log(res);
-  //       // Datalength = res.data.length;
-       
-  //       setPosts(res.data);
-        
-  //   })
-  //       .catch (err => { 
-  //       console.log(err);
-  //   })
+
   var myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Content-Type", "application/json");
 
-var raw = JSON.stringify({
-  "longitude": latitude,
-  "latitude": longitude
-});
+  var raw = JSON.stringify({
+    "longitude": latitude,
+    "latitude": longitude
+  });
 
-var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: raw,
-  redirect: 'follow'
-};
-setIsLoading(true);
-fetch("https://nodejs-rental-api.herokuapp.com/property/searchProperty", requestOptions)
-  .then(response => response.json())
-  .then(result => {
-    setPosts(result.users)
-    setIsLoading(false) })
-  .catch(error => console.log('error', error));
-//   .then((response) =>{
-//     // console.log(res);
-//     Datalength = response.users.length;
-// })
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow'
+  };
+  setIsLoading(true);
+  fetch("https://nodejs-rental-api.herokuapp.com/property/searchProperty", requestOptions)
+    .then(response => response.json())
+    .then(result => {
+      setPosts(result.users)
+      setIsLoading(false) })
+    .catch(error => console.log('error', error));
+  //   .then((response) =>{
+  //     // console.log(res);
+  //     Datalength = response.users.length;
+  // })
   }, []);
-  console.log(posts.length)
-  Datalength = posts.length;
-  var setData = [{id: 0, image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'},{ id: 1, image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80' },{ id: 2, image: 'https://images.unsplash.com/photo-1617104678098-de229db51175?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1828&q=80' }, { id: 3, image: 'https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' },{ id: 4, image: 'https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80' },];    
-  var shuffleData = shuffle(setData);
-  // console.log(posts)
-  // var check = post
-  // console.log(check)
+    console.log(posts.length)
+    Datalength = posts.length;
+    var setData = [{id: 0, image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'},{ id: 1, image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80' },{ id: 2, image: 'https://images.unsplash.com/photo-1617104678098-de229db51175?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1828&q=80' }, { id: 3, image: 'https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' },{ id: 4, image: 'https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80' },];    
+    var shuffleData = shuffle(setData);
+    // console.log(posts)
+    // var check = post
+    // console.log(check)
   return (
 
     <div>
@@ -175,60 +159,36 @@ fetch("https://nodejs-rental-api.herokuapp.com/property/searchProperty", request
             </div>  */}
         </div>
         <div className='px-2'>
-        <div className="container flex justify-center items-center py-20">
-            <div className="card flex justify-center items-center text-white 2xl:text-3xl font-bold bg-green-500 ">
-               <h1 className='py-1 px-2'> {Datalength} Properties for Rent </h1>
-            </div>
-        </div>
-        <div className=" flex justify-center ">
+          <div className="container flex justify-center items-center py-20">
+              <div className="card flex justify-center items-center text-white 2xl:text-3xl font-bold bg-green-500 ">
+                <h1 className='py-1 px-2'> {Datalength} Properties for Rent </h1>
+              </div>
+          </div>
+          <div className=" flex justify-center ">
             <div className='flex flex-wrap justify-center '>
-            {isLoading ? <LoadingSpinner /> :(
+              {isLoading ? <LoadingSpinner /> :(
+                  <>
+                  { (!Datalength == 0) ?
+                  ( 
+                    <>                      
+                    { posts.map((item, index)=>{
+                      return <PropertyCard id = {item.id} propertyImage = {item.propertyImage}  propertyName = {item.propertyName}  bedrooms = {item.rooms} bathroom = {item.bathrooms} address ={item.address} area = {item.area} price = {item.price} propertyType = {item.propertyType} securityDeposit = {item.securityDeposit} data = {posts} shuffleData = {shuffleData} />
+                  })}
+                  </>
+                  )
+                  :
+                  (
                     <>
-                    { (!Datalength == 0) ?
-                     ( 
-                      <>                      
-                      { posts.map((item, index)=>{
-                        return <PropertyCard id = {item.id} propertyImage = {item.propertyImage}  propertyName = {item.propertyName}  bedrooms = {item.rooms} bathroom = {item.bathrooms} address ={item.address} area = {item.area} price = {item.price} propertyType = {item.propertyType} securityDeposit = {item.securityDeposit} data = {posts} shuffleData = {shuffleData} />
-                    })}
+                    <div className='font-medium  text-3xl text-center py-20 '> <h1 className=''> Nothing found 😢</h1> </div>
                     </>
-                    )
-                    :
-                     (
-                      <>
-                      <div className='font-medium  text-3xl text-center py-20 '> <h1 className=''> Nothing found 😢</h1> </div>
-                      </>
-                    )
-                    }
-                    </>
-                    )}
+                  )
+                  }
+                  </>
+              )}
             </div>    
-        </div>
+          </div>
         </div>
       <Footer />
     </div>
   )
 }
-       //   axios.get(
-          // `https://nodejs-rental-api.herokuapp.com/property/`, 
-          // { 
-    //         axios.get(
-    //       `https://nodejs-rental-api.herokuapp.com/property/searchProperty`, 
-    //       {
-    //           longitude: "66.990501",
-    //           latitude: "24.860966"
-                
-              
-    //         }
-
-    //     )
-    //     .then((res) =>{
-    //     console.log(res);
-    //     Datalength = res.data.length;
-    //     // console.log(location.state.id)
-    //     // console.log(location.state.id)
-    //     setPosts(res.data);
-        
-    // })
-    //     .catch (err => { 
-    //     console.log(err);
-    // })

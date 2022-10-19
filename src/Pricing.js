@@ -41,7 +41,7 @@ export default function Pricing() {
                 <h5><strong>Service Providers:</strong>Up to 2 advertisements.</h5>
               </div>
               <div className='text-white flex justify-center py-4 font-normal text-center'>
-                <Link className='bg-transparent border-2  border-white  py-2 px-5 mb-3 hover:text-white shadowBox' to="/signUp"> Register </Link>
+                <Link className='bg-transparent border-2  border-white hover:!border-yellow-500 py-2 px-5 mb-3 hover:text-white hover:!bg-yellow-500' to="/signUp"> Register </Link>
               </div>
             </div>
           </div>
@@ -49,59 +49,59 @@ export default function Pricing() {
         <div className="py-3 my-2 flex flex-wrap 2xl:flex-row justify-center lg:justify-around ">
           <div className='2xl:w-1/4'>
           <div className="pricingPlans h-fit  w-full  rounded-md shadowBox mb-5 ">
-            <div className='bg-indigo-700 h-fit bg-opacity-70  pb-4 rounded-md'>
+            <div className='bg-white h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
-              <FontAwesomeIcon icon={faCertificate} className=" text-xl text-slate-50 "></FontAwesomeIcon><h3 className='  text-2xl text-slate-50 px-1'> Basic</h3>
+              <FontAwesomeIcon icon={faCertificate} className=" text-xl text-black "></FontAwesomeIcon><h3 className='  text-2xl text-black px-1'> Basic</h3>
               </div> 
               <div className='flex text-center justify-center items-center py-3'>
-                <sup className='text-3xl text-slate-50 mb-2'>$</sup><h1 className='text-slate-50 text-7xl'>4.95<span className='font-thin text-slate-50 text-3xl'>/mo</span></h1>
+                <sup className='text-3xl text-black mb-2'>$</sup><h1 className='text-black text-7xl'>4.95<span className='font-thin text-black text-3xl'>/mo</span></h1>
               </div>
               <div className='pb-2 pt-4 flex justify-center items-center'>
-                <h1 className='font-bold text-slate-50 text-lg'>Tenants</h1>
+                <h1 className='font-bold text-black text-lg'>Tenants</h1>
               </div>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                <h1 className=' text-white text-base '>Unlimited applications</h1>  
+                <h1 className=' text-black text-base '>Unlimited applications</h1>  
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14'/>
               
                <div className='pt-5 pb-3 flex justify-center items-center '>
-                  <h1 className='font-bold text-white text-lg'>Landlords</h1>
+                  <h1 className='font-bold text-black text-lg'>Landlords</h1>
                </div>
                <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base'>Upto <span className='font-bold'>7</span> Active Listings</h1>
+                  <h1 className=' text-black text-base'>Upto <span className='font-bold'>7</span> Active Listings</h1>
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14'/>
               
               <div className='pt-5 pb-3 flex justify-center items-center '>
-                  <h1 className='font-bold text-white text-lg'>Real Estate Agents</h1>
+                  <h1 className='font-bold text-black text-lg'>Real Estate Agents</h1>
               </div>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base px-11 text-center'>Upto <span className='font-bold'>7</span> Active Listings Which Includes Smart Contract</h1>
+                  <h1 className=' text-black text-base px-11 text-center'>Upto <span className='font-bold'>7</span> Active Listings Which Includes Smart Contract</h1>
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14'/>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base '>Inclusion in Agents Search Engine</h1>
+                  <h1 className=' text-black text-base '>Inclusion in Agents Search Engine</h1>
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14'/>
              
               <div className='pt-5 pb-3 flex justify-center items-center '>
-                  <h1 className='font-bold text-white text-lg'>Service Providers</h1>
+                  <h1 className='font-bold text-black text-lg'>Service Providers</h1>
               </div>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base '>Upto <span className='font-bold'>7</span> advertisements</h1>
+                  <h1 className=' text-black text-base '>Upto <span className='font-bold'>7</span> advertisements</h1>
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14'/>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base text-center '>Inclusion in Service Providers Search Engine</h1>
+                  <h1 className=' text-black text-base text-center '>Inclusion in Service Providers Search Engine</h1>
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14 '/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14 '/>
             </div>
           </div>
           </div>
           
           <div className='2xl:w-1/4'>
           <div className="pricingPlans h-fit   w-full rounded-md shadowBox mb-5">
-            <div className='bg-fuchsia-800 h-fit bg-opacity-70  pb-4 rounded-md'>
+            <div className='bg-black h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
               <FontAwesomeIcon icon={faCertificate} className=" text-xl text-slate-50 "></FontAwesomeIcon><h3 className='  text-2xl text-slate-50 px-1'> Plus</h3>
               </div> 
@@ -153,59 +153,59 @@ export default function Pricing() {
 
           <div className='2xl:w-1/4'>
           <div className="pricingPlans h-fit  w-full rounded-md shadowBox mb-5 ">
-            <div className='bg-teal-600 h-fit bg-opacity-70  pb-4 rounded-md'>
+            <div className='bg-white h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
-              <FontAwesomeIcon icon={faCertificate} className=" text-xl text-slate-50 "></FontAwesomeIcon><h3 className='  text-2xl text-slate-50 px-1'> Professional</h3>
+              <FontAwesomeIcon icon={faCertificate} className=" text-xl text-black "></FontAwesomeIcon><h3 className='  text-2xl text-black px-1'> Professional</h3>
               </div> 
               <div className='flex text-center justify-center items-center py-3'>
-                <sup className='text-3xl text-slate-50 mb-2'>$</sup><h1 className='text-slate-50 text-7xl'>14.95<span className='font-thin text-slate-50 text-3xl'>/mo</span></h1>
+                <sup className='text-3xl text-black mb-2'>$</sup><h1 className='text-black text-7xl'>14.95<span className='font-thin text-black text-3xl'>/mo</span></h1>
               </div>
               <div className='pb-2 pt-4 flex justify-center items-center'>
-                <h1 className='font-bold text-slate-50 text-lg'>Tenants</h1>
+                <h1 className='font-bold text-black text-lg'>Tenants</h1>
               </div>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                <h1 className=' text-white text-base '><span className='font-bold'>Unlimited</span> applications</h1>  
+                <h1 className=' text-black text-base '><span className='font-bold'>Unlimited</span> applications</h1>  
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14'/>
               
                <div className='pt-5 pb-3 flex justify-center items-center '>
-                  <h1 className='font-bold text-white text-lg'>Landlords</h1>
+                  <h1 className='font-bold text-black text-lg'>Landlords</h1>
                </div>
                <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base'>Upto <span className='font-bold'>20</span> Active Listings</h1>
+                  <h1 className=' text-black text-base'>Upto <span className='font-bold'>20</span> Active Listings</h1>
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14'/>
               
               <div className='pt-5 pb-3 flex justify-center items-center '>
-                  <h1 className='font-bold text-white text-lg'>Real Estate Agents</h1>
+                  <h1 className='font-bold text-black text-lg'>Real Estate Agents</h1>
               </div>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base px-11 text-center'>Upto <span className='font-bold'>20</span> Active Listings Which Includes Smart Contract</h1>
+                  <h1 className=' text-black text-base px-11 text-center'>Upto <span className='font-bold'>20</span> Active Listings Which Includes Smart Contract</h1>
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14'/>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base '>Inclusion in Agents Search Engine</h1>
+                  <h1 className=' text-black text-base '>Inclusion in Agents Search Engine</h1>
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14'/>
              
               <div className='pt-5 pb-3 flex justify-center items-center '>
-                  <h1 className='font-bold text-white text-lg'>Service Providers</h1>
+                  <h1 className='font-bold text-black text-lg'>Service Providers</h1>
               </div>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base '>Upto <span className='font-bold'>20</span> advertisements</h1>
+                  <h1 className=' text-black text-base '>Upto <span className='font-bold'>20</span> advertisements</h1>
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14'/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14'/>
               <div className='pt-3 pb-1  flex justify-center items-center'>
-                  <h1 className=' text-white text-base text-center'>Inclusion in Service Providers Search Engine</h1>
+                  <h1 className=' text-black text-base text-center'>Inclusion in Service Providers Search Engine</h1>
               </div>
-              <hr className='text-white bg-white font-bold pb-0 px-4 mx-14 '/>
+              <hr className='text-black bg-black font-bold pb-0 px-4 mx-14 '/>
             </div>
           </div>
           </div>
 
           <div className='2xl:w-1/4'>
           <div className="pricingPlans h-fit  w-full rounded-md shadowBox">
-            <div className='bg-amber-500 h-fit bg-opacity-70  pb-4 rounded-md'>
+            <div className='bg-black h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
               <FontAwesomeIcon icon={faDiamond} className=" text-xl text-slate-50 "></FontAwesomeIcon><h3 className='  text-2xl text-slate-50 px-1'> Enterprise</h3>
               </div> 
