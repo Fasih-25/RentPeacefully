@@ -41,7 +41,7 @@ export default function Pricing() {
                 <h5><strong>Service Providers:</strong>Up to 2 advertisements.</h5>
               </div>
               <div className='text-white flex justify-center py-4 font-normal text-center'>
-                <Link className='bg-transparent border-2  border-white hover:!border-yellow-500 py-2 px-5 mb-3 hover:text-white hover:!bg-yellow-500' to="/signUp"> Register </Link>
+                <Link className='bg-transparent border-2  border-white hover:!no-underline hover:!border-yellow-500 py-2 px-5 mb-3 hover:text-white hover:!bg-yellow-500' to="/signUp"> Register </Link>
               </div>
             </div>
           </div>
