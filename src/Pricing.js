@@ -48,7 +48,7 @@ export default function Pricing() {
         </div> 
         <div className="py-3 my-2 flex flex-wrap 2xl:flex-row justify-center lg:justify-around ">
           <div className='2xl:w-1/4'>
-          <div className="pricingPlans h-fit  w-full  rounded-md shadowBox mb-5 ">
+          <div className="  rounded-md shadowBox mb-5 ">
             <div className='bg-white h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
               <FontAwesomeIcon icon={faCertificate} className=" text-xl text-black "></FontAwesomeIcon><h3 className='  text-2xl text-black px-1'> Basic</h3>
@@ -100,7 +100,7 @@ export default function Pricing() {
           </div>
           
           <div className='2xl:w-1/4'>
-          <div className="pricingPlans h-fit   w-full rounded-md shadowBox mb-5">
+          <div className="  rounded-md shadowBox mb-5">
             <div className='bg-black h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
               <FontAwesomeIcon icon={faCertificate} className=" text-xl text-slate-50 "></FontAwesomeIcon><h3 className='  text-2xl text-slate-50 px-1'> Plus</h3>
@@ -152,7 +152,7 @@ export default function Pricing() {
           </div>
 
           <div className='2xl:w-1/4'>
-          <div className="pricingPlans h-fit  w-full rounded-md shadowBox mb-5 ">
+          <div className=" rounded-md shadowBox mb-5 ">
             <div className='bg-white h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
               <FontAwesomeIcon icon={faCertificate} className=" text-xl text-black "></FontAwesomeIcon><h3 className='  text-2xl text-black px-1'> Professional</h3>
@@ -204,7 +204,7 @@ export default function Pricing() {
           </div>
 
           <div className='2xl:w-1/4'>
-          <div className="pricingPlans h-fit  w-full rounded-md shadowBox">
+          <div className=" rounded-md shadowBox">
             <div className='bg-black h-fit bg-opacity-70  pb-4 rounded-md'>
               <div className='flex justify-center items-center text-center py-3'>
               <FontAwesomeIcon icon={faDiamond} className=" text-xl text-slate-50 "></FontAwesomeIcon><h3 className='  text-2xl text-slate-50 px-1'> Enterprise</h3>
