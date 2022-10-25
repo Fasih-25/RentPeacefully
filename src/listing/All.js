@@ -108,7 +108,7 @@ useEffect(() => {
     <div>
       <FirstNavBar />
       <Navbar />
-        <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around ' >
+        <div className='text-center bg-black text-slate-50 flex flex-row justify-around ' >
             {/* <div className='flex justify-center items-center'>
                 <button className='btn btn-primary'>filters</button>
             </div> */}
