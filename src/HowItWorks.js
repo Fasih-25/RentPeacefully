@@ -150,7 +150,7 @@ export default function HowItWorks() {
                                 <img src={require('./assets/service1.jpg')} className="" alt="" />
                             </div>
                             <div className="flex md:justify-center lg:justify-start xl:pl-10 2xl:pl-96 2xl:ml-12 flex-col">
-                                {/* <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faWrench} className="text-green-600"></FontAwesomeIcon> Services </h4> */}
+                                <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faWrench} className="text-green-600"></FontAwesomeIcon> Services </h4>
                                 <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-2  "><strong>List your service</strong></h1>
                                 <p className="text-center mb-2 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:!pr-6 xl:text-lg  ">Listing a service on RentPeacefully is quick and easy. Add a brief description of the service you provide and wait to get contacted by a Landlord.</p>
                             </div>
@@ -163,7 +163,7 @@ export default function HowItWorks() {
                                     <img src={require('./assets/service2.jpg')} className="" alt="" />
                                 </div>
                                 <div className="container flex flex-col md:justify-center items-center lg:justify-start mb-20 2xl:-ml-56">
-                                    {/* <h4 className="text-red-500 font-bold text-center lg:!text-left mb-3 "><FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon> Score</h4> */}
+                                    <h4 className="text-red-500 font-bold text-center lg:!text-left mb-3 "><FontAwesomeIcon icon={faStar} className="text-red-500"></FontAwesomeIcon> Score</h4>
                                     <h1 className="text-slate-600 text-center lg:!text-center text-3xl md:text-3xl mb-4  "><strong>Get rated </strong></h1>
                                     <p className="text-center 2xl:px-32 2xl:mx-28    mb-4 lg:!text-center lg:mt-6 md:text-lg xl:text-lg lg:text-base 2xl:text-sm">Get a greater rating for your services once they're finished. The higher score, the greater are the chances to get hired again and your service ad will be in a higher position.</p>
                                 </div>
