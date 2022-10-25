@@ -30,19 +30,19 @@ export default function HowItWorks() {
                     <button className={toggleState === 3 ? "text-black font-bold sm:w-1/3 bg-yellow-400 py-1 xxsm:px-5 xsm:px-10  px-16 mt-2 sm:!mt-0 sm:px-0 mx-3 text-center !outline-0 rounded" : "text-white font-bold sm:w-1/3 mt-2 sm:!mt-0"} onClick={() => toggleTab(3)} > For Service Providers </button>
                 </div>
                 <div className="">
-                <div className="card shadowBox relative mx-3 -z-10 flex flex-col p-3">
-                    <div className={toggleState === 1 ? "  flex-start " : "hidden"}>
-                        <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
-                            <div className="md:text-center flex items-center justify-center lg:justify-start">
-                                <img src={require('./assets/searchForProperties1.png')} className="" alt="" />
+                    <div className="card shadowBox relative mx-3 -z-10 flex flex-col p-3">
+                        <div className={toggleState === 1 ? "  flex-start " : "hidden"}>
+                            <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
+                                <div className="md:text-center flex items-center justify-center lg:justify-start">
+                                    <img src={require('./assets/searchForProperties1.png')} className="" alt="" />
+                                </div>
+                                <div className=" md:justify-center pt-6 sm:!pt-0 lg:justify-start xl:pl-10 2xl:pl-60">
+                                    {/* <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faHomeLg} className="text-green-600"></FontAwesomeIcon> Property </h4> */}
+                                    <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-3  "><strong>Search for your dream property</strong></h1>
+                                    <p className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:pr-6 xl:text-lg  ">Enter the country and city you are interested in, choose the most relevant result from a drop-down list, and go explore all the option you have.</p>
+                                </div>
                             </div>
-                            <div className=" md:justify-center pt-6 sm:!pt-0 lg:justify-start xl:pl-10 2xl:pl-60">
-                            {/* <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faHomeLg} className="text-green-600"></FontAwesomeIcon> Property </h4> */}
-                            <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-3  "><strong>Search for your dream property</strong></h1>
-                            <p className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:pr-6 xl:text-lg  ">Enter the country and city you are interested in, choose the most relevant result from a drop-down list, and go explore all the option you have.</p>
-                            </div>
-                            </div>
-                            
+                                
                             <hr className=""></hr>
                             
                             <div className="flex flex-col-reverse lg:flex-row-reverse justify-evenly   py-14 xl:pl-7 ">
@@ -55,7 +55,7 @@ export default function HowItWorks() {
                                     <p className="text-center mb-4 lg:!text-center lg:mt-6 md:text-lg xl:text-lg lg:text-base 2xl:text-sm">Go to the property listing you like, press “Apply” button and follow the steps to apply for your favorite property.</p>
                                 </div>
                             </div>
-                            
+                                
                             <hr className=""></hr>
 
                             <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
@@ -85,34 +85,34 @@ export default function HowItWorks() {
                                     <p className="text-center mb-4 lg:!text-center lg:mt-6 md:text-lg xl:text-lg lg:text-base 2xl:text-sm">Open a ticket to submit a maintenance request, start a dispute with the Landlord and pay the rent. You need a small amount of Ether for this actions (except for the rent), since they are processed by the smart contract and the record is saved on the Ethereum Network. To pay the rent, you need to deposit the money to the smart contract escrow account, by just sending the money to the contract Ethereum address, this contract will hold the money instead of a bank, and it will even lock (freeze) the rent payment if you have a ticket open until you close it!!</p>
                                 </div>
                             </div>
-                            
-                    </div>
+                                
+                        </div>
 
-                    <div className={toggleState === 2 ? "flex-start" : "hidden"} >
-                        <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
-                            <div className="md:text-center flex md:items-center md:justify-center lg:justify-start shadowBox">
-                                <img src={require('./assets/property1.jpg')} className="" alt="" />
-                            </div>
-                            <div className=" md:justify-center lg:justify-start lg:pl-8 xl:pl-10 2xl:pl-24 pt-6 sm:!pt-0">
-                                {/* <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faHomeLg} className="text-green-600"></FontAwesomeIcon> Property </h4> */}
-                                <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-3  "><strong>List your property</strong></h1>
-                                <p className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:pr-6 xl:text-lg  ">Listing a property for rent on RentPeacefully is quick and easy. Add your property in seconds with photos, description, and list of amenities. Post your rental listing on the platform to boost its visibility.</p>
-                            </div>
+                        <div className={toggleState === 2 ? "flex-start" : "hidden"} >
+                            <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
+                                <div className="md:text-center flex md:items-center md:justify-center lg:justify-start shadowBox">
+                                    <img src={require('./assets/property1.jpg')} className="" alt="" />
+                                </div>
+                                <div className=" md:justify-center lg:justify-start lg:pl-8 xl:pl-10 2xl:pl-24 pt-6 sm:!pt-0">
+                                    {/* <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faHomeLg} className="text-green-600"></FontAwesomeIcon> Property </h4> */}
+                                    <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-3  "><strong>List your property</strong></h1>
+                                    <p className="text-center mb-4 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:pr-6 xl:text-lg  ">Listing a property for rent on RentPeacefully is quick and easy. Add your property in seconds with photos, description, and list of amenities. Post your rental listing on the platform to boost its visibility.</p>
+                                </div>
                             </div>
                             
                             <hr className=""></hr>
                             
                             <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 lg:justify-evenly ">
-                            <div className="md:text-center flex md:items-center md:justify-center lg:justify-center lg:w-3/4 2xl:w-2/4">
-                                <img src={require('./assets/ApplyToday.jpg')} className="" alt="" />
-                            </div>
+                                <div className="md:text-center flex md:items-center md:justify-center lg:justify-center lg:w-3/4 2xl:w-2/4">
+                                    <img src={require('./assets/ApplyToday.jpg')} className="" alt="" />
+                                </div>
                                 <div className=" flex flex-col md:justify-center lg:justify-start ">
-                                {/* <h4 className="text-red-500 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faChain} className="text-red-500"></FontAwesomeIcon> Signature</h4> */}
-                                <h1 className="text-slate-600 text-center  text-3xl md:text-3xl mb-4  "><strong>Receive Rental applications </strong></h1>
-                                <p className="text-center mb-4 lg:!text-center  lg:mt-6 md:text-lg xl:text-lg lg:text-base 2xl:text-sm">View the list of applications submitted by potential tenants.</p>
+                                    {/* <h4 className="text-red-500 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faChain} className="text-red-500"></FontAwesomeIcon> Signature</h4> */}
+                                    <h1 className="text-slate-600 text-center  text-3xl md:text-3xl mb-4  "><strong>Receive Rental applications </strong></h1>
+                                    <p className="text-center mb-4 lg:!text-center  lg:mt-6 md:text-lg xl:text-lg lg:text-base 2xl:text-sm">View the list of applications submitted by potential tenants.</p>
+                                </div>
                             </div>
-                            </div>
-                            
+                                
                             <hr className=""></hr>
 
                             <div className="flex flex-col lg:flex-row py-14 xl:pl-7 ">
@@ -137,25 +137,25 @@ export default function HowItWorks() {
                                     <img src={require('./assets/contract2.png')} className="" alt="" />
                                 </div>
                                 <div className="container md:justify-center lg:!justify-center items-center ">
-                                    {/* <h4 className="text-red-500 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faChain} className="text-red-500"></FontAwesomeIcon> Signature</h4> */}
+                                    <h4 className="text-red-500 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faChain} className="text-red-500"></FontAwesomeIcon> Signature</h4>
                                     <h1 className="text-slate-600 text-center lg:!text-center text-3xl md:text-3xl mb-4  "><strong>Interact in your Rental Aggreement</strong></h1>
                                     <p className="text-center mb-4 lg:!text-center  lg:mt-6 md:text-lg xl:text-lg lg:text-base 2xl:text-sm">Raise the rent, start a dispute with the Tenant and withdraw the payment. You need a small amount of Ether for this actions, since they are processed by the smart contract and the record is saved on the Ethereum Network. Withdraw the rent payment from the Smart Contract escrow account, this contract will hold the money instead of a bank!!</p>
                                 </div>
                             </div>
-                    </div>
-
-                    <div className={toggleState === 3 ? "flex-start" : "hidden"} >
-                        <div className="flex flex-col lg:flex-row py-14 xl:pl-7 justify-around 2xl:justify-start">
-                            <div className=" md:text-center flex items-center    justify-center lg:!justify-center 2xl:pl-36">
-                                <img src={require('./assets/service1.jpg')} className="" alt="" />
-                            </div>
-                            <div className="flex md:justify-center lg:justify-start xl:pl-10 2xl:pl-96 2xl:ml-12 flex-col">
-                                <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faWrench} className="text-green-600"></FontAwesomeIcon> Services </h4>
-                                <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-2  "><strong>List your service</strong></h1>
-                                <p className="text-center mb-2 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:!pr-6 xl:text-lg  ">Listing a service on RentPeacefully is quick and easy. Add a brief description of the service you provide and wait to get contacted by a Landlord.</p>
-                            </div>
                         </div>
-                            
+
+                        <div className={toggleState === 3 ? "flex-start" : "hidden"} >
+                            <div className="flex flex-col lg:flex-row py-14 xl:pl-7 justify-around 2xl:justify-start">
+                                <div className=" md:text-center flex items-center    justify-center lg:!justify-center 2xl:pl-36">
+                                    <img src={require('./assets/service1.jpg')} className="" alt="" />
+                                </div>
+                                <div className="flex md:justify-center lg:justify-start xl:pl-10 2xl:pl-96 2xl:ml-12 flex-col">
+                                    <h4 className="text-green-600 font-bold text-center lg:!text-left mb-3"><FontAwesomeIcon icon={faWrench} className="text-green-600"></FontAwesomeIcon> Services </h4>
+                                    <h1 className="text-slate-700 text-center lg:!text-left text-2xl md:text-3xl mb-2  "><strong>List your service</strong></h1>
+                                    <p className="text-center mb-2 lg:!text-left lg:mt-6 md:text-lg lg:text-base lg:!pr-6 xl:text-lg  ">Listing a service on RentPeacefully is quick and easy. Add a brief description of the service you provide and wait to get contacted by a Landlord.</p>
+                                </div>
+                            </div>
+                                
                             <hr className=""></hr>
                             
                             <div className="flex flex-col-reverse lg:flex-row-reverse py-14 xl:pl-7 justify-evenly  ">
@@ -168,8 +168,8 @@ export default function HowItWorks() {
                                     <p className="text-center 2xl:px-32 2xl:mx-28    mb-4 lg:!text-center lg:mt-6 md:text-lg xl:text-lg lg:text-base 2xl:text-sm">Get a greater rating for your services once they're finished. The higher score, the greater are the chances to get hired again and your service ad will be in a higher position.</p>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                </div>
                 </div>
             </section>
         </div>

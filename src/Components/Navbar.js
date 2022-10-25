@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
-import logo from '../assets/ERT.png';
+import logo from '../assets/logo.png';
 import "../App.css";
 import ContactUs from './ContactUs';
 import { faGift, faHome, faAddressBook, faQuestionCircle, faExclamationCircle, faPlusSquare, faSignInAlt, faScrewdriverWrench, faUserAlt, faPhoneAlt} from '@fortawesome/free-solid-svg-icons'; 
@@ -16,8 +16,8 @@ export default function Navbar() {
     <div className=''>
         <nav className="navbar pt-2.5 pb-2.5 navbar-expand-lg bg-slate-50 px-2 lg:!px-0  flex items-center justify-center lg:justify-around">
             <div className='flex flex-row'>
-                <img className='logoImage' height="30px !important" src={logo} alt=''></img>
-                <Link className="navbar-brand text-gray-900 font-bold" to="/">RentalApp</Link>
+                <img className='logoImage' src={logo} alt=''></img>
+                <Link className="navbar-brand text-gray-900 font-bold" to="/">Property Rental App</Link>
             </div>
             <div className=" flex items-center justify-between"> 
                 <button className="navbar-toggler hidden" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
