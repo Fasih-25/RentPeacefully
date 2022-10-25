@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="flex-col sm:flex-row mx-20 lg:mx-44 flex justify-between">
                 {/* <hr className='md:hidden w-1 ' /> */}
                 <div className='col-md-3 text-center sm:!text-left mb-4 '>
-                  <div className='flex flex-row text-lg px-2'>
+                  <div className='flex flex-row text-lg px-2 items-center justify-center lg:!justify-start'>
                     <img className='logoImage' height="50px !important" src={logo} alt=''></img>
                     <h5 className='text-xl font-normal '>RentalApp</h5>
                   </div>
