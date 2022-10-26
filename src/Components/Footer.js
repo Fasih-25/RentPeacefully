@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faFacebook, faGooglePlus, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import ContactUs from './ContactUs';
-import logo from '../assets/ERT.png';
+import logo from '../assets/logo.png';
 
 export default function Footer() {
   const [showMyModal, setShowMyModal] = useState(false)
@@ -21,7 +21,7 @@ export default function Footer() {
                 <div className='col-md-3 text-center sm:!text-left mb-4 '>
                   <div className='flex flex-row text-lg px-2 items-center justify-center lg:!justify-start'>
                     <img className='logoImage' height="50px !important" src={logo} alt=''></img>
-                    <h5 className='text-xl font-normal '>RentalApp</h5>
+                    <h5 className='text-xl font-normal '>Property Rental App</h5>
                   </div>
                     <ul className='!text-center sm:!text-left pt-2 items-center'>
                         <li><button className="dropdown-item sm:w-fit px-2 text-slate-100 hover:bg-yellow-400 focus:hover:bg-yellow-400 ease-in-out duration-500 hover:font-bold hover:text-slate-900 sm:!text-left !text-center text-base  rounded-sm" onClick={()=>setShowMyModal(true)}>Contact Us</button></li>
