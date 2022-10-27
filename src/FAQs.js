@@ -10,7 +10,7 @@ import FirstNavBar from "./Components/FirstNavBar";
      <div>
         <FirstNavBar />
         <Navbar />
-        <div className='text-center bg-sky-400 text-slate-50 flex flex-row justify-around  shadowBox' >
+        <div className='text-center bg-black text-slate-50 flex flex-row justify-around  shadowBox' >
             <h2 className='lg:text-2xl py-2 xl:text-3xl xl:!py-4 '> Frequently Asked Questions (FAQ)</h2>    
         </div>
         <div className='py-10 px-3 lg:!px-10 xl:!px-20 2xl:!px-40 flex flex-col mb-5 animate-textIn ease-in'>
