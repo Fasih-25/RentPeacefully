@@ -18,14 +18,17 @@ export default function ResetPassword() {
     const [message, setMessage] = useState("");
     let navigate = useNavigate();
 
+    const queryParams = new URLSearchParams(window.location.search);
+    const token = queryParams.get('token');
+    console.log(token)
+    const url = "https://nodejs-rental-api.herokuapp.com/user/resetPassword?token="+token;
+    console.log(url)
     let handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            if(userType =="" || password.length<6 || userName == "" || phoneNo == "" || email == ""){
+            if(password.length<6){
             
-                if(userType==""){
-                    alert("Please Select User Type")
-                }
+                
                 if(password.length<6){
                 // alert("password needs atleast 6 charaters")
                     setMessage("password needs atleast 6 charaters"); 
@@ -33,33 +36,36 @@ export default function ResetPassword() {
             }
             else
             {
+                if(reTypePassword === password){
                 const requestOptions = {
-                    method: 'POST',
+                    method: 'PUT',
                     headers: {    
                         'Accept': 'application/json',
                         'Content-Type': 'application/json',
                         'Access-Control-Allow-Origin': '*' },
-                    body: JSON.stringify({ userName, email, password, phoneNo, userType})};
+                    body: JSON.stringify({password})};
                     
-                let res = await fetch("https://nodejs-rental-api.herokuapp.com/user/register",requestOptions);
+                let res = await fetch(url,requestOptions);
                 
                 let resJson = await res.json();
                 //   if (res.status === 200) {
-                    if (resJson.message === "The email address you have entered is already associated with another account.") {
-                    setUserName("");
-                    setEmail("");
-                    setPhoneNo("");
-                    setUserType("");
+                    console.log(resJson.message)
+                    if (resJson.Message === "Password has been reset") {
                     setPassword("");
+                    setReTypePassword("");
                     setMessage("");
-                    console.log(userType, userName,email,password,phoneNo)
-                    // setMessage("User created successfully");
+                    console.log(password)
                     // navigate("/")
-                    alert("This Email is already registered, Please Try Different one");
+                    setMessage("Password updated ");
+                    // alert("");
                 } else {
-                    // setMessage("Some error occured");
-                    navigate("/")
+                    setMessage("token Expired");
+                    // navigate("/")
                 }
+            }
+            else{
+                setMessage("Password dosen't match")
+            }
             }
 
         } catch (err) {
@@ -95,7 +101,7 @@ export default function ResetPassword() {
                                         className="block w-full px-2 xl:!py-3 py-2 mx-3 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                     />
                                 </div>
-                                <div className="message flex justify-center items-center text-red-600 font-bold pt-2">{message ? <p>{message}</p> : null}</div>
+                                
                             </div>
                             <div className="mt-4">
                                 <div className="flex flex-row items-center justify-center mt-4">
@@ -111,15 +117,16 @@ export default function ResetPassword() {
                                     />
                                 </div>    
                             </div>
-                            <div className=' !my-4'>
+                            <div className="message flex justify-center items-center text-black font-bold pt-2">{message ? <p>{message}</p> : null}</div>
+                            {/* <div className=' !my-4'>
                                 {(password !== reTypePassword) ? (<span className='text-red-600 font-semibold !my-4'>Password dosen't matched</span>)  : ("")}
-                            </div>
+                            </div> */}
                             <div className="flex items-center mt-4">
                                 <button type='submit'  className="w-full px-4 py-3 mx-5  tracking-wide text-white transition-colors duration-200 transform bg-teal-500 shadowBox  rounded-md focus:outline-none">
                                     RESET PASSWORD
                                 </button>
                             </div>
-                            {/* <div className="message">{messag    e ? <p>{message}</p> : null}</div> */}
+                            {/* <div className="message">{message ? <p>{message}</p> : null}</div> */}
                             <hr className='mt-3' />
                         </form>
                         {/* <div className="mt-4 text-grey-600 text-center">
@@ -145,4 +152,3 @@ export default function ResetPassword() {
     </div>
   )
 }
-//this is for checking.

@@ -22,9 +22,7 @@ import ResetPassword from './ResetPassword';
 
 function App() {
   
-const queryParams = new URLSearchParams(window.location.search);
 
-const token = queryParams.get('token');
 
   return (
     <div className="app">

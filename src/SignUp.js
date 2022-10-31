@@ -182,7 +182,7 @@ export default function SignUp() {
                                     CREATE NEW ACCOUNT
                                 </button>
                             </div>
-                            {/* <div className="message">{messag    e ? <p>{message}</p> : null}</div> */}
+                            {/* <div className="message">{message ? <p>{message}</p> : null}</div> */}
                             <hr className='mt-3' />
                         </form>
                         <div className="mt-4 text-grey-600 text-center">
