@@ -37,7 +37,11 @@ import FirstNavBar from "./Components/FirstNavBar";
                         </h2>
                         <div id="collapseSecond" className="accordion-collapse collapse" aria-labelledby="headingFirst" data-bs-parent="#accordionExample">
                         <div className="accordion-body  text-center text-sm 2xl:text-base md:px-14 ">
-                        RentalApp is a blockchain based platform which enables Landlord to list properties for rent, successively create an easy, securely and safely Smart Contract and then deploy it to the public Ethereum Network, which will only work once both Parties have signed the agreement with their blockchain private keys. Built with blockchain Technology and Smart Contracts, which makes it the most transparent process possible and fosters trust between the parties.
+                            RentalApp is a blockchain based platform which enables Landlord to list properties for rent, 
+                            successively create an easy, securely and safely Smart Contract and then deploy it to the public Ethereum Network, 
+                            which will only work once both Parties have signed the agreement with their blockchain private keys. 
+                            Built with blockchain Technology and Smart Contracts, 
+                            which makes it the most transparent process possible and fosters trust between the parties.
                         </div>
                         </div>
                     </div>
@@ -61,7 +65,10 @@ import FirstNavBar from "./Components/FirstNavBar";
                         </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third-party interference.These apps run on a custom built blockchain, an enormously powerful shared global infrastructure that can move value around and represent the ownership of property. 
+                                Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed 
+                                without any possibility of downtime, censorship, fraud or third-party interference.These apps run on a 
+                                custom built blockchain, an enormously powerful shared global infrastructure that can move value around and 
+                                represent the ownership of property. 
                             </div>
                         </div>
                     </div>
@@ -73,7 +80,10 @@ import FirstNavBar from "./Components/FirstNavBar";
                         </h2>
                         <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            A smart contract is a computer protocol intended to digitally facilitate, verify, or enforce the negotiation or performance of a contract. Smart contracts allow the performance of credible transactions without third parties. These transactions are trackable and irreversible. 
+                                A smart contract is a computer protocol intended to digitally facilitate, verify, 
+                                or enforce the negotiation or performance of a contract. 
+                                Smart contracts allow the performance of credible transactions without third parties. 
+                                These transactions are trackable and irreversible. 
                             </div>
                         </div>
                     </div>
@@ -113,7 +123,10 @@ import FirstNavBar from "./Components/FirstNavBar";
                         </h2>
                         <div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                                Yes, you can export your wallet file and use it in other platforms, to interact with your contract, these also includes, parity wallet and mist. However, it's obviously easier to use the wallet inside the platform since it has a built-in interface for your exact needs. 
+                                Yes, you can export your wallet file and use it in other platforms, to interact with your contract, 
+                                these also includes, parity wallet and mist. However, 
+                                it's obviously easier to use the wallet inside the platform since it has a built-in interface
+                                for your exact needs. 
                             </div>
                         </div>
                     </div>
@@ -125,7 +138,11 @@ import FirstNavBar from "./Components/FirstNavBar";
                         </h2>
                         <div id="collapseEight" className="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Yes!, The rental aggreement document is generated based on the clauses saved in the smart contract which resides in the Ethereum network, so they are also visible through a blockchain explorer, you'll be provided with the contract source code, abi, and all related info. However, since the clauses are saved in the form of numbers, to know what it means it's a bit tricky, so a tutorial will be provided soon so you can read it easily. 
+                                Yes!, The rental aggreement document is generated based on the clauses saved in the 
+                                smart contract which resides in the Ethereum network, so they are also visible through a blockchain explorer,
+                                you'll be provided with the contract source code, abi, and all related info. However, 
+                                since the clauses are saved in the form of numbers, to know what it means it's a bit tricky, 
+                                so a tutorial will be provided soon so you can read it easily. 
                             </div>
                         </div>
                     </div>
@@ -137,55 +154,63 @@ import FirstNavBar from "./Components/FirstNavBar";
                         </h2>
                         <div id="collapseNine" className="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Besides saving the clauses, the smart contract is also capable of saving the rent payment for you, so there's no need to deposit the payment to a bank account anymore. 
+                                Besides saving the clauses, the smart contract is also capable of saving the rent payment for you,
+                                so there's no need to deposit the payment to a bank account anymore. 
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="headingTen">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                            Can I see the record of the activities in my Rental Aggreement in a blockchain explorer?  
+                                Can I see the record of the activities in my Rental Aggreement in a blockchain explorer?  
                             </button>
                         </h2>
                         <div id="collapseTen" className="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Yes, every action taken is a transaction saved on blockchain, however, RentalApp offers a user-friendly interface so you can see it much understandably. 
+                                Yes, every action taken is a transaction saved on blockchain, however, 
+                                RentalApp offers a user-friendly interface so you can see it much understandably. 
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading11">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                            What happens if a ticket is open at the moment of a payment? 
+                                What happens if a ticket is open at the moment of a payment? 
                             </button>
                         </h2>
                         <div id="collapse11" className="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            The paymement will be locked until the ticket is closed. The ticket can be closed either by the Tenant or an admin. 
+                                The paymement will be locked until the ticket is closed. 
+                                The ticket can be closed either by the Tenant or an admin. 
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading12">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                            What cryptocurrencies does the platform support? 
+                                What cryptocurrencies does the platform support? 
                             </button>
                         </h2>
                         <div id="collapse12" className="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Ethereum is the only cryptocurrency supported for the moment, since it's used to deploy the smart contract, however, we'll be adding more cryptocurrencies which meet this requirement soon. 
+                                Ethereum is the only cryptocurrency supported for the moment, 
+                                since it's used to deploy the smart contract, however,
+                                we'll be adding more cryptocurrencies which meet this requirement soon. 
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading13">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                            When can I get access to the panel/dashboard?  
+                                When can I get access to the panel/dashboard?  
                             </button>
                         </h2>
                         <div id="collapse13" className="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Any type of entity (Landlord, Tenant or Service provider) can get an access to their Admin panel or dashboard once we approve them on their request so they have to provide most of the information in the initial form and before we approve them, it is necessary to get their email verified. 
+                                Any type of entity (Landlord, Tenant or Service provider) 
+                                can get an access to their Admin panel or dashboard once we approve them on their request so they 
+                                have to provide most of the information in the initial form and before we approve them, 
+                                it is necessary to get their email verified. 
                             </div>
                         </div>
                     </div>
@@ -198,12 +223,12 @@ import FirstNavBar from "./Components/FirstNavBar";
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading14">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                            Can I list my property on RentalApp?  
+                                Can I list my property on RentalApp?  
                             </button>
                         </h2>
                         <div id="collapse14" className="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Yes, you can. Set your guide price, select amenities, add a brief description and add beautiful pictures of it
+                                Yes, you can. Set your guide price, select amenities, add a brief description and add beautiful pictures of it
                             </div>
                         </div>
                     </div>
@@ -215,19 +240,25 @@ import FirstNavBar from "./Components/FirstNavBar";
                         </h2>
                         <div id="collapse15" className="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Every Smart Contract created is saved in the Ethereum blockchain in a transaction, and every transaction in the network costs as small miner fee so it can be saved in the blockchain. The same happens with the actions taken in the Rental Aggreement since they are processes in the form of Ethereum transactions and its record is saved. 
+                                Every Smart Contract created is saved in the Ethereum blockchain in a transaction, 
+                                and every transaction in the network costs as small miner fee so it can be saved in the blockchain. 
+                                The same happens with the actions taken in the Rental Aggreement since they are processes in the
+                                form of Ethereum transactions and its record is saved. 
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading16">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
-                            What can I do with my Ethereum Wallet?   
+                                What can I do with my Ethereum Wallet?   
                             </button>
                         </h2>
                         <div id="collapse16" className="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            For Landlords, it's possible to raise the rent, start a dispute, and withdraw the payment from the Smart Contract Escrow Account. This actions are processed in Ethereum transactions and saved in the blockchain, so it costs a small miner fee for processing. 
+                                For Landlords, it's possible to raise the rent, 
+                                start a dispute, and withdraw the payment from the Smart Contract Escrow Account. 
+                                This actions are processed in Ethereum transactions and saved in the blockchain, 
+                                so it costs a small miner fee for processing. 
                             </div>
                         </div>
                     </div>
@@ -240,48 +271,54 @@ import FirstNavBar from "./Components/FirstNavBar";
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading17">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
-                            Can I rent a property on RentalApp?  
+                                Can I rent a property on RentalApp?  
                             </button>
                         </h2>
                         <div id="collapse17" className="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Yes, you can. Know the property you want to rent, the amenities it offers, price, rules and more.
+                                Yes, you can. Know the property you want to rent, the amenities it offers, price, rules and more.
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading18">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
-                            Why do I have to pay a fee to interact in my Rental Aggreement with the Smart Contract? 
+                                Why do I have to pay a fee to interact in my Rental Aggreement with the Smart Contract? 
                             </button>
                         </h2>
                         <div id="collapse18" className="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                                Every action taken is processed by the Ethereum network and also generates a record which is saved in the Ethereum blockchain in a transaction, and every transaction in the network costs as small miner fee so it can be saved in the blockchain. 
+                                Every action taken is processed by the Ethereum network and also generates
+                                a record which is saved in the Ethereum blockchain in a transaction, 
+                                and every transaction in the network costs as small miner fee so it can be saved in the blockchain. 
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading19">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
-                            What can I do with my Ethereum Wallet?    
+                                What can I do with my Ethereum Wallet?    
                             </button>
                         </h2>
                         <div id="collapse19" className="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            For Tenants, it's possible to open a maintenance service request ticket, start a dispute, and deposit the payment from the Smart Contract Escrow Account. This actions are processed in Ethereum transactions and saved in the blockchain, so it costs a small miner fee for processing. 
+                                For Tenants, it's possible to open a maintenance service request ticket, 
+                                start a dispute, and deposit the payment from the Smart Contract Escrow Account. 
+                                This actions are processed in Ethereum transactions and saved in the blockchain, 
+                                so it costs a small miner fee for processing. 
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading20">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
-                            Can I also deposit just by sending the money to the smart contract address?    
+                                Can I also deposit just by sending the money to the smart contract address?    
                             </button>
                         </h2>
                         <div id="collapse20" className="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Yes. You just need to send the payment to the Smart Contract Address from any wallet (a friend can deposit for you) and this one will automatically process your payment. 
+                                Yes. You just need to send the payment to the Smart Contract Address from any wallet 
+                                (a friend can deposit for you) and this one will automatically process your payment. 
                             </div>
                         </div>
                     </div>
@@ -294,24 +331,26 @@ import FirstNavBar from "./Components/FirstNavBar";
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading21">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
-                            Can I list the services I provide on RentalApp? 
+                                Can I list the services I provide on RentalApp? 
                             </button>
                         </h2>
                         <div id="collapse21" className="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Yes, you can. Once your service is listed you must wait until you get hired by a Landlord .
+                                Yes, you can. Once your service is listed you must wait until you get hired by a Landlord .
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item shadowBox mt-2" >
                         <h2 className="accordion-header " id="heading22">
                             <button className="accordion-button collapsed text-sky-500 2xl:text-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
-                            What does the score mean? 
+                                What does the score mean? 
                             </button>
                         </h2>
                         <div id="collapse22" className="accordion-collapse collapse" aria-labelledby="heading22" data-bs-parent="#accordionExample">
                             <div className="accordion-body text-center text-sm 2xl:text-base md:px-14">
-                            Your score indicates how good you're at your job according to the Landlord and Tenant opinion you've worked with. The higher score, the higher are the chances to get hired again and your service ad will be in a higher position.
+                                Your score indicates how good you're at your job according to the 
+                                Landlord and Tenant opinion you've worked with. The higher score, 
+                                the higher are the chances to get hired again and your service ad will be in a higher position.
                             </div>
                         </div>
                     </div>

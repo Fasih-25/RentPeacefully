@@ -19,7 +19,13 @@ import AgentsDetail from './RealEstateAgents/AgentsDetails';
 import FAQs from './FAQs';
 import HowItWorks from './HowItWorks';
 import ResetPassword from './ResetPassword';
+
 function App() {
+  
+const queryParams = new URLSearchParams(window.location.search);
+
+const token = queryParams.get('token');
+
   return (
     <div className="app">
       <Router>

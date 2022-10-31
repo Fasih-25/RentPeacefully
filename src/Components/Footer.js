@@ -20,8 +20,8 @@ export default function Footer() {
                 {/* <hr className='md:hidden w-1 ' /> */}
                 <div className='col-md-3 text-center sm:!text-left mb-4 '>
                   <div className='flex flex-row text-lg px-2 items-center justify-center lg:!justify-start'>
-                    <img className='logoImage' height="50px !important" src={logo} alt=''></img>
-                    <h5 className='text-xl font-normal '>Property Rental App</h5>
+                    <img className='logoImage sm:!h-10' height="50px !important" src={logo} alt=''></img>
+                    <h5 className='xxsm:text-xs xsm:text-sm sm:!text-sm 2xl:!text-xl font-normal '>Property Rental App</h5>
                   </div>
                     <ul className='!text-center sm:!text-left pt-2 items-center'>
                         <li><button className="dropdown-item sm:w-fit px-2 text-slate-100 hover:bg-yellow-400 focus:hover:bg-yellow-400 ease-in-out duration-500 hover:font-bold hover:text-slate-900 sm:!text-left !text-center text-base  rounded-sm" onClick={()=>setShowMyModal(true)}>Contact Us</button></li>
@@ -59,12 +59,12 @@ export default function Footer() {
           <hr className='text-white my-4 ' />
         </div>
         <div className="text-center mb-3 justify-center text-xl ">
-          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faFacebook} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-blue-900 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
-          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faTwitter} className="socialbtn items-center justify-center py-2 px-2 bg-sky-400 text-slate-100 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
-          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faGooglePlus} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-red-600 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
-          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faLinkedin} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-blue-800 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
-          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faInstagram} className="socialbtn items-center justify-center py-2 px-2 bg-sky-900 text-gray-100 hover:text-gray-400 text-xl rounded-full text "></FontAwesomeIcon></button>
-          <button className="  px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faEnvelope} className="socialbtn items-center justify-center py-2 px-2 bg-gray-800 text-gray-100 hover:text-gray-400 text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className=" px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faFacebook} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-blue-900 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className=" px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faTwitter} className="socialbtn items-center justify-center py-2 px-2 bg-sky-400 text-slate-100 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className=" px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faGooglePlus} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-red-600 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className=" px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faLinkedin} className="socialbtn items-center justify-center py-2 px-2 bg-gray-200 text-blue-800 hover:text-black text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className=" px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faInstagram} className="socialbtn items-center justify-center py-2 px-2 bg-sky-900 text-gray-100 hover:text-gray-400 text-xl rounded-full text "></FontAwesomeIcon></button>
+          <button className=" px-2 " onClick={()=>navigate("/")}><FontAwesomeIcon icon={faEnvelope} className="socialbtn items-center justify-center py-2 px-2 bg-gray-800 text-gray-100 hover:text-gray-400 text-xl rounded-full text "></FontAwesomeIcon></button>
                   
         </div>
         <div className="footerCopyright flex bg-[#f9f9f9]">
