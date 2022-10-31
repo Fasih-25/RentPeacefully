@@ -20,9 +20,9 @@ export default function ResetPassword() {
 
     const queryParams = new URLSearchParams(window.location.search);
     const token = queryParams.get('token');
-    console.log(token)
+    // console.log(token)
     const url = "https://nodejs-rental-api.herokuapp.com/user/resetPassword?token="+token;
-    console.log(url)
+    // console.log(url)
     let handleSubmit = async (e) => {
         e.preventDefault();
         try {
