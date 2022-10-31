@@ -18,6 +18,7 @@ import AllAgents from './RealEstateAgents/AllAgents';
 import AgentsDetail from './RealEstateAgents/AgentsDetails';
 import FAQs from './FAQs';
 import HowItWorks from './HowItWorks';
+import ResetPassword from './ResetPassword';
 function App() {
   return (
     <div className="app">
@@ -40,6 +41,7 @@ function App() {
           <Route exact path="/realEstateAgents/AgentsDetails" element={<AgentsDetail />} />
           <Route exact path="/fAQs" element={<FAQs />} />
           <Route exact path="/how-It-Works" element={<HowItWorks />} />
+          <Route exact path="/resetPassword" element={<ResetPassword />} />
         </Routes>
       </Router>
     </div>
