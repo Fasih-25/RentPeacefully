@@ -6,11 +6,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faUserAlt, faLock} from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from "react-router-dom";
 import FirstNavBar from './Components/FirstNavBar';
+import { Icon } from 'react-icons-kit'
+import {eyeOff} from 'react-icons-kit/feather/eyeOff'
+import {eye} from 'react-icons-kit/feather/eye'
 
 export default function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [message, setMessage] = useState("");
+    const [type, setType]=useState('password');
+    const [icon, setIcon]=useState(eyeOff);
+
     let navigate = useNavigate();
     function handleForgetPassword()
   {
@@ -50,6 +56,18 @@ export default function Login() {
       console.log(err);
     }
   };
+
+  const handleToggle=()=>{    
+    if(type==='password'){
+      setIcon(eye);      
+      setType('text');
+    }
+    else{
+      setIcon(eyeOff);     
+      setType('password');
+    }
+  }
+
   return (
     <div>
       <FirstNavBar />
@@ -93,7 +111,7 @@ export default function Login() {
                         <div className="flex flex-row items-center justify-center mt-4">
                             <FontAwesomeIcon icon={faLock} className=" text-3xl text-gray-400 "></FontAwesomeIcon>
                             <input
-                                type="password"
+                                type={type}
                                 required
                                 placeholder='Password'
                                 name="password"
@@ -101,6 +119,7 @@ export default function Login() {
                                 onChange={(e)=>setPassword(e.target.value)}
                                 className="block w-full xl:!py-3 px-2 py-2 mx-3 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                             />
+                           <span onClick={handleToggle}><Icon icon={icon} size={25}/></span>
                         </div>
                     </div>
                     <div className="message text-red-600 font-bold text-center mt-3">{message ? <p>{message}</p> : null}</div>

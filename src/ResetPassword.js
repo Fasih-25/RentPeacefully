@@ -6,6 +6,9 @@ import { Select, Option } from "@material-tailwind/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEnvelope,faLock, faPhoneAlt, faUserAlt} from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from "react-router-dom";
+import { Icon } from 'react-icons-kit'
+import {eyeOff} from 'react-icons-kit/feather/eyeOff'
+import {eye} from 'react-icons-kit/feather/eye'
 import FirstNavBar from './Components/FirstNavBar';
 
 export default function ResetPassword() {
@@ -16,56 +19,59 @@ export default function ResetPassword() {
     const [phoneNo, setPhoneNo] = useState("")
     const [password, setPassword] = useState("")
     const [message, setMessage] = useState("");
+    const [type, setType]=useState('password');
+    const [icon, setIcon]=useState(eyeOff);
     let navigate = useNavigate();
 
     const queryParams = new URLSearchParams(window.location.search);
     const token = queryParams.get('token');
-    // console.log(token)
+    console.log(token)
     const url = "https://nodejs-rental-api.herokuapp.com/user/resetPassword?token="+token;
-    // console.log(url)
+    console.log(url)
     let handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            if(password.length<6){
-            
-                
-                if(password.length<6){
-                // alert("password needs atleast 6 charaters")
+            if(password.length<6)
+            {    
+                if(password.length<6)
+                {
                     setMessage("password needs atleast 6 charaters"); 
                 }
             }
             else
             {
-                if(reTypePassword === password){
-                const requestOptions = {
-                    method: 'PUT',
-                    headers: {    
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin': '*' },
-                    body: JSON.stringify({password})};
+                if(reTypePassword === password)
+                {
+                    const requestOptions = {
+                        method: 'PUT',
+                        headers: {    
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json',
+                            'Access-Control-Allow-Origin': '*' },
+                        body: JSON.stringify({password})
+                    };    
+                    let res = await fetch(url,requestOptions);
                     
-                let res = await fetch(url,requestOptions);
-                
-                let resJson = await res.json();
-                //   if (res.status === 200) {
-                    console.log(resJson.message)
-                    if (resJson.Message === "Password has been reset") {
-                    setPassword("");
-                    setReTypePassword("");
-                    setMessage("");
-                    console.log(password)
-                    // navigate("/")
-                    setMessage("Password updated ");
-                    // alert("");
-                } else {
-                    setMessage("token Expired");
-                    // navigate("/")
+                    let resJson = await res.json();
+                        console.log(resJson.message)
+                        
+                    if (resJson.Message === "Password has been reset") 
+                    {
+                        setPassword("");
+                        setReTypePassword("");
+                        setMessage("");
+                        // console.log(password)
+                        setMessage("Password updated ");
+                    } 
+                    else 
+                    {
+                        setMessage("token Expired");
+                    }
                 }
-            }
-            else{
-                setMessage("Password dosen't match")
-            }
+                else
+                {
+                    setMessage("Password dosen't match")
+                }
             }
 
         } catch (err) {
@@ -74,6 +80,17 @@ export default function ResetPassword() {
       };
         
         // const [retypePassword, setretypePassword] = useState("")
+
+        const handleToggle=()=>{    
+            if(type==='password'){
+              setIcon(eye);      
+              setType('text');
+            }
+            else{
+              setIcon(eyeOff);     
+              setType('password');
+            }
+          }
 
   return (
     <div>
@@ -92,7 +109,7 @@ export default function ResetPassword() {
                                 <div className="flex flex-row items-center justify-center mt-4">
                                     <FontAwesomeIcon icon={faLock} className=" text-3xl text-gray-400 "></FontAwesomeIcon>
                                     <input
-                                        type="password"
+                                        type={type}
                                         required
                                         placeholder='Password'
                                         name="password"
@@ -100,6 +117,7 @@ export default function ResetPassword() {
                                         onChange={(e)=>setPassword(e.target.value)}
                                         className="block w-full px-2 xl:!py-3 py-2 mx-3 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                     />
+                                    
                                 </div>
                                 
                             </div>
@@ -107,7 +125,7 @@ export default function ResetPassword() {
                                 <div className="flex flex-row items-center justify-center mt-4">
                                     <FontAwesomeIcon icon={faLock} className=" text-3xl text-gray-400 "></FontAwesomeIcon>
                                     <input
-                                        type="password"
+                                        type={type}
                                         required
                                         value={reTypePassword}
                                         placeholder='Confirm Password'
@@ -115,6 +133,7 @@ export default function ResetPassword() {
                                         // name="password_confirmation" 
                                         className="block w-full xl:!py-3 px-2 py-2 mx-3 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                                     />
+                                    <span onClick={handleToggle}><Icon icon={icon} size={25}/></span>
                                 </div>    
                             </div>
                             <div className="message flex justify-center items-center text-black font-bold pt-2">{message ? <p>{message}</p> : null}</div>
